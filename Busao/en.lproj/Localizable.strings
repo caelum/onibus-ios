@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  Busao
+
+  Created by Diego Chohfi on 4/3/12.
+  Copyright (c) 2012 None. All rights reserved.
+*/
+"localizacao" = "Location";
+"onibus" = "Bus";
+"buscando_paradas" = "Finding Stops";
+"problema_buscando_paradas" = "Problem finding stops";
+"pronto" = "Done";
+"pegando_onibus" = "Getting the bus";
+"mapa" = "Map";
+"itinerario" = "Route";
+"busque_no_mapa" = "Drop a pin";
+"ultimo_update" = "Last Updated: ";
+"solte_para_atualizar" = "Release to refresh...";
+"puxe_para_atualizar" = "Pull down to refresh...";
+"carregando" = "Loading...";
+"onibus_no_ponto" = "buses on stop";
+"pontos_proximos_pino" = "Find the bus stops next to the pin";
+"pontos_proximos" = "Nearest stops";
