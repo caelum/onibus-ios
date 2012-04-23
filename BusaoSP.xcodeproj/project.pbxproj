@@ -92,7 +92,7 @@
 		20569855152E406E00F030BA /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
 		2056985B152E516200F030BA /* busao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = busao.png; path = ../busao.png; sourceTree = "<group>"; };
 		2056985D152E516A00F030BA /* busao@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "busao@2x.png"; path = "../busao@2x.png"; sourceTree = "<group>"; };
-		20708696152CA35D00EADA0F /* Caelum.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Caelum.gpx; path = ../Caelum.gpx; sourceTree = "<group>"; };
+		20708696152CA35D00EADA0F /* Vila Mariana.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = "Vila Mariana.gpx"; path = "../Vila Mariana.gpx"; sourceTree = "<group>"; };
 		20708698152CA3ED00EADA0F /* PontoDeOnibusController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PontoDeOnibusController.h; sourceTree = "<group>"; };
 		20708699152CA3ED00EADA0F /* PontoDeOnibusController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PontoDeOnibusController.m; sourceTree = "<group>"; };
 		207086A1152CA88500EADA0F /* 242-Aim.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "242-Aim.png"; sourceTree = "<group>"; };
@@ -306,7 +306,7 @@
 				20569852152E404900F030BA /* Default@2x.png */,
 				2056985D152E516A00F030BA /* busao@2x.png */,
 				2056985B152E516200F030BA /* busao.png */,
-				20708696152CA35D00EADA0F /* Caelum.gpx */,
+				20708696152CA35D00EADA0F /* Vila Mariana.gpx */,
 				208A1C241524F7FE00335F87 /* BusaoSP-Info.plist */,
 				208A1C281524F7FE00335F87 /* main.m */,
 				208A1C2A1524F7FE00335F87 /* BusaoSP-Prefix.pch */,
