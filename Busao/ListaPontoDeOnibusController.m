@@ -83,6 +83,9 @@
     [self.onibusDataSource buscaPontosParaLocalizacao:self.localizacaoAtual];
 }
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    if([self isSearching:tableView]){
+        return nil;
+    }
     Ponto *ponto = [self.pontos objectAtIndex:section];    
     double distanciaDoPontoAtual = [ponto.localizacao distanciaEntrePonto:self.localizacaoAtual];
     NSString *distancia = [NSString stringWithFormat:@" %.0fm", distanciaDoPontoAtual];

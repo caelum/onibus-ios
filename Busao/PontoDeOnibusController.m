@@ -6,7 +6,6 @@
 //  Copyright (c) 2012 None. All rights reserved.
 //
 
-#import <Twitter/TWTweetComposeViewController.h>
 #import "EGORefreshTableHeaderView.h"
 #import "SSHUDView.h"
 #import "PontoDeOnibusController.h"
@@ -16,17 +15,18 @@
 @interface PontoDeOnibusController (){
     SSHUDView *loading;
 }
-
-- (void) tweet: (UIGestureRecognizer *) gesture;
+@property(nonatomic, strong) UISearchBar *searchBar;
+@property(nonatomic, strong) UISearchDisplayController *searchDisplayController;
+@property(nonatomic, strong) NSMutableArray *onibusFiltrados;
 @end
 
 @implementation PontoDeOnibusController
-@synthesize pontos, paradasDataSource, localizacaoAtual;
+@synthesize pontos, paradasDataSource, localizacaoAtual, searchBar, searchDisplayController, onibusFiltrados;
 
 - (id)initWithPonto: (Ponto *) ponto
 {
     self = [super initWithStyle:UITableViewStylePlain];
-    if (self) {      
+    if (self) {     
         self.pontos = [NSArray arrayWithObject:ponto];
         self.navigationItem.title = NSLocalized(@"onibus");
     }
@@ -34,21 +34,47 @@
 }
 
 - (void)viewDidLoad
-{    
+{
+    self.searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
+    self.tableView.tableHeaderView = searchBar;
+    
+    searchDisplayController = [[UISearchDisplayController alloc] initWithSearchBar:searchBar contentsController:self];
+    searchDisplayController.delegate = self;
+    searchDisplayController.searchResultsDataSource = self;
+    searchDisplayController.searchResultsDelegate = self;
+    
+    [self hideSearchView];
+    
     self.paradasDataSource = [[ParadaDataSource alloc] initWithDelegate:self];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     
-    UIGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(tweet:)];
-
-    [self.tableView addGestureRecognizer:longPress];
+    self.onibusFiltrados = [[NSMutableArray alloc] init];
 }
-
+- (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
+{
+    [onibusFiltrados removeAllObjects];
+    for(Ponto *ponto in pontos){
+        for(Onibus *onibus in ponto.onibuses){
+            BOOL containsString = [onibus.nome rangeOfString:searchString options:NSCaseInsensitiveSearch].location != NSNotFound;
+            if(containsString){
+                [onibusFiltrados addObject:onibus];
+            }
+        }
+    }
+    return YES;
+}
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    if([self isSearching:tableView]){
+        return 1;
+    }
     return [pontos count];
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    if([self isSearching:tableView]){
+        return [onibusFiltrados count];
+    }
     Ponto *ponto = [pontos objectAtIndex:section];
     return [ponto.onibuses count];
 }
@@ -64,7 +90,7 @@
     if(!cell){
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
-    Onibus *onibus = [self buscaOnibus:indexPath];
+    Onibus *onibus = [self buscaOnibus:indexPath paraTableView:tableView];
     
     cell.textLabel.text = onibus.linha;
     cell.detailTextLabel.text = onibus.nome;
@@ -72,7 +98,7 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    Onibus *onibus = [self buscaOnibus:indexPath];
+    Onibus *onibus = [self buscaOnibus:indexPath paraTableView:tableView];
     [onibus setPonto:[pontos objectAtIndex:indexPath.section]];
     loading = [[SSHUDView alloc] initWithTitle:NSLocalized(@"buscando_paradas")];
     [loading show];
@@ -90,25 +116,23 @@
 - (void) problemaParaBuscarParadas {
     [loading failQuicklyWithTitle:NSLocalized(@"problema_buscando_paradas")];
 }
-- (Onibus *)buscaOnibus:(NSIndexPath *)index{
+- (Onibus *)buscaOnibus:(NSIndexPath *)index paraTableView: (UITableView *) tableView{
+    if([self isSearching:tableView]){
+        return [onibusFiltrados objectAtIndex:index.row];
+    }
     Ponto *ponto = [pontos objectAtIndex:index.section];
     Onibus *onibus = [ponto.onibuses objectAtIndex:index.row];
-    return onibus;
-}
-
-- (void) tweet: (UIGestureRecognizer *) gesture{
-    if([TWTweetComposeViewController canSendTweet]){
-        CGPoint pontoTela = [gesture locationInView:self.tableView];
-        NSIndexPath *index = [self.tableView indexPathForRowAtPoint:pontoTela];
-        
-        Onibus *onibus = [self buscaOnibus:index];
-        
-        TWTweetComposeViewController *tweet = [[TWTweetComposeViewController alloc] init];
-        [tweet setInitialText:[NSString stringWithFormat:@"%@ %@", NSLocalized(@"pegando_onibus"), onibus.linha]];
-        [self presentModalViewController:tweet animated:YES];
-    }
+    return onibus;            
 }
 -(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation{
     return YES;
+}
+- (BOOL) isSearching:(UITableView *)tableView {
+    return !(tableView == self.tableView);
+}
+- (void) hideSearchView {
+    CGRect tableViewBounds = self.tableView.bounds;
+    tableViewBounds.origin.y = tableViewBounds.origin.y + self.searchBar.bounds.size.height;
+    self.tableView.bounds = tableViewBounds;
 }
 @end

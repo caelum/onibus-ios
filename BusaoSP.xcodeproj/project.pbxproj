@@ -13,10 +13,11 @@
 		20392974152651E100B791DF /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 20392973152651E100B791DF /* DataSource.m */; };
 		2039297815265F6300B791DF /* ParadasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2039297615265F6300B791DF /* ParadasViewController.m */; };
 		2039297B15265F8200B791DF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2039297A15265F8200B791DF /* MapKit.framework */; };
+		2053E96E1548781700B9F3FD /* KeyValueObjectMapping.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2053E96D1548781700B9F3FD /* KeyValueObjectMapping.framework */; };
 		20569853152E404900F030BA /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20569852152E404900F030BA /* Default@2x.png */; };
 		20569856152E406E00F030BA /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 20569855152E406E00F030BA /* Default.png */; };
-		2056985C152E516200F030BA /* busao.png in Resources */ = {isa = PBXBuildFile; fileRef = 2056985B152E516200F030BA /* busao.png */; };
-		2056985E152E516A00F030BA /* busao@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2056985D152E516A00F030BA /* busao@2x.png */; };
+		2056985C152E516200F030BA /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2056985B152E516200F030BA /* Icon.png */; };
+		2056985E152E516A00F030BA /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2056985D152E516A00F030BA /* Icon@2x.png */; };
 		2070869A152CA3ED00EADA0F /* PontoDeOnibusController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20708699152CA3ED00EADA0F /* PontoDeOnibusController.m */; };
 		207086A2152CA88500EADA0F /* 242-Aim.png in Resources */ = {isa = PBXBuildFile; fileRef = 207086A1152CA88500EADA0F /* 242-Aim.png */; };
 		207086A4152CA8B000EADA0F /* 242-Aim@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 207086A3152CA8B000EADA0F /* 242-Aim@2x.png */; };
@@ -29,7 +30,6 @@
 		208A1C391524FB7100335F87 /* Onibus.m in Sources */ = {isa = PBXBuildFile; fileRef = 208A1C381524FB7100335F87 /* Onibus.m */; };
 		208A1C421524FD6700335F87 /* OnibusDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 208A1C411524FD6700335F87 /* OnibusDataSource.m */; };
 		208A1C50152508DB00335F87 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208A1C4F152508DB00335F87 /* CoreLocation.framework */; };
-		208C2F4C1545ECE200E5EE2E /* KeyValueObjectMapping.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208C2F4B1545ECE200E5EE2E /* KeyValueObjectMapping.framework */; };
 		208DD3D5152A2B1100D730F8 /* MKMapView+ZoomOut.m in Sources */ = {isa = PBXBuildFile; fileRef = 208DD3D4152A2B1100D730F8 /* MKMapView+ZoomOut.m */; };
 		208DD3DA152A2BCD00D730F8 /* Localizacao.m in Sources */ = {isa = PBXBuildFile; fileRef = 208DD3D9152A2BCD00D730F8 /* Localizacao.m */; };
 		20B974FA15360CA2008DAD44 /* SemGps.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20B974FC15360CA2008DAD44 /* SemGps.xib */; };
@@ -48,7 +48,6 @@
 		20D8E406152B7174006C7328 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 20D8E408152B7174006C7328 /* Localizable.strings */; };
 		20D8E412152B76C8006C7328 /* ListaPontoDeOnibusController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D8E40B152B7634006C7328 /* ListaPontoDeOnibusController.m */; };
 		20D8E416152B77DC006C7328 /* PontosPorProximidadeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D8E414152B77DC006C7328 /* PontosPorProximidadeController.m */; };
-		20DFB2A015250C2900A5680D /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20DFB29F15250C2900A5680D /* Twitter.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		20E3BD7C152DE888002CE5E6 /* UILabel+DetailLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E3BD7B152DE888002CE5E6 /* UILabel+DetailLabel.m */; };
 		20EB2194152CBB5E0009BC49 /* AnnotationViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 20EB2193152CBB5E0009BC49 /* AnnotationViewFactory.m */; };
 		20EB2196152CC0FB0009BC49 /* 081-GPS@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20EB2195152CC0FB0009BC49 /* 081-GPS@2x.png */; };
@@ -88,10 +87,11 @@
 		2039297515265F6300B791DF /* ParadasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParadasViewController.h; sourceTree = "<group>"; };
 		2039297615265F6300B791DF /* ParadasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParadasViewController.m; sourceTree = "<group>"; };
 		2039297A15265F8200B791DF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		2053E96D1548781700B9F3FD /* KeyValueObjectMapping.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KeyValueObjectMapping.framework; sourceTree = "<group>"; };
 		20569852152E404900F030BA /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
 		20569855152E406E00F030BA /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
-		2056985B152E516200F030BA /* busao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = busao.png; path = ../busao.png; sourceTree = "<group>"; };
-		2056985D152E516A00F030BA /* busao@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "busao@2x.png"; path = "../busao@2x.png"; sourceTree = "<group>"; };
+		2056985B152E516200F030BA /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
+		2056985D152E516A00F030BA /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
 		20708696152CA35D00EADA0F /* Caelum.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Caelum.gpx; path = ../Caelum.gpx; sourceTree = "<group>"; };
 		20708698152CA3ED00EADA0F /* PontoDeOnibusController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PontoDeOnibusController.h; sourceTree = "<group>"; };
 		20708699152CA3ED00EADA0F /* PontoDeOnibusController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PontoDeOnibusController.m; sourceTree = "<group>"; };
@@ -113,7 +113,6 @@
 		208A1C401524FD6700335F87 /* OnibusDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnibusDataSource.h; sourceTree = "<group>"; };
 		208A1C411524FD6700335F87 /* OnibusDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnibusDataSource.m; sourceTree = "<group>"; };
 		208A1C4F152508DB00335F87 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		208C2F4B1545ECE200E5EE2E /* KeyValueObjectMapping.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KeyValueObjectMapping.framework; sourceTree = "<group>"; };
 		208DD3D3152A2B1100D730F8 /* MKMapView+ZoomOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+ZoomOut.h"; sourceTree = "<group>"; };
 		208DD3D4152A2B1100D730F8 /* MKMapView+ZoomOut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+ZoomOut.m"; sourceTree = "<group>"; };
 		208DD3D8152A2BCD00D730F8 /* Localizacao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Localizacao.h; sourceTree = "<group>"; };
@@ -185,11 +184,10 @@
 				20EB21AC152CFBFB0009BC49 /* QuartzCore.framework in Frameworks */,
 				208A1C211524F7FE00335F87 /* CoreGraphics.framework in Frameworks */,
 				2039297B15265F8200B791DF /* MapKit.framework in Frameworks */,
-				20DFB2A015250C2900A5680D /* Twitter.framework in Frameworks */,
 				208A1C50152508DB00335F87 /* CoreLocation.framework in Frameworks */,
 				208A1C1D1524F7FE00335F87 /* UIKit.framework in Frameworks */,
 				208A1C1F1524F7FE00335F87 /* Foundation.framework in Frameworks */,
-				208C2F4C1545ECE200E5EE2E /* KeyValueObjectMapping.framework in Frameworks */,
+				2053E96E1548781700B9F3FD /* KeyValueObjectMapping.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +266,7 @@
 		208A1C1B1524F7FE00335F87 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				208C2F4B1545ECE200E5EE2E /* KeyValueObjectMapping.framework */,
+				2053E96D1548781700B9F3FD /* KeyValueObjectMapping.framework */,
 				20EB21AB152CFBFB0009BC49 /* QuartzCore.framework */,
 				208DD3FA152A3BD100D730F8 /* SenTestingKit.framework */,
 				2039297A15265F8200B791DF /* MapKit.framework */,
@@ -304,8 +302,8 @@
 			children = (
 				20569855152E406E00F030BA /* Default.png */,
 				20569852152E404900F030BA /* Default@2x.png */,
-				2056985D152E516A00F030BA /* busao@2x.png */,
-				2056985B152E516200F030BA /* busao.png */,
+				2056985D152E516A00F030BA /* Icon@2x.png */,
+				2056985B152E516200F030BA /* Icon.png */,
 				20708696152CA35D00EADA0F /* Caelum.gpx */,
 				208A1C241524F7FE00335F87 /* BusaoSP-Info.plist */,
 				208A1C281524F7FE00335F87 /* main.m */,
@@ -499,8 +497,8 @@
 				20EB21DF152D283E0009BC49 /* pin-current.png in Resources */,
 				20569853152E404900F030BA /* Default@2x.png in Resources */,
 				20569856152E406E00F030BA /* Default.png in Resources */,
-				2056985C152E516200F030BA /* busao.png in Resources */,
-				2056985E152E516A00F030BA /* busao@2x.png in Resources */,
+				2056985C152E516200F030BA /* Icon.png in Resources */,
+				2056985E152E516A00F030BA /* Icon@2x.png in Resources */,
 				20F5804C1535267500F1CAAB /* compass.png in Resources */,
 				20F5804D1535267500F1CAAB /* compass@2x.png in Resources */,
 				20B974FA15360CA2008DAD44 /* SemGps.xib in Resources */,
@@ -590,8 +588,8 @@
 		202E7F161533D39900660A1B /* AdHoc */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Diego Chohfi Turini (2YX992EA5F)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Diego Chohfi Turini (2YX992EA5F)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Diego Chohfi Turini";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Diego Chohfi Turini";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -607,8 +605,8 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = BusaoSP;
-				PROVISIONING_PROFILE = "62C05D4E-205C-4932-8E00-92B10056679B";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "62C05D4E-205C-4932-8E00-92B10056679B";
+				PROVISIONING_PROFILE = "CDBA7AA7-3FA8-4806-9A95-B88697F5231C";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "CDBA7AA7-3FA8-4806-9A95-B88697F5231C";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -638,8 +636,8 @@
 		20569860152E546700F030BA /* AppStore */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Diego Chohfi Turini (2YX992EA5F)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Diego Chohfi Turini (2YX992EA5F)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Diego Chohfi Turini";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Diego Chohfi Turini";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -655,8 +653,8 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = BusaoSP;
-				PROVISIONING_PROFILE = "62C05D4E-205C-4932-8E00-92B10056679B";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "62C05D4E-205C-4932-8E00-92B10056679B";
+				PROVISIONING_PROFILE = "CDBA7AA7-3FA8-4806-9A95-B88697F5231C";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "CDBA7AA7-3FA8-4806-9A95-B88697F5231C";
 				SKIP_INSTALL = NO;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -713,7 +711,7 @@
 		208A1C311524F7FE00335F87 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Diego Chohfi Turini (2YX992EA5F)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Diego Chohfi Turini";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Diego Chohfi Turini (2YX992EA5F)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -730,6 +728,8 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = BusaoSP;
+				PROVISIONING_PROFILE = "CDBA7AA7-3FA8-4806-9A95-B88697F5231C";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "168FC83F-8119-4940-85FB-3D96978685CD";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
@@ -739,7 +739,7 @@
 		208A1C321524F7FE00335F87 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Diego Chohfi Turini (2YX992EA5F)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Diego Chohfi Turini";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Diego Chohfi Turini (2YX992EA5F)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -756,6 +756,8 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = BusaoSP;
+				PROVISIONING_PROFILE = "CDBA7AA7-3FA8-4806-9A95-B88697F5231C";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "168FC83F-8119-4940-85FB-3D96978685CD";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
