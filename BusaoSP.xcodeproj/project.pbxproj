@@ -14,6 +14,9 @@
 		2039297815265F6300B791DF /* ParadasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2039297615265F6300B791DF /* ParadasViewController.m */; };
 		2039297B15265F8200B791DF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2039297A15265F8200B791DF /* MapKit.framework */; };
 		2053E96E1548781700B9F3FD /* KeyValueObjectMapping.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2053E96D1548781700B9F3FD /* KeyValueObjectMapping.framework */; };
+		2053E9871549FE1900B9F3FD /* Appirater.m in Sources */ = {isa = PBXBuildFile; fileRef = 2053E9861549FE1900B9F3FD /* Appirater.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2053E9891549FF2900B9F3FD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2053E9881549FF2900B9F3FD /* SystemConfiguration.framework */; };
+		2053E98B1549FF2E00B9F3FD /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2053E98A1549FF2E00B9F3FD /* CFNetwork.framework */; };
 		20569853152E404900F030BA /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20569852152E404900F030BA /* Default@2x.png */; };
 		20569856152E406E00F030BA /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 20569855152E406E00F030BA /* Default.png */; };
 		2056985C152E516200F030BA /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2056985B152E516200F030BA /* Icon.png */; };
@@ -88,11 +91,15 @@
 		2039297615265F6300B791DF /* ParadasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParadasViewController.m; sourceTree = "<group>"; };
 		2039297A15265F8200B791DF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		2053E96D1548781700B9F3FD /* KeyValueObjectMapping.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KeyValueObjectMapping.framework; sourceTree = "<group>"; };
+		2053E9851549FE1900B9F3FD /* Appirater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Appirater.h; sourceTree = "<group>"; };
+		2053E9861549FE1900B9F3FD /* Appirater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Appirater.m; sourceTree = "<group>"; };
+		2053E9881549FF2900B9F3FD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		2053E98A1549FF2E00B9F3FD /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		2053E98C1549FF6700B9F3FD /* Vila Mariana.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Vila Mariana.gpx"; sourceTree = "<group>"; };
 		20569852152E404900F030BA /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
 		20569855152E406E00F030BA /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
 		2056985B152E516200F030BA /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
 		2056985D152E516A00F030BA /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
-		20708696152CA35D00EADA0F /* Caelum.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Caelum.gpx; path = ../Caelum.gpx; sourceTree = "<group>"; };
 		20708698152CA3ED00EADA0F /* PontoDeOnibusController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PontoDeOnibusController.h; sourceTree = "<group>"; };
 		20708699152CA3ED00EADA0F /* PontoDeOnibusController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PontoDeOnibusController.m; sourceTree = "<group>"; };
 		207086A1152CA88500EADA0F /* 242-Aim.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "242-Aim.png"; sourceTree = "<group>"; };
@@ -181,6 +188,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2053E98B1549FF2E00B9F3FD /* CFNetwork.framework in Frameworks */,
+				2053E9891549FF2900B9F3FD /* SystemConfiguration.framework in Frameworks */,
 				20EB21AC152CFBFB0009BC49 /* QuartzCore.framework in Frameworks */,
 				208A1C211524F7FE00335F87 /* CoreGraphics.framework in Frameworks */,
 				2039297B15265F8200B791DF /* MapKit.framework in Frameworks */,
@@ -221,6 +230,7 @@
 		2039298015266BF300B791DF /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				2053E9831549FE0A00B9F3FD /* AppRater */,
 				20EB21A5152CFB790009BC49 /* EGORefreshTable */,
 				2039299015266C1400B791DF /* SSHGroup */,
 			);
@@ -246,6 +256,15 @@
 			name = SSHGroup;
 			sourceTree = "<group>";
 		};
+		2053E9831549FE0A00B9F3FD /* AppRater */ = {
+			isa = PBXGroup;
+			children = (
+				2053E9851549FE1900B9F3FD /* Appirater.h */,
+				2053E9861549FE1900B9F3FD /* Appirater.m */,
+			);
+			name = AppRater;
+			sourceTree = "<group>";
+		};
 		208A1C0D1524F7FE00335F87 = {
 			isa = PBXGroup;
 			children = (
@@ -266,6 +285,8 @@
 		208A1C1B1524F7FE00335F87 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2053E98A1549FF2E00B9F3FD /* CFNetwork.framework */,
+				2053E9881549FF2900B9F3FD /* SystemConfiguration.framework */,
 				2053E96D1548781700B9F3FD /* KeyValueObjectMapping.framework */,
 				20EB21AB152CFBFB0009BC49 /* QuartzCore.framework */,
 				208DD3FA152A3BD100D730F8 /* SenTestingKit.framework */,
@@ -300,11 +321,11 @@
 		208A1C231524F7FE00335F87 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2053E98C1549FF6700B9F3FD /* Vila Mariana.gpx */,
 				20569855152E406E00F030BA /* Default.png */,
 				20569852152E404900F030BA /* Default@2x.png */,
 				2056985D152E516A00F030BA /* Icon@2x.png */,
 				2056985B152E516200F030BA /* Icon.png */,
-				20708696152CA35D00EADA0F /* Caelum.gpx */,
 				208A1C241524F7FE00335F87 /* BusaoSP-Info.plist */,
 				208A1C281524F7FE00335F87 /* main.m */,
 				208A1C2A1524F7FE00335F87 /* BusaoSP-Prefix.pch */,
@@ -537,6 +558,7 @@
 				20E3BD7C152DE888002CE5E6 /* UILabel+DetailLabel.m in Sources */,
 				202B23671533654900619462 /* NSStringWithMaxSize.m in Sources */,
 				20F5805C1535F76700F1CAAB /* GPSManager.m in Sources */,
+				2053E9871549FE1900B9F3FD /* Appirater.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

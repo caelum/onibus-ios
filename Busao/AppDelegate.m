@@ -11,6 +11,7 @@
 #import "PontosPorProximidadeController.h"
 #import "OnibusDataSource.h"
 #import "AppDelegate.h"
+#import "Appirater.h"
 
 @interface AppDelegate()
 
@@ -35,10 +36,15 @@
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = tabBarController;
     [self.window makeKeyAndVisible];
+
+    [Appirater appLaunched:YES];
     return YES;
 }
 -(void)applicationDidBecomeActive:(UIApplication *)application {
     [listaDeOnibus applicationDidBecameActive];
     [onibusDisponiveis applicationDidBecomeActive];
+}
+-(void)applicationWillEnterForeground:(UIApplication *)application{
+    [Appirater appEnteredForeground:YES];
 }
 @end
