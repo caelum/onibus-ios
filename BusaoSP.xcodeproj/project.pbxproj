@@ -13,7 +13,6 @@
 		20392974152651E100B791DF /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 20392973152651E100B791DF /* DataSource.m */; };
 		2039297815265F6300B791DF /* ParadasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2039297615265F6300B791DF /* ParadasViewController.m */; };
 		2039297B15265F8200B791DF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2039297A15265F8200B791DF /* MapKit.framework */; };
-		2053E96E1548781700B9F3FD /* KeyValueObjectMapping.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2053E96D1548781700B9F3FD /* KeyValueObjectMapping.framework */; };
 		2053E9871549FE1900B9F3FD /* Appirater.m in Sources */ = {isa = PBXBuildFile; fileRef = 2053E9861549FE1900B9F3FD /* Appirater.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2053E9891549FF2900B9F3FD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2053E9881549FF2900B9F3FD /* SystemConfiguration.framework */; };
 		2053E98B1549FF2E00B9F3FD /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2053E98A1549FF2E00B9F3FD /* CFNetwork.framework */; };
@@ -36,6 +35,7 @@
 		208DD3D5152A2B1100D730F8 /* MKMapView+ZoomOut.m in Sources */ = {isa = PBXBuildFile; fileRef = 208DD3D4152A2B1100D730F8 /* MKMapView+ZoomOut.m */; };
 		208DD3DA152A2BCD00D730F8 /* Localizacao.m in Sources */ = {isa = PBXBuildFile; fileRef = 208DD3D9152A2BCD00D730F8 /* Localizacao.m */; };
 		20B974FA15360CA2008DAD44 /* SemGps.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20B974FC15360CA2008DAD44 /* SemGps.xib */; };
+		20D687DA155B063600228C32 /* KeyValueObjectMapping.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20D687D9155B063600228C32 /* KeyValueObjectMapping.framework */; };
 		20D8E3C4152B6241006C7328 /* 088-Map.png in Resources */ = {isa = PBXBuildFile; fileRef = 20D8E3C3152B6241006C7328 /* 088-Map.png */; };
 		20D8E3C6152B6250006C7328 /* 088-Map@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20D8E3C5152B6250006C7328 /* 088-Map@2x.png */; };
 		20D8E3C9152B63CA006C7328 /* UIViewController+NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D8E3C8152B63CA006C7328 /* UIViewController+NavigationController.m */; };
@@ -90,7 +90,6 @@
 		2039297515265F6300B791DF /* ParadasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParadasViewController.h; sourceTree = "<group>"; };
 		2039297615265F6300B791DF /* ParadasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParadasViewController.m; sourceTree = "<group>"; };
 		2039297A15265F8200B791DF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		2053E96D1548781700B9F3FD /* KeyValueObjectMapping.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KeyValueObjectMapping.framework; sourceTree = "<group>"; };
 		2053E9851549FE1900B9F3FD /* Appirater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Appirater.h; sourceTree = "<group>"; };
 		2053E9861549FE1900B9F3FD /* Appirater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Appirater.m; sourceTree = "<group>"; };
 		2053E9881549FF2900B9F3FD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -127,6 +126,7 @@
 		208DD3FA152A3BD100D730F8 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		20B974FB15360CA2008DAD44 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SemGps.xib; sourceTree = "<group>"; };
 		20B974FD15360CAF008DAD44 /* pt */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = pt; path = pt.lproj/SemGps.xib; sourceTree = "<group>"; };
+		20D687D9155B063600228C32 /* KeyValueObjectMapping.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KeyValueObjectMapping.framework; sourceTree = "<group>"; };
 		20D8E3C3152B6241006C7328 /* 088-Map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "088-Map.png"; sourceTree = "<group>"; };
 		20D8E3C5152B6250006C7328 /* 088-Map@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "088-Map@2x.png"; sourceTree = "<group>"; };
 		20D8E3C7152B63CA006C7328 /* UIViewController+NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NavigationController.h"; sourceTree = "<group>"; };
@@ -196,7 +196,7 @@
 				208A1C50152508DB00335F87 /* CoreLocation.framework in Frameworks */,
 				208A1C1D1524F7FE00335F87 /* UIKit.framework in Frameworks */,
 				208A1C1F1524F7FE00335F87 /* Foundation.framework in Frameworks */,
-				2053E96E1548781700B9F3FD /* KeyValueObjectMapping.framework in Frameworks */,
+				20D687DA155B063600228C32 /* KeyValueObjectMapping.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,9 +285,9 @@
 		208A1C1B1524F7FE00335F87 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				20D687D9155B063600228C32 /* KeyValueObjectMapping.framework */,
 				2053E98A1549FF2E00B9F3FD /* CFNetwork.framework */,
 				2053E9881549FF2900B9F3FD /* SystemConfiguration.framework */,
-				2053E96D1548781700B9F3FD /* KeyValueObjectMapping.framework */,
 				20EB21AB152CFBFB0009BC49 /* QuartzCore.framework */,
 				208DD3FA152A3BD100D730F8 /* SenTestingKit.framework */,
 				2039297A15265F8200B791DF /* MapKit.framework */,

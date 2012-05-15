@@ -27,8 +27,8 @@
 -(id)initWithParadas: (NSArray *) _paradas doOnibus: (Onibus *) _onibus paraLocalizaca: (Localizacao *) _localizacao {
     self = [super init];
     if (self) {
-        self.mapView = [[MKMapView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]];        
-        [self.mapView setAutoresizingMask:UIViewAutoresizingFlexibleWidth];
+        self.mapView = [[MKMapView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]];
+        self.mapView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
         self.paradas = _paradas;
         self.localizacao = _localizacao;
         self.onibus = _onibus;
@@ -41,12 +41,8 @@
 {
     self.mapView.delegate = self;
     [self adicionaPontos];
-            
-    [self.view addSubview:mapView];
-    
-    UILabel *detail = [UILabel detailLabelWithText:onibus.nome];
-    
-    [self.view addSubview:detail];
+    self.view = mapView;
+    [self.view addSubview:[UILabel detailLabelWithText:onibus.nome]];
 }
 
 - (void)viewDidUnload

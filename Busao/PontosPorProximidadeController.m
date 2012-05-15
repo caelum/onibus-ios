@@ -33,7 +33,7 @@
     if (self) {
         jaBuscouUsuario = false;
         self.mapView = [[MKMapView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]];
-        [self.mapView setAutoresizingMask:UIViewAutoresizingFlexibleWidth];
+        self.mapView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
         self.mapView.showsUserLocation = YES;
         self.mapView.delegate = self;
         UITabBarItem *listaItem = [[UITabBarItem alloc] initWithTitle:NSLocalized(@"mapa") image:[UIImage imageNamed:@"088-Map.png"] tag:1];
@@ -50,7 +50,7 @@
     [self criaDropPin];
     [self.mapView zoomOut];
     
-    [self.view addSubview:mapView];
+    self.view = mapView;
     [self.view addSubview:[UILabel detailLabelWithText:NSLocalized(@"pontos_proximos_pino")]];
 }
 - (void) applicationDidBecomeActive {
