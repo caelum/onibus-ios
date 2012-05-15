@@ -12,7 +12,7 @@
 
 @interface ParadaDataSource()
 
-@property(nonatomic, weak) id<ParadasDelegate> delegate;
+@property(nonatomic, unsafe_unretained) id<ParadasDelegate> delegate;
 @property(nonatomic, strong) Onibus *onibus;
 @property(nonatomic, strong) DataSource *dataSource;
 

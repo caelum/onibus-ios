@@ -10,7 +10,7 @@
 
 @interface DataSource()
 
-@property(nonatomic, weak) id<DataSourceDelegate> delegate;
+@property(nonatomic, unsafe_unretained) id<DataSourceDelegate> delegate;
 @property(nonatomic, strong) NSURLConnection *connection;
 @property(nonatomic, strong) NSMutableData *mutableData;
 

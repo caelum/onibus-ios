@@ -14,7 +14,7 @@
 #define URL @"http://ondeestaoalbi.herokuapp.com/onibusesNosPontosProximos.json?lat=%f&long=%f"
 @interface OnibusDataSource()
 
-@property(nonatomic, weak) id<OnibusDelegate> delegate;
+@property(nonatomic, unsafe_unretained) id<OnibusDelegate> delegate;
 @property(nonatomic, strong) DataSource *dataSource;
 @property(nonatomic, strong) Localizacao *localizacao;
 
