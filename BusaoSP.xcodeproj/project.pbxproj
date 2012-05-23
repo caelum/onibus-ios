@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		202B23671533654900619462 /* NSStringWithMaxSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 202B23661533654900619462 /* NSStringWithMaxSize.m */; };
+		2037FA6A156BEF16003FB301 /* KeyValueObjectMapping.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2037FA69156BEF16003FB301 /* KeyValueObjectMapping.framework */; };
 		2039296D152612D600B791DF /* Parada.m in Sources */ = {isa = PBXBuildFile; fileRef = 2039296C152612D600B791DF /* Parada.m */; };
 		203929711526134B00B791DF /* ParadaDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 203929701526134B00B791DF /* ParadaDataSource.m */; };
 		20392974152651E100B791DF /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 20392973152651E100B791DF /* DataSource.m */; };
@@ -35,7 +36,6 @@
 		208DD3D5152A2B1100D730F8 /* MKMapView+ZoomOut.m in Sources */ = {isa = PBXBuildFile; fileRef = 208DD3D4152A2B1100D730F8 /* MKMapView+ZoomOut.m */; };
 		208DD3DA152A2BCD00D730F8 /* Localizacao.m in Sources */ = {isa = PBXBuildFile; fileRef = 208DD3D9152A2BCD00D730F8 /* Localizacao.m */; };
 		20B974FA15360CA2008DAD44 /* SemGps.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20B974FC15360CA2008DAD44 /* SemGps.xib */; };
-		20D687DA155B063600228C32 /* KeyValueObjectMapping.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20D687D9155B063600228C32 /* KeyValueObjectMapping.framework */; };
 		20D8E3C4152B6241006C7328 /* 088-Map.png in Resources */ = {isa = PBXBuildFile; fileRef = 20D8E3C3152B6241006C7328 /* 088-Map.png */; };
 		20D8E3C6152B6250006C7328 /* 088-Map@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20D8E3C5152B6250006C7328 /* 088-Map@2x.png */; };
 		20D8E3C9152B63CA006C7328 /* UIViewController+NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D8E3C8152B63CA006C7328 /* UIViewController+NavigationController.m */; };
@@ -81,6 +81,7 @@
 /* Begin PBXFileReference section */
 		202B23651533654900619462 /* NSStringWithMaxSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringWithMaxSize.h; sourceTree = "<group>"; };
 		202B23661533654900619462 /* NSStringWithMaxSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringWithMaxSize.m; sourceTree = "<group>"; };
+		2037FA69156BEF16003FB301 /* KeyValueObjectMapping.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KeyValueObjectMapping.framework; sourceTree = "<group>"; };
 		2039296B152612D600B791DF /* Parada.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parada.h; sourceTree = "<group>"; };
 		2039296C152612D600B791DF /* Parada.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Parada.m; sourceTree = "<group>"; };
 		2039296F1526134B00B791DF /* ParadaDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParadaDataSource.h; sourceTree = "<group>"; };
@@ -126,7 +127,6 @@
 		208DD3FA152A3BD100D730F8 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		20B974FB15360CA2008DAD44 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SemGps.xib; sourceTree = "<group>"; };
 		20B974FD15360CAF008DAD44 /* pt */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = pt; path = pt.lproj/SemGps.xib; sourceTree = "<group>"; };
-		20D687D9155B063600228C32 /* KeyValueObjectMapping.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KeyValueObjectMapping.framework; sourceTree = "<group>"; };
 		20D8E3C3152B6241006C7328 /* 088-Map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "088-Map.png"; sourceTree = "<group>"; };
 		20D8E3C5152B6250006C7328 /* 088-Map@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "088-Map@2x.png"; sourceTree = "<group>"; };
 		20D8E3C7152B63CA006C7328 /* UIViewController+NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NavigationController.h"; sourceTree = "<group>"; };
@@ -196,7 +196,7 @@
 				208A1C50152508DB00335F87 /* CoreLocation.framework in Frameworks */,
 				208A1C1D1524F7FE00335F87 /* UIKit.framework in Frameworks */,
 				208A1C1F1524F7FE00335F87 /* Foundation.framework in Frameworks */,
-				20D687DA155B063600228C32 /* KeyValueObjectMapping.framework in Frameworks */,
+				2037FA6A156BEF16003FB301 /* KeyValueObjectMapping.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +285,7 @@
 		208A1C1B1524F7FE00335F87 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				20D687D9155B063600228C32 /* KeyValueObjectMapping.framework */,
+				2037FA69156BEF16003FB301 /* KeyValueObjectMapping.framework */,
 				2053E98A1549FF2E00B9F3FD /* CFNetwork.framework */,
 				2053E9881549FF2900B9F3FD /* SystemConfiguration.framework */,
 				20EB21AB152CFBFB0009BC49 /* QuartzCore.framework */,
@@ -592,8 +592,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Diego Chohfi Turini (2YX992EA5F)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Diego Chohfi Turini (2YX992EA5F)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Diego Chohfi Turini";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Diego Chohfi Turini";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -602,6 +602,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "84C32072-86E6-456D-9A16-BBADB5807C65";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "0618623A-E5E6-4094-8657-E8B5F926E703";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -610,6 +612,10 @@
 		202E7F161533D39900660A1B /* AdHoc */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD_32_BIT)",
+					armv6,
+				);
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Diego Chohfi Turini";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Diego Chohfi Turini";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -620,6 +626,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Busao/BusaoSP-Prefix.pch";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "Busao/BusaoSP-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				OTHER_LDFLAGS = (
@@ -627,8 +634,6 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = BusaoSP;
-				PROVISIONING_PROFILE = "CDBA7AA7-3FA8-4806-9A95-B88697F5231C";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "CDBA7AA7-3FA8-4806-9A95-B88697F5231C";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -640,8 +645,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Diego Chohfi Turini (2YX992EA5F)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Diego Chohfi Turini (2YX992EA5F)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Diego Chohfi Turini";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Diego Chohfi Turini";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -650,6 +655,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "84C32072-86E6-456D-9A16-BBADB5807C65";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "84C32072-86E6-456D-9A16-BBADB5807C65";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -658,6 +665,10 @@
 		20569860152E546700F030BA /* AppStore */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD_32_BIT)",
+					armv6,
+				);
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Diego Chohfi Turini";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Diego Chohfi Turini";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -668,6 +679,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Busao/BusaoSP-Prefix.pch";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "Busao/BusaoSP-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				OTHER_LDFLAGS = (
@@ -675,8 +687,6 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = BusaoSP;
-				PROVISIONING_PROFILE = "CDBA7AA7-3FA8-4806-9A95-B88697F5231C";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "CDBA7AA7-3FA8-4806-9A95-B88697F5231C";
 				SKIP_INSTALL = NO;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -689,7 +699,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Diego Chohfi Turini (2YX992EA5F)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Diego Chohfi Turini";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Diego Chohfi Turini (2YX992EA5F)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -705,6 +715,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PROVISIONING_PROFILE = "84C32072-86E6-456D-9A16-BBADB5807C65";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "168FC83F-8119-4940-85FB-3D96978685CD";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -715,7 +727,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Diego Chohfi Turini (2YX992EA5F)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Diego Chohfi Turini";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Diego Chohfi Turini (2YX992EA5F)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -725,6 +737,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "84C32072-86E6-456D-9A16-BBADB5807C65";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "168FC83F-8119-4940-85FB-3D96978685CD";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -733,6 +747,10 @@
 		208A1C311524F7FE00335F87 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD_32_BIT)",
+					armv6,
+				);
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Diego Chohfi Turini";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Diego Chohfi Turini (2YX992EA5F)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -743,6 +761,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Busao/BusaoSP-Prefix.pch";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "Busao/BusaoSP-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				OTHER_LDFLAGS = (
@@ -750,7 +769,6 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = BusaoSP;
-				PROVISIONING_PROFILE = "CDBA7AA7-3FA8-4806-9A95-B88697F5231C";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "168FC83F-8119-4940-85FB-3D96978685CD";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
@@ -761,6 +779,10 @@
 		208A1C321524F7FE00335F87 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD_32_BIT)",
+					armv6,
+				);
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Diego Chohfi Turini";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Diego Chohfi Turini (2YX992EA5F)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -771,6 +793,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Busao/BusaoSP-Prefix.pch";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "Busao/BusaoSP-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				OTHER_LDFLAGS = (
@@ -778,7 +801,6 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = BusaoSP;
-				PROVISIONING_PROFILE = "CDBA7AA7-3FA8-4806-9A95-B88697F5231C";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "168FC83F-8119-4940-85FB-3D96978685CD";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
