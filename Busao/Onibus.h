@@ -7,13 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Sentido.h"
+#import "Operacao.h"
 
 @class Ponto;
 @interface Onibus : NSObject
 
-@property(nonatomic, readonly) long identificador;
-@property(nonatomic, readonly) NSString *nome;
-@property(nonatomic, readonly) NSString *linha;
+@property(nonatomic, readonly) int identificador;
+@property(nonatomic, readonly) NSString *letreiro;
+@property(nonatomic, readonly) NSString *codigoGPS;
+@property(nonatomic, strong) Sentido *sentido;
+@property(nonatomic, strong) Operacao *operacao;
 @property(nonatomic, strong) Ponto *ponto;
 @property(nonatomic, strong) NSArray *paradas;
 

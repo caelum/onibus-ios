@@ -42,7 +42,7 @@
     self.mapView.delegate = self;
     [self adicionaPontos];
     self.view = mapView;
-    [self.view addSubview:[UILabel detailLabelWithText:onibus.nome]];
+    [self.view addSubview:[UILabel detailLabelWithText:onibus.letreiro]];
 }
 
 - (void)viewDidUnload

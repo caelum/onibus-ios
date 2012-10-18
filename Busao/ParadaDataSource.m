@@ -21,7 +21,7 @@
 @implementation ParadaDataSource
 @synthesize delegate, onibus, dataSource;
 
-#define URL @"http://ondeestaoalbi.herokuapp.com/pontosDoOnibusSelecionado.json?onibus=%i"
+#define URL @"http://ondeestaoalbi2.herokuapp.com/itinerarioDoOnibus.json?onibus=%i"
 
 - (id)initWithDelegate: (id<ParadasDelegate>) _delegate{
     self = [super init];

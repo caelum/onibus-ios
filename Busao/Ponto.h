@@ -12,7 +12,7 @@
 
 @interface Ponto : NSObject <MKAnnotation>
 
-@property(nonatomic, readonly) long identificador;
+@property(nonatomic, readonly) int identificador;
 @property(nonatomic, readonly) NSString *nome;
 @property(nonatomic, readonly) NSString *descricao;
 @property(nonatomic, readonly) NSArray *onibuses;

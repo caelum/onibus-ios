@@ -9,6 +9,7 @@
 #import "Parada.h"
 
 @implementation Parada
+
 @synthesize codigo, descricao, localizacao;
 
 - (CLLocationCoordinate2D)coordinate{

@@ -56,7 +56,7 @@
     [onibusFiltrados removeAllObjects];
     for(Ponto *ponto in pontos){
         for(Onibus *onibus in ponto.onibuses){
-            BOOL containsString = [onibus.nome rangeOfString:searchString options:NSCaseInsensitiveSearch].location != NSNotFound;
+            BOOL containsString = [onibus.letreiro rangeOfString:searchString options:NSCaseInsensitiveSearch].location != NSNotFound;
             if(containsString){
                 [onibusFiltrados addObject:onibus];
             }
@@ -92,8 +92,8 @@
     }
     Onibus *onibus = [self buscaOnibus:indexPath paraTableView:tableView];
     
-    cell.textLabel.text = onibus.linha;
-    cell.detailTextLabel.text = onibus.nome;
+    cell.textLabel.text = [onibus letreiro];
+    cell.detailTextLabel.text = [[onibus sentido] description];
     return cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -110,7 +110,10 @@
 - (void) recebeParadas: (NSArray *) paradas paraOnibus: (Onibus *) onibus {
     [loading completeQuicklyWithTitle:NSLocalized(@"pronto")];
     
-    ParadasViewController *paradasController = [[ParadasViewController alloc] initWithParadas:paradas doOnibus:onibus paraLocalizaca:onibus.ponto.localizacao];    
+    ParadasViewController *paradasController = [[ParadasViewController alloc] initWithParadas:paradas
+                                                                                     doOnibus:onibus
+                                                                               paraLocalizaca:onibus.ponto.localizacao];
+    
     [self.navigationController pushViewController:paradasController animated:YES];
 }
 - (void) problemaParaBuscarParadas {

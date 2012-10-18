@@ -11,7 +11,7 @@
 #import "Onibus.h"
 #import <KeyValueObjectMapping/DCKeyValueObjectMapping.h>
 
-#define URL @"http://ondeestaoalbi.herokuapp.com/onibusesNosPontosProximos.json?lat=%f&long=%f"
+#define URL @"http://ondeestaoalbi2.herokuapp.com/onibusesNosPontosProximos.json?lat=%f&long=%f"
 @interface OnibusDataSource()
 
 @property(nonatomic, unsafe_unretained) id<OnibusDelegate> delegate;
@@ -51,19 +51,34 @@
 - (NSArray *) parseJsonBusao: (NSMutableArray *) resultados{    
     DCParserConfiguration *config = [DCParserConfiguration configuration];
     
-    DCArrayMapping *onibues = [DCArrayMapping mapperForClassElements:[Onibus class] forAttribute:@"onibuses" onClass:[Ponto class]];
-    [config addArrayMapper:onibues];
+    DCArrayMapping *onibuses = [DCArrayMapping mapperForClassElements:[Onibus class]
+                                                         forAttribute:@"onibuses"
+                                                              onClass:[Ponto class]];
     
-    DCObjectMapping *coordenada = [DCObjectMapping mapKeyPath:@"coordenada" toAttribute:@"localizacao" onClass:[Ponto class]];
-    DCObjectMapping *idPonto = [DCObjectMapping mapKeyPath:@"id" toAttribute:@"identificador" onClass:[Ponto class]];
-    DCObjectMapping *idOnibus = [DCObjectMapping mapKeyPath:@"id" toAttribute:@"identificador" onClass:[Onibus class]];
+    [config addArrayMapper:onibuses];
+    
+
+    
+    DCObjectMapping *coordenada = [DCObjectMapping mapKeyPath:@"coordenada"
+                                                  toAttribute:@"localizacao"
+                                                      onClass:[Ponto class]];
+    
+    DCObjectMapping *idPonto = [DCObjectMapping mapKeyPath:@"id"
+                                               toAttribute:@"identificador"
+                                                   onClass:[Ponto class]];
+    
+    DCObjectMapping *idOnibus = [DCObjectMapping mapKeyPath:@"id"
+                                                toAttribute:@"identificador"
+                                                    onClass:[Onibus class]];
     
     [config addObjectMapping:coordenada];
     [config addObjectMapping:idPonto];
     [config addObjectMapping:idOnibus];
     
     
-    DCKeyValueObjectMapping *parser = [DCKeyValueObjectMapping mapperForClass:[Ponto class] andConfiguration:config];
+    DCKeyValueObjectMapping *parser = [DCKeyValueObjectMapping mapperForClass:[Ponto class]
+                                                             andConfiguration:config];
+    
     return [parser parseArray:resultados];
 }
 @end

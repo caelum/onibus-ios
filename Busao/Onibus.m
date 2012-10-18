@@ -10,10 +10,11 @@
 #import "Ponto.h"
 
 @implementation Onibus
-@synthesize nome, linha, paradas, identificador, ponto;
+
+@synthesize letreiro, paradas, identificador, ponto;
 
 -(NSString *)description{
-    return [NSString stringWithFormat:@"%@: %@ - %@", identificador, linha, nome];
+    return [NSString stringWithFormat:@"%i: %@", identificador, letreiro];
 }
 
 @end
