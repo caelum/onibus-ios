@@ -78,6 +78,8 @@
 		20F5805C1535F76700F1CAAB /* GPSManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F5805B1535F76700F1CAAB /* GPSManager.m */; };
 		772FAEDE162F903F000DAC1F /* Sentido.m in Sources */ = {isa = PBXBuildFile; fileRef = 772FAEDD162F903F000DAC1F /* Sentido.m */; };
 		772FAEE2162F9289000DAC1F /* Operacao.m in Sources */ = {isa = PBXBuildFile; fileRef = 772FAEE1162F9288000DAC1F /* Operacao.m */; };
+		7794BE671632215300E880F9 /* OnibusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7794BE651632215300E880F9 /* OnibusViewController.m */; };
+		7794BE681632215300E880F9 /* OnibusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7794BE661632215300E880F9 /* OnibusViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -187,6 +189,9 @@
 		772FAEDD162F903F000DAC1F /* Sentido.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sentido.m; sourceTree = "<group>"; };
 		772FAEE0162F9288000DAC1F /* Operacao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Operacao.h; sourceTree = "<group>"; };
 		772FAEE1162F9288000DAC1F /* Operacao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Operacao.m; sourceTree = "<group>"; };
+		7794BE641632215300E880F9 /* OnibusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnibusViewController.h; sourceTree = "<group>"; };
+		7794BE651632215300E880F9 /* OnibusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnibusViewController.m; sourceTree = "<group>"; };
+		7794BE661632215300E880F9 /* OnibusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OnibusViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -371,6 +376,9 @@
 				20D8E413152B77DC006C7328 /* PontosPorProximidadeController.h */,
 				20D8E414152B77DC006C7328 /* PontosPorProximidadeController.m */,
 				20B974FC15360CA2008DAD44 /* SemGps.xib */,
+				7794BE641632215300E880F9 /* OnibusViewController.h */,
+				7794BE651632215300E880F9 /* OnibusViewController.m */,
+				7794BE661632215300E880F9 /* OnibusViewController.xib */,
 			);
 			name = Telas;
 			sourceTree = "<group>";
@@ -533,6 +541,7 @@
 				20F5804C1535267500F1CAAB /* compass.png in Resources */,
 				20F5804D1535267500F1CAAB /* compass@2x.png in Resources */,
 				20B974FA15360CA2008DAD44 /* SemGps.xib in Resources */,
+				7794BE681632215300E880F9 /* OnibusViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,6 +580,7 @@
 				2053E9871549FE1900B9F3FD /* Appirater.m in Sources */,
 				772FAEDE162F903F000DAC1F /* Sentido.m in Sources */,
 				772FAEE2162F9289000DAC1F /* Operacao.m in Sources */,
+				7794BE671632215300E880F9 /* OnibusViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

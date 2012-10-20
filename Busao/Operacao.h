@@ -14,4 +14,8 @@
 @property(nonatomic, readonly) NSString *sabado;
 @property(nonatomic, readonly) NSString *domingo;
 
+-(NSString*) horarioDiaUtil;
+-(NSString*) horarioSabado;
+-(NSString*) horarioDomingo;
+
 @end

@@ -11,6 +11,7 @@
 #import "PontoDeOnibusController.h"
 #import "ParadasViewController.h"
 #import "Onibus.h"
+#import "OnibusViewController.h"
 
 @interface PontoDeOnibusController (){
     SSHUDView *loading;
@@ -99,11 +100,16 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     Onibus *onibus = [self buscaOnibus:indexPath paraTableView:tableView];
-    [onibus setPonto:[pontos objectAtIndex:indexPath.section]];
-    loading = [[SSHUDView alloc] initWithTitle:NSLocalized(@"buscando_paradas")];
-    [loading show];
     
-    [paradasDataSource buscaParadasParaOnibus:onibus];
+    OnibusViewController *controller = [[OnibusViewController alloc]initWithOnibus:onibus];
+    [self.navigationController pushViewController:controller animated:YES];
+    
+//    [onibus setPonto:[pontos objectAtIndex:indexPath.section]];
+//    loading = [[SSHUDView alloc] initWithTitle:NSLocalized(@"buscando_paradas")];
+//    [loading show];
+//
+//    [paradasDataSource buscaParadasParaOnibus:onibus];
+    
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];    
 }
 
