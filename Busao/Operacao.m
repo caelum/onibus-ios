@@ -8,6 +8,7 @@
 
 #import "Operacao.h"
 
+
 @implementation Operacao
 
 @synthesize diaUtil, domingo, sabado;

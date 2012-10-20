@@ -7,22 +7,19 @@
 //
 
 #import "EGORefreshTableHeaderView.h"
-#import "SSHUDView.h"
 #import "PontoDeOnibusController.h"
-#import "ParadasViewController.h"
 #import "Onibus.h"
 #import "OnibusViewController.h"
 
-@interface PontoDeOnibusController (){
-    SSHUDView *loading;
-}
+@interface PontoDeOnibusController ()
+
 @property(nonatomic, strong) UISearchBar *searchBar;
 @property(nonatomic, strong) UISearchDisplayController *searchDisplayController;
 @property(nonatomic, strong) NSMutableArray *onibusFiltrados;
 @end
 
 @implementation PontoDeOnibusController
-@synthesize pontos, paradasDataSource, localizacaoAtual, searchBar, searchDisplayController, onibusFiltrados;
+@synthesize pontos, localizacaoAtual, searchBar, searchDisplayController, onibusFiltrados;
 
 - (id)initWithPonto: (Ponto *) ponto
 {
@@ -46,7 +43,6 @@
     
     [self hideSearchView];
     
-    self.paradasDataSource = [[ParadaDataSource alloc] initWithDelegate:self];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     
@@ -100,31 +96,14 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     Onibus *onibus = [self buscaOnibus:indexPath paraTableView:tableView];
+    [onibus setPonto:[pontos objectAtIndex:indexPath.section]];
     
     OnibusViewController *controller = [[OnibusViewController alloc]initWithOnibus:onibus];
     [self.navigationController pushViewController:controller animated:YES];
     
-//    [onibus setPonto:[pontos objectAtIndex:indexPath.section]];
-//    loading = [[SSHUDView alloc] initWithTitle:NSLocalized(@"buscando_paradas")];
-//    [loading show];
-//
-//    [paradasDataSource buscaParadasParaOnibus:onibus];
-    
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];    
 }
 
-- (void) recebeParadas: (NSArray *) paradas paraOnibus: (Onibus *) onibus {
-    [loading completeQuicklyWithTitle:NSLocalized(@"pronto")];
-    
-    ParadasViewController *paradasController = [[ParadasViewController alloc] initWithParadas:paradas
-                                                                                     doOnibus:onibus
-                                                                               paraLocalizaca:onibus.ponto.localizacao];
-    
-    [self.navigationController pushViewController:paradasController animated:YES];
-}
-- (void) problemaParaBuscarParadas {
-    [loading failQuicklyWithTitle:NSLocalized(@"problema_buscando_paradas")];
-}
 - (Onibus *)buscaOnibus:(NSIndexPath *)index paraTableView: (UITableView *) tableView{
     if([self isSearching:tableView]){
         return [onibusFiltrados objectAtIndex:index.row];

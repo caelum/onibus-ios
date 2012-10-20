@@ -15,6 +15,6 @@
 
 @property (strong, nonatomic) MKMapView *mapView;
 
--(id)initWithParadas: (NSArray *) paradas doOnibus: (Onibus *) ponibus paraLocalizaca: (Localizacao *)localizacao;
+-(id)initWithParadas: (NSArray *) paradas doOnibus: (Onibus *) ponibus paraLocalizacao: (Localizacao *)localizacao;
 
 @end

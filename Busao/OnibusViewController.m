@@ -8,9 +8,13 @@
 
 #import "OnibusViewController.h"
 #import "Onibus.h"
+#import "SSHUDView.h"
+#import "ParadasViewController.h"
+#import "Ponto.h"
 
 @interface OnibusViewController () {
     Onibus* onibus;
+    SSHUDView *loading;
 }
 @end
 
@@ -21,6 +25,7 @@
 @synthesize operacaoDiaUtil;
 @synthesize operacaoSabado;
 @synthesize operacaoDomingo;
+@synthesize paradasDataSource;
 
 - (id)initWithOnibus: (Onibus*) _onibus
 {
@@ -43,7 +48,25 @@
     [operacaoSabado setText: [[onibus operacao] horarioSabado ] ];
     [operacaoDomingo setText: [[onibus operacao] horarioDomingo ] ];
     
+    self.paradasDataSource = [[ParadaDataSource alloc] initWithDelegate:self];
+    
 }
+
+- (void) recebeParadas: (NSArray *) paradas paraOnibus: (Onibus *) _onibus {
+    [loading completeQuicklyWithTitle:NSLocalized(@"pronto")];
+    
+    
+    ParadasViewController *paradasController = [[ParadasViewController alloc]
+                                                initWithParadas:paradas
+                                                doOnibus:onibus
+                                                paraLocalizacao:onibus.ponto.localizacao];
+    
+    [self.navigationController pushViewController:paradasController animated:YES];
+}
+- (void) problemaParaBuscarParadas {
+    [loading failQuicklyWithTitle:NSLocalized(@"problema_buscando_paradas")];
+}
+
 
 - (void)viewDidUnload
 {
@@ -63,6 +86,9 @@
 }
 
 - (IBAction)mostraPontos:(id)sender {
-    
+    loading = [[SSHUDView alloc] initWithTitle:NSLocalized(@"buscando_paradas")];
+    [loading show];
+
+    [paradasDataSource buscaParadasParaOnibus:onibus];
 }
 @end

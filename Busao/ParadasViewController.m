@@ -24,7 +24,7 @@
 @implementation ParadasViewController
 @synthesize mapView, paradas, localizacao, onibus;
 
--(id)initWithParadas: (NSArray *) _paradas doOnibus: (Onibus *) _onibus paraLocalizaca: (Localizacao *) _localizacao {
+-(id)initWithParadas: (NSArray *) _paradas doOnibus: (Onibus *) _onibus paraLocalizacao: (Localizacao *) _localizacao {
     self = [super init];
     if (self) {
         self.mapView = [[MKMapView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]];
