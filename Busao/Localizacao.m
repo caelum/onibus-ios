@@ -37,6 +37,16 @@
     return [NSString stringWithFormat:@"%d - %d", latitude, longitude];
 }
 
+- (BOOL)isEqual:(id)other {
+    if (other == self)
+        return YES;
+    
+    if (![super isEqual:other])
+        return NO;
+    
+    return ([self latitude] == [other latitude] && [self longitude] == [other longitude]);
+}
+
 - (NSString *)title{
     return @"Localização atual";
 }

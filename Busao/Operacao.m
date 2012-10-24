@@ -8,35 +8,34 @@
 
 #import "Operacao.h"
 
+@interface Operacao()
+
+-(NSString*) extraiHorario: (NSString*) _horario;
+
+@end
+
 
 @implementation Operacao
 
 @synthesize diaUtil, domingo, sabado;
 
 -(NSString *) horarioDiaUtil {
-    NSArray *split =[diaUtil componentsSeparatedByString:@" - "];
-    
-    if ([split count] == 1 ) {
-        return diaUtil;
-    }
-    return [split objectAtIndex:1];
-
+    return [self extraiHorario: diaUtil];
 }
 
 -(NSString *) horarioSabado {
-    NSArray *split =[sabado componentsSeparatedByString:@" - "];
-    
-    if ([split count] == 1 ) {
-        return sabado;
-    }
-    return [split objectAtIndex:1];
+    return [self extraiHorario: sabado];
 }
 
 -(NSString *) horarioDomingo {
-    NSArray *split =[domingo componentsSeparatedByString:@" - "];
+    return [self extraiHorario: domingo];
+}
+
+-(NSString*) extraiHorario: (NSString*) _horario {
+    NSArray *split =[_horario componentsSeparatedByString:@" - "];
     
     if ([split count] == 1 ) {
-        return domingo;
+        return _horario;
     }
     return [split objectAtIndex:1];
 }

@@ -10,6 +10,7 @@
 #import "Onibus.h"
 #import "SSHUDView.h"
 #import "ParadasViewController.h"
+#import "TempoRealViewController.h"
 #import "Ponto.h"
 
 @interface OnibusViewController () {
@@ -26,6 +27,7 @@
 @synthesize operacaoSabado;
 @synthesize operacaoDomingo;
 @synthesize paradasDataSource;
+@synthesize tempoRealDataSource;
 
 - (id)initWithOnibus: (Onibus*) _onibus
 {
@@ -36,7 +38,6 @@
     }
     return self;
 }
-    
 
 - (void)viewDidLoad
 {
@@ -48,8 +49,7 @@
     [operacaoSabado setText: [[onibus operacao] horarioSabado ] ];
     [operacaoDomingo setText: [[onibus operacao] horarioDomingo ] ];
     
-    self.paradasDataSource = [[ParadaDataSource alloc] initWithDelegate:self];
-    
+
 }
 
 - (void) recebeParadas: (NSArray *) paradas paraOnibus: (Onibus *) _onibus {
@@ -67,6 +67,30 @@
     [loading failQuicklyWithTitle:NSLocalized(@"problema_buscando_paradas")];
 }
 
+- (void) recebeLocalizacoes: (NSArray *) localizacoes paraOnibus: (Onibus *) __onibus {
+    [loading completeQuicklyWithTitle:NSLocalized(@"pronto")];
+    
+    if ([localizacoes count] >0) {
+        TempoRealViewController *controller = [[TempoRealViewController alloc]
+                                               initWithLocalizacoes:localizacoes
+                                               doOnibus: __onibus];
+        
+        [self.navigationController pushViewController:controller animated:YES];
+        
+    } else {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Tempo real"
+                                                        message:@"Nenhuma veiculo localizado no momento"
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [alert show];
+    }
+    
+    
+}
+- (void) problemaParaBuscarLocalizacoes {
+    [loading failQuicklyWithTitle:@"Problema buscando localizações atuais"];
+}
 
 - (void)viewDidUnload
 {
@@ -75,17 +99,28 @@
     [self setOperacaoDiaUtil:nil];
     [self setOperacaoSabado:nil];
     [self setOperacaoDomingo:nil];
+    [self setTempoRealDataSource:nil];
+    [self setParadasDataSource:nil];
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+
+- (IBAction)mostraLocalizacaoEmTempoReal:(id)sender {
+    self.tempoRealDataSource = [[TempoRealDataSource alloc] initWithDelegate:self];
+    
+    loading = [[SSHUDView alloc] initWithTitle:@"Buscando localizações atuais"];
+    [loading show];
+
+    [tempoRealDataSource buscaLocalizacoesParaOnibus:onibus];
+}
+
 - (IBAction)mostraPontos:(id)sender {
+    self.paradasDataSource = [[ParadaDataSource alloc] initWithDelegate:self];
+    
     loading = [[SSHUDView alloc] initWithTitle:NSLocalized(@"buscando_paradas")];
     [loading show];
 

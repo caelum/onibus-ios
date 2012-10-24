@@ -78,6 +78,9 @@
 		20F5805C1535F76700F1CAAB /* GPSManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F5805B1535F76700F1CAAB /* GPSManager.m */; };
 		772FAEDE162F903F000DAC1F /* Sentido.m in Sources */ = {isa = PBXBuildFile; fileRef = 772FAEDD162F903F000DAC1F /* Sentido.m */; };
 		772FAEE2162F9289000DAC1F /* Operacao.m in Sources */ = {isa = PBXBuildFile; fileRef = 772FAEE1162F9288000DAC1F /* Operacao.m */; };
+		774C579616373A9500AAAF2A /* TempoRealDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 774C579516373A9500AAAF2A /* TempoRealDataSource.m */; };
+		774C579A1637438F00AAAF2A /* Veiculo.m in Sources */ = {isa = PBXBuildFile; fileRef = 774C57991637438F00AAAF2A /* Veiculo.m */; };
+		774C57A0163744D800AAAF2A /* TempoRealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 774C579F163744D800AAAF2A /* TempoRealViewController.m */; };
 		7794BE671632215300E880F9 /* OnibusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7794BE651632215300E880F9 /* OnibusViewController.m */; };
 		7794BE681632215300E880F9 /* OnibusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7794BE661632215300E880F9 /* OnibusViewController.xib */; };
 /* End PBXBuildFile section */
@@ -189,6 +192,12 @@
 		772FAEDD162F903F000DAC1F /* Sentido.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sentido.m; sourceTree = "<group>"; };
 		772FAEE0162F9288000DAC1F /* Operacao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Operacao.h; sourceTree = "<group>"; };
 		772FAEE1162F9288000DAC1F /* Operacao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Operacao.m; sourceTree = "<group>"; };
+		774C579416373A9400AAAF2A /* TempoRealDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TempoRealDataSource.h; sourceTree = "<group>"; };
+		774C579516373A9500AAAF2A /* TempoRealDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TempoRealDataSource.m; sourceTree = "<group>"; };
+		774C57981637438F00AAAF2A /* Veiculo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Veiculo.h; sourceTree = "<group>"; };
+		774C57991637438F00AAAF2A /* Veiculo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Veiculo.m; sourceTree = "<group>"; };
+		774C579E163744D800AAAF2A /* TempoRealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TempoRealViewController.h; sourceTree = "<group>"; };
+		774C579F163744D800AAAF2A /* TempoRealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TempoRealViewController.m; sourceTree = "<group>"; };
 		7794BE641632215300E880F9 /* OnibusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnibusViewController.h; sourceTree = "<group>"; };
 		7794BE651632215300E880F9 /* OnibusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnibusViewController.m; sourceTree = "<group>"; };
 		7794BE661632215300E880F9 /* OnibusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OnibusViewController.xib; sourceTree = "<group>"; };
@@ -234,6 +243,8 @@
 				203929701526134B00B791DF /* ParadaDataSource.m */,
 				20392972152651E100B791DF /* DataSource.h */,
 				20392973152651E100B791DF /* DataSource.m */,
+				774C579416373A9400AAAF2A /* TempoRealDataSource.h */,
+				774C579516373A9500AAAF2A /* TempoRealDataSource.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -360,6 +371,8 @@
 				772FAEDD162F903F000DAC1F /* Sentido.m */,
 				772FAEE0162F9288000DAC1F /* Operacao.h */,
 				772FAEE1162F9288000DAC1F /* Operacao.m */,
+				774C57981637438F00AAAF2A /* Veiculo.h */,
+				774C57991637438F00AAAF2A /* Veiculo.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -379,6 +392,8 @@
 				7794BE641632215300E880F9 /* OnibusViewController.h */,
 				7794BE651632215300E880F9 /* OnibusViewController.m */,
 				7794BE661632215300E880F9 /* OnibusViewController.xib */,
+				774C579E163744D800AAAF2A /* TempoRealViewController.h */,
+				774C579F163744D800AAAF2A /* TempoRealViewController.m */,
 			);
 			name = Telas;
 			sourceTree = "<group>";
@@ -581,6 +596,9 @@
 				772FAEDE162F903F000DAC1F /* Sentido.m in Sources */,
 				772FAEE2162F9289000DAC1F /* Operacao.m in Sources */,
 				7794BE671632215300E880F9 /* OnibusViewController.m in Sources */,
+				774C579616373A9500AAAF2A /* TempoRealDataSource.m in Sources */,
+				774C579A1637438F00AAAF2A /* Veiculo.m in Sources */,
+				774C57A0163744D800AAAF2A /* TempoRealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

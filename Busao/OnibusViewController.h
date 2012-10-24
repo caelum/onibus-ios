@@ -9,9 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "Onibus.h"
 #import "ParadaDataSource.h"
+#import "TempoRealDataSource.h"
 
 
-@interface OnibusViewController : UIViewController <ParadasDelegate>
+@interface OnibusViewController : UIViewController <ParadasDelegate, TempoRealDelegate>
 
 @property (strong, nonatomic) IBOutlet UILabel *letreiro;
 @property (strong, nonatomic) IBOutlet UILabel *sentido;
@@ -20,9 +21,12 @@
 @property (strong, nonatomic) IBOutlet UILabel *operacaoDomingo;
 
 @property(nonatomic, strong) ParadaDataSource *paradasDataSource;
+@property(nonatomic, strong) TempoRealDataSource *tempoRealDataSource;
 
 - (IBAction)mostraPontos:(id)sender;
+- (IBAction)mostraLocalizacaoEmTempoReal:(id)sender;
 
 - (id)initWithOnibus: (Onibus*) _onibus;
+
 
 @end
