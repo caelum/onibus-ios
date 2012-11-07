@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		202B23671533654900619462 /* NSStringWithMaxSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 202B23661533654900619462 /* NSStringWithMaxSize.m */; };
-		2037FA6A156BEF16003FB301 /* KeyValueObjectMapping.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2037FA69156BEF16003FB301 /* KeyValueObjectMapping.framework */; };
 		2039296D152612D600B791DF /* Parada.m in Sources */ = {isa = PBXBuildFile; fileRef = 2039296C152612D600B791DF /* Parada.m */; };
 		203929711526134B00B791DF /* ParadaDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 203929701526134B00B791DF /* ParadaDataSource.m */; };
 		20392974152651E100B791DF /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 20392973152651E100B791DF /* DataSource.m */; };
@@ -76,6 +75,7 @@
 		20F5804C1535267500F1CAAB /* compass.png in Resources */ = {isa = PBXBuildFile; fileRef = 20F5804A1535267500F1CAAB /* compass.png */; };
 		20F5804D1535267500F1CAAB /* compass@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20F5804B1535267500F1CAAB /* compass@2x.png */; };
 		20F5805C1535F76700F1CAAB /* GPSManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F5805B1535F76700F1CAAB /* GPSManager.m */; };
+		240DB81C15EC4E38B5D24AAB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BDDFF3F780CE4FAEBF6C9AE7 /* libPods.a */; };
 		772FAEDE162F903F000DAC1F /* Sentido.m in Sources */ = {isa = PBXBuildFile; fileRef = 772FAEDD162F903F000DAC1F /* Sentido.m */; };
 		772FAEE2162F9289000DAC1F /* Operacao.m in Sources */ = {isa = PBXBuildFile; fileRef = 772FAEE1162F9288000DAC1F /* Operacao.m */; };
 		774C579616373A9500AAAF2A /* TempoRealDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 774C579516373A9500AAAF2A /* TempoRealDataSource.m */; };
@@ -88,7 +88,6 @@
 /* Begin PBXFileReference section */
 		202B23651533654900619462 /* NSStringWithMaxSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringWithMaxSize.h; sourceTree = "<group>"; };
 		202B23661533654900619462 /* NSStringWithMaxSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringWithMaxSize.m; sourceTree = "<group>"; };
-		2037FA69156BEF16003FB301 /* KeyValueObjectMapping.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KeyValueObjectMapping.framework; sourceTree = "<group>"; };
 		2039296B152612D600B791DF /* Parada.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parada.h; sourceTree = "<group>"; };
 		2039296C152612D600B791DF /* Parada.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Parada.m; sourceTree = "<group>"; };
 		2039296F1526134B00B791DF /* ParadaDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParadaDataSource.h; sourceTree = "<group>"; };
@@ -97,11 +96,11 @@
 		20392973152651E100B791DF /* DataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSource.m; sourceTree = "<group>"; };
 		2039297515265F6300B791DF /* ParadasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParadasViewController.h; sourceTree = "<group>"; };
 		2039297615265F6300B791DF /* ParadasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParadasViewController.m; sourceTree = "<group>"; };
-		2039297A15265F8200B791DF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		2039297A15265F8200B791DF /* MapKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		2053E9851549FE1900B9F3FD /* Appirater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Appirater.h; sourceTree = "<group>"; };
 		2053E9861549FE1900B9F3FD /* Appirater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Appirater.m; sourceTree = "<group>"; };
-		2053E9881549FF2900B9F3FD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		2053E98A1549FF2E00B9F3FD /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		2053E9881549FF2900B9F3FD /* SystemConfiguration.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		2053E98A1549FF2E00B9F3FD /* CFNetwork.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		2053E98C1549FF6700B9F3FD /* Vila Mariana.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Vila Mariana.gpx"; sourceTree = "<group>"; };
 		20569852152E404900F030BA /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
 		20569855152E406E00F030BA /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
@@ -112,9 +111,9 @@
 		207086A1152CA88500EADA0F /* 242-Aim.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "242-Aim.png"; sourceTree = "<group>"; };
 		207086A3152CA8B000EADA0F /* 242-Aim@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "242-Aim@2x.png"; sourceTree = "<group>"; };
 		208A1C181524F7FE00335F87 /* BusaoSP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusaoSP.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		208A1C1C1524F7FE00335F87 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		208A1C1E1524F7FE00335F87 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		208A1C201524F7FE00335F87 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		208A1C1C1524F7FE00335F87 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		208A1C1E1524F7FE00335F87 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		208A1C201524F7FE00335F87 /* CoreGraphics.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		208A1C241524F7FE00335F87 /* BusaoSP-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BusaoSP-Info.plist"; sourceTree = "<group>"; };
 		208A1C281524F7FE00335F87 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		208A1C2A1524F7FE00335F87 /* BusaoSP-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BusaoSP-Prefix.pch"; sourceTree = "<group>"; };
@@ -126,7 +125,7 @@
 		208A1C381524FB7100335F87 /* Onibus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Onibus.m; sourceTree = "<group>"; };
 		208A1C401524FD6700335F87 /* OnibusDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnibusDataSource.h; sourceTree = "<group>"; };
 		208A1C411524FD6700335F87 /* OnibusDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnibusDataSource.m; sourceTree = "<group>"; };
-		208A1C4F152508DB00335F87 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		208A1C4F152508DB00335F87 /* CoreLocation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		208DD3D3152A2B1100D730F8 /* MKMapView+ZoomOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+ZoomOut.h"; sourceTree = "<group>"; };
 		208DD3D4152A2B1100D730F8 /* MKMapView+ZoomOut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+ZoomOut.m"; sourceTree = "<group>"; };
 		208DD3D8152A2BCD00D730F8 /* Localizacao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Localizacao.h; sourceTree = "<group>"; };
@@ -169,7 +168,7 @@
 		20EB219B152CC9120009BC49 /* 002-HomeAlt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "002-HomeAlt.png"; sourceTree = "<group>"; };
 		20EB21A7152CFB880009BC49 /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
 		20EB21A8152CFB880009BC49 /* EGORefreshTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableHeaderView.m; sourceTree = "<group>"; };
-		20EB21AB152CFBFB0009BC49 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		20EB21AB152CFBFB0009BC49 /* QuartzCore.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		20EB21B2152D04270009BC49 /* blackArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackArrow.png; sourceTree = "<group>"; };
 		20EB21B3152D04270009BC49 /* blackArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blackArrow@2x.png"; sourceTree = "<group>"; };
 		20EB21B4152D04270009BC49 /* blueArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueArrow.png; sourceTree = "<group>"; };
@@ -201,6 +200,8 @@
 		7794BE641632215300E880F9 /* OnibusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnibusViewController.h; sourceTree = "<group>"; };
 		7794BE651632215300E880F9 /* OnibusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnibusViewController.m; sourceTree = "<group>"; };
 		7794BE661632215300E880F9 /* OnibusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OnibusViewController.xib; sourceTree = "<group>"; };
+		946F015939FB4246B6A1EA08 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		BDDFF3F780CE4FAEBF6C9AE7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,7 +217,7 @@
 				208A1C50152508DB00335F87 /* CoreLocation.framework in Frameworks */,
 				208A1C1D1524F7FE00335F87 /* UIKit.framework in Frameworks */,
 				208A1C1F1524F7FE00335F87 /* Foundation.framework in Frameworks */,
-				2037FA6A156BEF16003FB301 /* KeyValueObjectMapping.framework in Frameworks */,
+				240DB81C15EC4E38B5D24AAB /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +294,7 @@
 				208A1C221524F7FE00335F87 /* Busao */,
 				208A1C1B1524F7FE00335F87 /* Frameworks */,
 				208A1C191524F7FE00335F87 /* Products */,
+				946F015939FB4246B6A1EA08 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -307,7 +309,6 @@
 		208A1C1B1524F7FE00335F87 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2037FA69156BEF16003FB301 /* KeyValueObjectMapping.framework */,
 				2053E98A1549FF2E00B9F3FD /* CFNetwork.framework */,
 				2053E9881549FF2900B9F3FD /* SystemConfiguration.framework */,
 				20EB21AB152CFBFB0009BC49 /* QuartzCore.framework */,
@@ -318,6 +319,7 @@
 				208A1C1C1524F7FE00335F87 /* UIKit.framework */,
 				208A1C1E1524F7FE00335F87 /* Foundation.framework */,
 				208A1C201524F7FE00335F87 /* CoreGraphics.framework */,
+				BDDFF3F780CE4FAEBF6C9AE7 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -480,6 +482,7 @@
 				208A1C141524F7FE00335F87 /* Sources */,
 				208A1C151524F7FE00335F87 /* Frameworks */,
 				208A1C161524F7FE00335F87 /* Resources */,
+				5977940113FF448E9841AADE /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -561,6 +564,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5977940113FF448E9841AADE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		208A1C141524F7FE00335F87 /* Sources */ = {
@@ -651,13 +671,14 @@
 		};
 		202E7F161533D39900660A1B /* AdHoc */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 946F015939FB4246B6A1EA08 /* Pods.xcconfig */;
 			buildSettings = {
 				ARCHS = (
 					"$(ARCHS_STANDARD_32_BIT)",
 					armv6,
 				);
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Diego Chohfi Turini";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Diego Chohfi Turini";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Erich Egert";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Erich Egert (J27P64BT4K)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -668,12 +689,14 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "Busao/BusaoSP-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
 				);
 				PRODUCT_NAME = BusaoSP;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "14D13CDB-840A-49D2-9795-5F2F7CF44995";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -704,13 +727,14 @@
 		};
 		20569860152E546700F030BA /* AppStore */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 946F015939FB4246B6A1EA08 /* Pods.xcconfig */;
 			buildSettings = {
 				ARCHS = (
 					"$(ARCHS_STANDARD_32_BIT)",
 					armv6,
 				);
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Diego Chohfi Turini";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Diego Chohfi Turini";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Erich Egert";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Erich Egert (J27P64BT4K)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -721,12 +745,14 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "Busao/BusaoSP-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
 				);
 				PRODUCT_NAME = BusaoSP;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "14D13CDB-840A-49D2-9795-5F2F7CF44995";
 				SKIP_INSTALL = NO;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -786,13 +812,14 @@
 		};
 		208A1C311524F7FE00335F87 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 946F015939FB4246B6A1EA08 /* Pods.xcconfig */;
 			buildSettings = {
 				ARCHS = (
 					"$(ARCHS_STANDARD_32_BIT)",
 					armv6,
 				);
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Diego Chohfi Turini";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Diego Chohfi Turini (2YX992EA5F)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Erich Egert";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Erich Egert (J27P64BT4K)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -803,13 +830,14 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "Busao/BusaoSP-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
 				);
 				PRODUCT_NAME = BusaoSP;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "168FC83F-8119-4940-85FB-3D96978685CD";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "14D13CDB-840A-49D2-9795-5F2F7CF44995";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
@@ -818,13 +846,14 @@
 		};
 		208A1C321524F7FE00335F87 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 946F015939FB4246B6A1EA08 /* Pods.xcconfig */;
 			buildSettings = {
 				ARCHS = (
 					"$(ARCHS_STANDARD_32_BIT)",
 					armv6,
 				);
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Diego Chohfi Turini";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Diego Chohfi Turini (2YX992EA5F)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Erich Egert";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Erich Egert (J27P64BT4K)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -835,13 +864,14 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "Busao/BusaoSP-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
 				);
 				PRODUCT_NAME = BusaoSP;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "168FC83F-8119-4940-85FB-3D96978685CD";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "14D13CDB-840A-49D2-9795-5F2F7CF44995";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};

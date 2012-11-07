@@ -8,7 +8,7 @@
 
 #import "TempoRealDataSource.h"
 #import "DataSource.h"
-#import <KeyValueObjectMapping/DCKeyValueObjectMapping.h>
+#import "DCKeyValueObjectMapping.h"
 #import "Veiculo.h"
 
 #define URL @"http://ondeestaoalbi2.herokuapp.com/localizacoesDoOnibus.json?codigoLinha=%@"

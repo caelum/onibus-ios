@@ -8,7 +8,7 @@
 
 #import "ParadaDataSource.h"
 #import "Parada.h"
-#import <KeyValueObjectMapping/DCKeyValueObjectMapping.h>
+#import "DCKeyValueObjectMapping.h"
 
 @interface ParadaDataSource()
 

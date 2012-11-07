@@ -9,7 +9,7 @@
 #import "OnibusDataSource.h"
 #import "Ponto.h"
 #import "Onibus.h"
-#import <KeyValueObjectMapping/DCKeyValueObjectMapping.h>
+#import "DCKeyValueObjectMapping.h"
 
 #define URL @"http://ondeestaoalbi2.herokuapp.com/onibusesNosPontosProximos.json?lat=%f&long=%f"
 @interface OnibusDataSource()

@@ -8,7 +8,7 @@
 
 #import "Ponto.h"
 #import "Onibus.h"
-#import <KeyValueObjectMapping/DCKeyValueObjectMapping.h>
+#import "DCKeyValueObjectMapping.h"
 
 
 @implementation Ponto
