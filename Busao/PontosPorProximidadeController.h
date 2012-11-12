@@ -14,6 +14,4 @@
 
 @property (strong, nonatomic) MKMapView *mapView;
 
-- (void) applicationDidBecomeActive;
-
 @end

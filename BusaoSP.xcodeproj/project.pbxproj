@@ -232,8 +232,6 @@
 		202B23641533653100619462 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				201A05AE1651563200CCC3B5 /* UIViewController+AutoOrientation.h */,
-				201A05AF1651563200CCC3B5 /* UIViewController+AutoOrientation.m */,
 				202B23651533654900619462 /* NSStringWithMaxSize.h */,
 				202B23661533654900619462 /* NSStringWithMaxSize.m */,
 				20F5805A1535F76700F1CAAB /* GPSManager.h */,
@@ -411,6 +409,8 @@
 		208DD3D7152A2B1400D730F8 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				201A05AE1651563200CCC3B5 /* UIViewController+AutoOrientation.h */,
+				201A05AF1651563200CCC3B5 /* UIViewController+AutoOrientation.m */,
 				208DD3D3152A2B1100D730F8 /* MKMapView+ZoomOut.h */,
 				208DD3D4152A2B1100D730F8 /* MKMapView+ZoomOut.m */,
 				20D8E3C7152B63CA006C7328 /* UIViewController+NavigationController.h */,

@@ -36,6 +36,12 @@
         self.mapView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
         self.mapView.showsUserLocation = YES;
         self.mapView.delegate = self;
+        
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(verificaGps)
+                                                     name:UIApplicationDidBecomeActiveNotification
+                                                   object:nil];
+        
         UITabBarItem *listaItem = [[UITabBarItem alloc] initWithTitle:NSLocalized(@"mapa") image:[UIImage imageNamed:@"088-Map.png"] tag:1];
         
         self.tabBarItem = listaItem;
@@ -53,7 +59,7 @@
     self.view = mapView;
     [self.view addSubview:[UILabel detailLabelWithText:NSLocalized(@"pontos_proximos_pino")]];
 }
-- (void) applicationDidBecomeActive {
+- (void) verificaGps {
     if([GPSManager isGPSDisabled]){
         self.navigationItem.leftBarButtonItem = NULL;
     }else{
@@ -141,5 +147,8 @@
 }
 -(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation{
     return YES;
+}
+- (void)dealloc{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 @end

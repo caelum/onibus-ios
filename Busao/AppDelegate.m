@@ -40,10 +40,6 @@
     [Appirater appLaunched:YES];
     return YES;
 }
--(void)applicationDidBecomeActive:(UIApplication *)application {
-    [listaDeOnibus applicationDidBecameActive];
-    [onibusDisponiveis applicationDidBecomeActive];
-}
 -(void)applicationWillEnterForeground:(UIApplication *)application{
     [Appirater appEnteredForeground:YES];
 }

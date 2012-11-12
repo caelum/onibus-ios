@@ -27,34 +27,43 @@
 {
     self = [super initWithStyle:UITableViewStylePlain];
     if (self) {      
-        UITabBarItem *listaItem = [[UITabBarItem alloc] initWithTitle:NSLocalized(@"localizacao") image:[UIImage imageNamed:@"082-Location.png"] tag:1];
+        UITabBarItem *listaItem = [[UITabBarItem alloc] initWithTitle:NSLocalized(@"localizacao")
+                                                                image:[UIImage imageNamed:@"082-Location.png"]
+                                                                  tag:1];
+        
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(verificaGps)
+                                                     name:UIApplicationDidBecomeActiveNotification
+                                                   object:nil];
+        
         self.tabBarItem = listaItem;
         self.navigationItem.title = NSLocalized(@"pontos_proximos");
     }
     return self;
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    if (pullToRefresh == nil) {
-        CGRect rect = CGRectMake(0.0f, 0.0f - self.tableView.bounds.size.height, self.view.frame.size.width, self.tableView.bounds.size.height); 
-        pullToRefresh= [[EGORefreshTableHeaderView alloc] initWithFrame:rect];
-		pullToRefresh.delegate = self;
-		[self.tableView addSubview:pullToRefresh];		
-	}
-
-	[pullToRefresh refreshLastUpdatedDate];
-    
-    self.onibusDataSource = [[OnibusDataSource alloc] initWithDelegate:self];     
+- (void)viewDidLoad {
+    [self inicializaPullToRefresh];
+    [self inicializaLocationManager];
+    self.onibusDataSource = [[OnibusDataSource alloc] initWithDelegate:self];
+    [self atualizarListagem];
+}
+- (void) inicializaLocationManager {
     locationManager = [[CLLocationManager alloc] init];
     locationManager.delegate = self;
     locationManager.distanceFilter = kCLDistanceFilterNone;
     locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters;
-    
-    [self atualizarListagem];
 }
-- (void) applicationDidBecameActive{
+- (void) inicializaPullToRefresh{
+    if (pullToRefresh == nil) {
+        CGRect rect = CGRectMake(0.0f, 0.0f - self.tableView.bounds.size.height, self.view.frame.size.width, self.tableView.bounds.size.height);
+        pullToRefresh= [[EGORefreshTableHeaderView alloc] initWithFrame:rect];
+		pullToRefresh.delegate = self;
+		[self.tableView addSubview:pullToRefresh];
+	}
+	[pullToRefresh refreshLastUpdatedDate];
+}
+- (void) verificaGps{
     if([GPSManager isGPSDisabled]){
         if(!semGps){
             semGps = [[UIViewController alloc] initWithNibName:@"SemGps" bundle:[NSBundle mainBundle]];
@@ -131,8 +140,7 @@
 - (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation{
     [self.tableView reloadData];
 }
-- (void)viewDidUnload{
-    pullToRefresh = nil;
-    semGps = nil;
+- (void)dealloc{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 @end

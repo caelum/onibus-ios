@@ -14,6 +14,4 @@
 
 @interface ListaPontoDeOnibusController : PontoDeOnibusController <OnibusDelegate, CLLocationManagerDelegate, EGORefreshTableHeaderDelegate>
 
-- (void) applicationDidBecameActive;
-
 @end
