@@ -12,9 +12,8 @@
 
 + (UILabel *) detailLabelWithText: (NSString *) texto{
     UIFont *font = [UIFont fontWithName:@"Arial Rounded MT Bold" size:(14)];
-//    CGSize size = [texto sizeWithFont:font];
-//    CGRect rect = CGRectMake(0, 0, size.width > 320 ? size.width : 320, 20);
-    CGRect rect = CGRectMake(0, 0, 320, 20);
+    CGRect frame = [[UIScreen mainScreen] applicationFrame];
+    CGRect rect = CGRectMake(0, 0, frame.size.width, 20);
     UILabel *label = [[UILabel alloc] initWithFrame:rect];
     [label setAutoresizingMask:UIViewAutoresizingFlexibleWidth];
     label.textAlignment =  UITextAlignmentCenter;

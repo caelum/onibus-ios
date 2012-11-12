@@ -9,33 +9,37 @@
 #import "ListaPontoDeOnibusController.h"
 #import "NSStringWithMaxSize.h"
 #import "GPSManager.h"
+#import "Localizacao.h"
+#import "Ponto.h"
 @interface ListaPontoDeOnibusController (){
-    EGORefreshTableHeaderView *pullToRefresh;
     BOOL reloading;
 }
 @property(nonatomic, strong) OnibusDataSource *onibusDataSource;
 @property(nonatomic, strong) CLLocationManager *locationManager;
 @property(nonatomic, strong) UIViewController *semGps;
-
+@property(nonatomic, strong) EGORefreshTableHeaderView *pullToRefresh;
 - (void) atualizarListagem;
 @end
 
 @implementation ListaPontoDeOnibusController
-@synthesize onibusDataSource, locationManager, semGps;
 
 - (id)init
 {
     self = [super initWithStyle:UITableViewStylePlain];
-    if (self) {      
-        UITabBarItem *listaItem = [[UITabBarItem alloc] initWithTitle:NSLocalized(@"localizacao")
-                                                                image:[UIImage imageNamed:@"082-Location.png"]
-                                                                  tag:1];
+    if (self) {
+        if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+            self.clearsSelectionOnViewWillAppear = NO;
+            self.contentSizeForViewInPopover = CGSizeMake(320.0, 600.0);
+        }
         
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(verificaGps)
                                                      name:UIApplicationDidBecomeActiveNotification
                                                    object:nil];
         
+        UITabBarItem *listaItem = [[UITabBarItem alloc] initWithTitle:NSLocalized(@"localizacao")
+                                                                image:[UIImage imageNamed:@"082-Location.png"]
+                                                                  tag:1];
         self.tabBarItem = listaItem;
         self.navigationItem.title = NSLocalized(@"pontos_proximos");
     }
@@ -49,31 +53,31 @@
     [self atualizarListagem];
 }
 - (void) inicializaLocationManager {
-    locationManager = [[CLLocationManager alloc] init];
-    locationManager.delegate = self;
-    locationManager.distanceFilter = kCLDistanceFilterNone;
-    locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters;
+    self.locationManager = [[CLLocationManager alloc] init];
+    self.locationManager.delegate = self;
+    self.locationManager.distanceFilter = kCLDistanceFilterNone;
+    self.locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters;
 }
 - (void) inicializaPullToRefresh{
-    if (pullToRefresh == nil) {
+    if (self.pullToRefresh == nil) {
         CGRect rect = CGRectMake(0.0f, 0.0f - self.tableView.bounds.size.height, self.view.frame.size.width, self.tableView.bounds.size.height);
-        pullToRefresh= [[EGORefreshTableHeaderView alloc] initWithFrame:rect];
-		pullToRefresh.delegate = self;
-		[self.tableView addSubview:pullToRefresh];
+        self.pullToRefresh= [[EGORefreshTableHeaderView alloc] initWithFrame:rect];
+		self.pullToRefresh.delegate = self;
+		[self.tableView addSubview:self.pullToRefresh];
 	}
-	[pullToRefresh refreshLastUpdatedDate];
+	[self.pullToRefresh refreshLastUpdatedDate];
 }
 - (void) verificaGps{
     if([GPSManager isGPSDisabled]){
-        if(!semGps){
-            semGps = [[UIViewController alloc] initWithNibName:@"SemGps" bundle:[NSBundle mainBundle]];
-            [self.view addSubview:semGps.view];
+        if(!self.semGps){
+            self.semGps = [[UIViewController alloc] initWithNibName:@"SemGps" bundle:[NSBundle mainBundle]];
+            [self.view addSubview:self.semGps.view];
             [self.tableView setUserInteractionEnabled:NO];
         }
     }else{
-        if(semGps){
-            [semGps.view removeFromSuperview];
-            semGps = NULL;
+        if(self.semGps){
+            [self.semGps.view removeFromSuperview];
+            self.semGps = nil;
         }
         [self.tableView setUserInteractionEnabled:YES];        
     }
@@ -107,7 +111,7 @@
 
 - (void) atualizarListagem{
     reloading = YES;
-    [locationManager startUpdatingLocation];
+    [self.locationManager startUpdatingLocation];
 }
 - (void) recebePontos: (NSArray *) _pontos paraLocalizacao:(Localizacao *)localizacao{
     self.pontos = _pontos;
@@ -119,7 +123,7 @@
 }
 - (void) listagemAtualizada{
     reloading = NO;
-	[pullToRefresh egoRefreshScrollViewDataSourceDidFinishedLoading:self.tableView];
+	[self.pullToRefresh egoRefreshScrollViewDataSourceDidFinishedLoading:self.tableView];
 }
 #pragma mark - PullToRefresh methods
 - (void)egoRefreshTableHeaderDidTriggerRefresh:(EGORefreshTableHeaderView*)view{
@@ -132,10 +136,10 @@
 	return [NSDate date];
 }
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{	
-	[pullToRefresh egoRefreshScrollViewDidScroll:scrollView];
+	[self.pullToRefresh egoRefreshScrollViewDidScroll:scrollView];
 }
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
-	[pullToRefresh egoRefreshScrollViewDidEndDragging:scrollView];
+	[self.pullToRefresh egoRefreshScrollViewDidEndDragging:scrollView];
 }
 - (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation{
     [self.tableView reloadData];

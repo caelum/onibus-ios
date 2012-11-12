@@ -14,6 +14,8 @@
     [self changeViewIfOnLandscape: toInterfaceOrientation];
 }
 - (void) changeViewIfOnLandscape: (UIInterfaceOrientation) orientation{
+    if(![UIDevice iPhone])
+        return;
     NSString *xibName = [NSString stringWithFormat:@"%@", NSStringFromClass([self class])];
     if( UIInterfaceOrientationIsLandscape(orientation) ){
         xibName = [NSString stringWithFormat:@"%@-landscape", NSStringFromClass([self class])];

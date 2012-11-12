@@ -1,11 +1,7 @@
-
 PODS:
-- DCKeyValueObjectMapping (1.1)
+  - DCKeyValueObjectMapping (1.1)
+  - SSToolkit (1.0.2)
 
 DEPENDENCIES:
-- DCKeyValueObjectMapping (~> 1.1)
-
-SPEC CHECKSUMS:
-  DCKeyValueObjectMapping: 36e673e17482c90f6851dd478cd3770de80a4824
-
-COCOAPODS: 0.15.2
+  - DCKeyValueObjectMapping (~> 1.1)
+  - SSToolkit (~> 1.0.2)

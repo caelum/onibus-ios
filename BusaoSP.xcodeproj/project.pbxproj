@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		201A05AC1651551E00CCC3B5 /* OnibusViewController-landscape.xib in Resources */ = {isa = PBXBuildFile; fileRef = 201A05AB1651551E00CCC3B5 /* OnibusViewController-landscape.xib */; };
 		201A05B01651563200CCC3B5 /* UIViewController+AutoOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 201A05AF1651563200CCC3B5 /* UIViewController+AutoOrientation.m */; };
+		201A05F416516C8500CCC3B5 /* UIDevice+iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 201A05F316516C8500CCC3B5 /* UIDevice+iPhone.m */; };
 		202B23671533654900619462 /* NSStringWithMaxSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 202B23661533654900619462 /* NSStringWithMaxSize.m */; };
 		2039296D152612D600B791DF /* Parada.m in Sources */ = {isa = PBXBuildFile; fileRef = 2039296C152612D600B791DF /* Parada.m */; };
 		203929711526134B00B791DF /* ParadaDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 203929701526134B00B791DF /* ParadaDataSource.m */; };
@@ -42,13 +43,6 @@
 		20D8E3C9152B63CA006C7328 /* UIViewController+NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D8E3C8152B63CA006C7328 /* UIViewController+NavigationController.m */; };
 		20D8E3CB152B66A2006C7328 /* 082-Location@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20D8E3CA152B66A2006C7328 /* 082-Location@2x.png */; };
 		20D8E3CD152B66B0006C7328 /* 082-Location.png in Resources */ = {isa = PBXBuildFile; fileRef = 20D8E3CC152B66B0006C7328 /* 082-Location.png */; };
-		20D8E3D0152B670C006C7328 /* SSHUDView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D8E3CF152B670C006C7328 /* SSHUDView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		20D8E3D3152B6753006C7328 /* SSHUDWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D8E3D2152B6753006C7328 /* SSHUDWindow.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		20D8E3D6152B6768006C7328 /* SSDrawingUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D8E3D5152B6768006C7328 /* SSDrawingUtilities.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		20D8E3D9152B678D006C7328 /* UIView+SSToolkitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D8E3D8152B678D006C7328 /* UIView+SSToolkitAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		20D8E3DC152B67A3006C7328 /* UIImage+SSToolkitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D8E3DB152B67A3006C7328 /* UIImage+SSToolkitAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		20D8E3DF152B6825006C7328 /* SSVignetteiPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 20D8E3DD152B6825006C7328 /* SSVignetteiPhone.png */; };
-		20D8E3E0152B6825006C7328 /* SSVignetteiPhone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20D8E3DE152B6825006C7328 /* SSVignetteiPhone@2x.png */; };
 		20D8E406152B7174006C7328 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 20D8E408152B7174006C7328 /* Localizable.strings */; };
 		20D8E412152B76C8006C7328 /* ListaPontoDeOnibusController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D8E40B152B7634006C7328 /* ListaPontoDeOnibusController.m */; };
 		20D8E416152B77DC006C7328 /* PontosPorProximidadeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D8E414152B77DC006C7328 /* PontosPorProximidadeController.m */; };
@@ -91,6 +85,8 @@
 		201A05AB1651551E00CCC3B5 /* OnibusViewController-landscape.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "OnibusViewController-landscape.xib"; sourceTree = "<group>"; };
 		201A05AE1651563200CCC3B5 /* UIViewController+AutoOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+AutoOrientation.h"; path = "../UIViewController+AutoOrientation.h"; sourceTree = "<group>"; };
 		201A05AF1651563200CCC3B5 /* UIViewController+AutoOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+AutoOrientation.m"; path = "../UIViewController+AutoOrientation.m"; sourceTree = "<group>"; };
+		201A05F216516C8500CCC3B5 /* UIDevice+iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+iPhone.h"; sourceTree = "<group>"; };
+		201A05F316516C8500CCC3B5 /* UIDevice+iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+iPhone.m"; sourceTree = "<group>"; };
 		202B23651533654900619462 /* NSStringWithMaxSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringWithMaxSize.h; sourceTree = "<group>"; };
 		202B23661533654900619462 /* NSStringWithMaxSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringWithMaxSize.m; sourceTree = "<group>"; };
 		2039296B152612D600B791DF /* Parada.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parada.h; sourceTree = "<group>"; };
@@ -144,18 +140,6 @@
 		20D8E3C8152B63CA006C7328 /* UIViewController+NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NavigationController.m"; sourceTree = "<group>"; };
 		20D8E3CA152B66A2006C7328 /* 082-Location@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "082-Location@2x.png"; sourceTree = "<group>"; };
 		20D8E3CC152B66B0006C7328 /* 082-Location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "082-Location.png"; sourceTree = "<group>"; };
-		20D8E3CE152B670C006C7328 /* SSHUDView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSHUDView.h; sourceTree = "<group>"; };
-		20D8E3CF152B670C006C7328 /* SSHUDView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSHUDView.m; sourceTree = "<group>"; };
-		20D8E3D1152B6753006C7328 /* SSHUDWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSHUDWindow.h; sourceTree = "<group>"; };
-		20D8E3D2152B6753006C7328 /* SSHUDWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSHUDWindow.m; sourceTree = "<group>"; };
-		20D8E3D4152B6768006C7328 /* SSDrawingUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSDrawingUtilities.h; sourceTree = "<group>"; };
-		20D8E3D5152B6768006C7328 /* SSDrawingUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSDrawingUtilities.m; sourceTree = "<group>"; };
-		20D8E3D7152B678D006C7328 /* UIView+SSToolkitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SSToolkitAdditions.h"; sourceTree = "<group>"; };
-		20D8E3D8152B678D006C7328 /* UIView+SSToolkitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SSToolkitAdditions.m"; sourceTree = "<group>"; };
-		20D8E3DA152B67A3006C7328 /* UIImage+SSToolkitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SSToolkitAdditions.h"; sourceTree = "<group>"; };
-		20D8E3DB152B67A3006C7328 /* UIImage+SSToolkitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SSToolkitAdditions.m"; sourceTree = "<group>"; };
-		20D8E3DD152B6825006C7328 /* SSVignetteiPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SSVignetteiPhone.png; sourceTree = "<group>"; };
-		20D8E3DE152B6825006C7328 /* SSVignetteiPhone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SSVignetteiPhone@2x.png"; sourceTree = "<group>"; };
 		20D8E407152B7174006C7328 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		20D8E409152B717C006C7328 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
 		20D8E40A152B7634006C7328 /* ListaPontoDeOnibusController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListaPontoDeOnibusController.h; sourceTree = "<group>"; };
@@ -260,28 +244,8 @@
 			children = (
 				2053E9831549FE0A00B9F3FD /* AppRater */,
 				20EB21A5152CFB790009BC49 /* EGORefreshTable */,
-				2039299015266C1400B791DF /* SSHGroup */,
 			);
 			name = Dependencies;
-			sourceTree = "<group>";
-		};
-		2039299015266C1400B791DF /* SSHGroup */ = {
-			isa = PBXGroup;
-			children = (
-				20D8E3DD152B6825006C7328 /* SSVignetteiPhone.png */,
-				20D8E3DE152B6825006C7328 /* SSVignetteiPhone@2x.png */,
-				20D8E3D7152B678D006C7328 /* UIView+SSToolkitAdditions.h */,
-				20D8E3D8152B678D006C7328 /* UIView+SSToolkitAdditions.m */,
-				20D8E3DA152B67A3006C7328 /* UIImage+SSToolkitAdditions.h */,
-				20D8E3DB152B67A3006C7328 /* UIImage+SSToolkitAdditions.m */,
-				20D8E3D4152B6768006C7328 /* SSDrawingUtilities.h */,
-				20D8E3D5152B6768006C7328 /* SSDrawingUtilities.m */,
-				20D8E3D1152B6753006C7328 /* SSHUDWindow.h */,
-				20D8E3D2152B6753006C7328 /* SSHUDWindow.m */,
-				20D8E3CE152B670C006C7328 /* SSHUDView.h */,
-				20D8E3CF152B670C006C7328 /* SSHUDView.m */,
-			);
-			name = SSHGroup;
 			sourceTree = "<group>";
 		};
 		2053E9831549FE0A00B9F3FD /* AppRater */ = {
@@ -417,6 +381,8 @@
 				20D8E3C8152B63CA006C7328 /* UIViewController+NavigationController.m */,
 				20E3BD7A152DE888002CE5E6 /* UILabel+DetailLabel.h */,
 				20E3BD7B152DE888002CE5E6 /* UILabel+DetailLabel.m */,
+				201A05F216516C8500CCC3B5 /* UIDevice+iPhone.h */,
+				201A05F316516C8500CCC3B5 /* UIDevice+iPhone.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -537,8 +503,6 @@
 				20D8E3C6152B6250006C7328 /* 088-Map@2x.png in Resources */,
 				20D8E3CB152B66A2006C7328 /* 082-Location@2x.png in Resources */,
 				20D8E3CD152B66B0006C7328 /* 082-Location.png in Resources */,
-				20D8E3DF152B6825006C7328 /* SSVignetteiPhone.png in Resources */,
-				20D8E3E0152B6825006C7328 /* SSVignetteiPhone@2x.png in Resources */,
 				20D8E406152B7174006C7328 /* Localizable.strings in Resources */,
 				207086A2152CA88500EADA0F /* 242-Aim.png in Resources */,
 				207086A4152CA8B000EADA0F /* 242-Aim@2x.png in Resources */,
@@ -610,11 +574,6 @@
 				208DD3D5152A2B1100D730F8 /* MKMapView+ZoomOut.m in Sources */,
 				208DD3DA152A2BCD00D730F8 /* Localizacao.m in Sources */,
 				20D8E3C9152B63CA006C7328 /* UIViewController+NavigationController.m in Sources */,
-				20D8E3D0152B670C006C7328 /* SSHUDView.m in Sources */,
-				20D8E3D3152B6753006C7328 /* SSHUDWindow.m in Sources */,
-				20D8E3D6152B6768006C7328 /* SSDrawingUtilities.m in Sources */,
-				20D8E3D9152B678D006C7328 /* UIView+SSToolkitAdditions.m in Sources */,
-				20D8E3DC152B67A3006C7328 /* UIImage+SSToolkitAdditions.m in Sources */,
 				20D8E416152B77DC006C7328 /* PontosPorProximidadeController.m in Sources */,
 				2070869A152CA3ED00EADA0F /* PontoDeOnibusController.m in Sources */,
 				20EB2194152CBB5E0009BC49 /* AnnotationViewFactory.m in Sources */,
@@ -629,6 +588,7 @@
 				774C579A1637438F00AAAF2A /* Veiculo.m in Sources */,
 				774C57A0163744D800AAAF2A /* TempoRealViewController.m in Sources */,
 				201A05B01651563200CCC3B5 /* UIViewController+AutoOrientation.m in Sources */,
+				201A05F416516C8500CCC3B5 /* UIDevice+iPhone.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -699,7 +659,7 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "Busao/BusaoSP-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
@@ -707,7 +667,7 @@
 				PRODUCT_NAME = BusaoSP;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "14D13CDB-840A-49D2-9795-5F2F7CF44995";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = AdHoc;
@@ -755,7 +715,7 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "Busao/BusaoSP-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
@@ -764,7 +724,7 @@
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "14D13CDB-840A-49D2-9795-5F2F7CF44995";
 				SKIP_INSTALL = NO;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = AppStore;
@@ -840,7 +800,7 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "Busao/BusaoSP-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
@@ -848,7 +808,7 @@
 				PRODUCT_NAME = BusaoSP;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "14D13CDB-840A-49D2-9795-5F2F7CF44995";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -874,7 +834,7 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "Busao/BusaoSP-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
@@ -882,7 +842,7 @@
 				PRODUCT_NAME = BusaoSP;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "14D13CDB-840A-49D2-9795-5F2F7CF44995";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

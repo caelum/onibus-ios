@@ -10,16 +10,17 @@
 #import "PontoDeOnibusController.h"
 #import "Onibus.h"
 #import "OnibusViewController.h"
+#import "ParadaDataSource.h"
+#import "Ponto.h"
 
 @interface PontoDeOnibusController ()
 
 @property(nonatomic, strong) UISearchBar *searchBar;
-@property(nonatomic, strong) UISearchDisplayController *searchDisplayController;
+@property(nonatomic, strong) UISearchDisplayController *searchController;
 @property(nonatomic, strong) NSMutableArray *onibusFiltrados;
 @end
 
 @implementation PontoDeOnibusController
-@synthesize pontos, localizacaoAtual, searchBar, searchDisplayController, onibusFiltrados;
 
 - (id)initWithPonto: (Ponto *) ponto
 {
@@ -34,12 +35,13 @@
 - (void)viewDidLoad
 {
     self.searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
-    self.tableView.tableHeaderView = searchBar;
+    self.tableView.tableHeaderView = self.searchBar;
     
-    searchDisplayController = [[UISearchDisplayController alloc] initWithSearchBar:searchBar contentsController:self];
-    searchDisplayController.delegate = self;
-    searchDisplayController.searchResultsDataSource = self;
-    searchDisplayController.searchResultsDelegate = self;
+    self.searchController = [[UISearchDisplayController alloc] initWithSearchBar:self.searchBar
+                                                              contentsController:self];
+    self.searchController.delegate = self;
+    self.searchController.searchResultsDataSource = self;
+    self.searchController.searchResultsDelegate = self;
     
     [self hideSearchView];
     
@@ -50,12 +52,12 @@
 }
 - (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
 {
-    [onibusFiltrados removeAllObjects];
-    for(Ponto *ponto in pontos){
+    [self.onibusFiltrados removeAllObjects];
+    for(Ponto *ponto in self.pontos){
         for(Onibus *onibus in ponto.onibuses){
             BOOL containsString = [onibus.letreiro rangeOfString:searchString options:NSCaseInsensitiveSearch].location != NSNotFound;
             if(containsString){
-                [onibusFiltrados addObject:onibus];
+                [self.onibusFiltrados addObject:onibus];
             }
         }
     }
@@ -65,18 +67,18 @@
     if([self isSearching:tableView]){
         return 1;
     }
-    return [pontos count];
+    return [self.pontos count];
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     if([self isSearching:tableView]){
-        return [onibusFiltrados count];
+        return [self.onibusFiltrados count];
     }
-    Ponto *ponto = [pontos objectAtIndex:section];
+    Ponto *ponto = [self.pontos objectAtIndex:section];
     return [ponto.onibuses count];
 }
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
-    Ponto *ponto = [pontos objectAtIndex:section];
+    Ponto *ponto = [self.pontos objectAtIndex:section];
     return ponto.descricao;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -96,19 +98,20 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     Onibus *onibus = [self buscaOnibus:indexPath paraTableView:tableView];
-    [onibus setPonto:[pontos objectAtIndex:indexPath.section]];
+    [onibus setPonto:[self.pontos objectAtIndex:indexPath.section]];
     
-    OnibusViewController *controller = [[OnibusViewController alloc]initWithOnibus:onibus];
-    [self.navigationController pushViewController:controller animated:YES];
-    
-    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];    
+    [self.onibusController configuraViewParaOnibus:onibus];
+    if([UIDevice iPhone]){
+        [self.navigationController pushViewController:self.onibusController animated:YES];
+    }
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 - (Onibus *)buscaOnibus:(NSIndexPath *)index paraTableView: (UITableView *) tableView{
     if([self isSearching:tableView]){
-        return [onibusFiltrados objectAtIndex:index.row];
+        return [self.onibusFiltrados objectAtIndex:index.row];
     }
-    Ponto *ponto = [pontos objectAtIndex:index.section];
+    Ponto *ponto = [self.pontos objectAtIndex:index.section];
     Onibus *onibus = [ponto.onibuses objectAtIndex:index.row];
     return onibus;            
 }
@@ -122,5 +125,11 @@
     CGRect tableViewBounds = self.tableView.bounds;
     tableViewBounds.origin.y = tableViewBounds.origin.y + self.searchBar.bounds.size.height;
     self.tableView.bounds = tableViewBounds;
+}
+- (OnibusViewController *)onibusController{
+    if(!_onibusController){
+        _onibusController = [[OnibusViewController alloc] init];
+    }
+    return _onibusController;
 }
 @end

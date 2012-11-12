@@ -13,41 +13,46 @@
 #import "TempoRealViewController.h"
 #import "Ponto.h"
 #import "UIViewController+AutoOrientation.h"
-@interface OnibusViewController () {
-    Onibus* onibus;
-    SSHUDView *loading;
-}
+@interface OnibusViewController ()
+
+@property(unsafe_unretained, nonatomic) IBOutlet UILabel *letreiro;
+@property(unsafe_unretained, nonatomic) IBOutlet UILabel *sentido;
+@property(unsafe_unretained, nonatomic) IBOutlet UILabel *operacaoDiaUtil;
+@property(unsafe_unretained, nonatomic) IBOutlet UILabel *operacaoSabado;
+@property(unsafe_unretained, nonatomic) IBOutlet UILabel *operacaoDomingo;
+
+@property(nonatomic, strong) Onibus* onibus;
+@property(nonatomic, strong) SSHUDView *loading;
+@property(nonatomic, strong) ParadaDataSource *paradasDataSource;
+@property(nonatomic, strong) TempoRealDataSource *tempoRealDataSource;
+
+@property(nonatomic, strong) UIPopoverController *masterPopoverController;
 @end
 
 @implementation OnibusViewController
-
-- (id)initWithOnibus: (Onibus*) _onibus
-{
-    self = [super initWithNibName:@"OnibusViewController"
-                           bundle:[NSBundle mainBundle]];
-    if (self) {
-        onibus = _onibus;
-    }
-    return self;
-}
-
 - (void)viewWillAppear:(BOOL)animated{
     [self changeViewIfOnLandscape:self.interfaceOrientation];
 }
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    [self.letreiro setText:[onibus letreiro]];
-    [self.sentido setText:[[onibus sentido] description ]];
-    [self.operacaoDiaUtil setText: [[onibus operacao] horarioDiaUtil ] ];
-    [self.operacaoSabado setText: [[onibus operacao] horarioSabado ] ];
-    [self.operacaoDomingo setText: [[onibus operacao] horarioDomingo ] ];
-    
-
+- (void)viewDidLoad {
+    [self configuraViewParaOnibus:self.onibus];
 }
-
-- (void) recebeParadas: (NSArray *) paradas paraOnibus: (Onibus *) _onibus {
-    [loading completeQuicklyWithTitle:NSLocalized(@"pronto")];
+- (void) configuraViewParaOnibus: (Onibus *) onibus {
+    self.onibus = onibus;
+    
+    if (self.masterPopoverController) {
+        [self.masterPopoverController dismissPopoverAnimated:YES];
+    }
+    
+    if([self isViewLoaded]){
+        [self.letreiro setText:[onibus letreiro]];
+        [self.sentido setText:[[onibus sentido] description]];
+        [self.operacaoDiaUtil setText: [[onibus operacao] horarioDiaUtil ] ];
+        [self.operacaoSabado setText: [[onibus operacao] horarioSabado ] ];
+        [self.operacaoDomingo setText: [[onibus operacao] horarioDomingo ] ];
+    }
+}
+- (void) recebeParadas: (NSArray *) paradas paraOnibus: (Onibus *) onibus {
+    [self.loading completeQuicklyWithTitle:NSLocalized(@"pronto")];
     
     
     ParadasViewController *paradasController = [[ParadasViewController alloc]
@@ -58,16 +63,16 @@
     [self.navigationController pushViewController:paradasController animated:YES];
 }
 - (void) problemaParaBuscarParadas {
-    [loading failQuicklyWithTitle:NSLocalized(@"problema_buscando_paradas")];
+    [self.loading failQuicklyWithTitle:NSLocalized(@"problema_buscando_paradas")];
 }
 
-- (void) recebeLocalizacoes: (NSArray *) localizacoes paraOnibus: (Onibus *) __onibus {
-    [loading completeQuicklyWithTitle:NSLocalized(@"pronto")];
+- (void) recebeLocalizacoes: (NSArray *) localizacoes paraOnibus: (Onibus *) onibus {
+    [self.loading completeQuicklyWithTitle:NSLocalized(@"pronto")];
     
     if ([localizacoes count] >0) {
         TempoRealViewController *controller = [[TempoRealViewController alloc]
                                                initWithLocalizacoes:localizacoes
-                                               doOnibus: __onibus];
+                                               doOnibus: onibus];
         
         [self.navigationController pushViewController:controller animated:YES];
         
@@ -83,41 +88,43 @@
     
 }
 - (void) problemaParaBuscarLocalizacoes {
-    [loading failQuicklyWithTitle:@"Problema buscando localizações atuais"];
-}
-
-- (void)viewDidUnload
-{
-    [self setLetreiro:nil];
-    [self setSentido:nil];
-    [self setOperacaoDiaUtil:nil];
-    [self setOperacaoSabado:nil];
-    [self setOperacaoDomingo:nil];
-    [self setTempoRealDataSource:nil];
-    [self setParadasDataSource:nil];
-    [super viewDidUnload];
+    [self.loading failQuicklyWithTitle:@"Problema buscando localizações atuais"];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
-
-
 - (IBAction)mostraLocalizacaoEmTempoReal:(id)sender {
     self.tempoRealDataSource = [[TempoRealDataSource alloc] initWithDelegate:self];
     
-    loading = [[SSHUDView alloc] initWithTitle:@"Buscando localizações atuais"];
-    [loading show];
+    self.loading = [[SSHUDView alloc] initWithTitle:@"Buscando localizações atuais"];
+    [self.loading show];
 
-    [self.tempoRealDataSource buscaLocalizacoesParaOnibus:onibus];
+    [self.tempoRealDataSource buscaLocalizacoesParaOnibus:self.onibus];
 }
 
 - (IBAction)mostraPontos:(id)sender {
     self.paradasDataSource = [[ParadaDataSource alloc] initWithDelegate:self];
     
-    loading = [[SSHUDView alloc] initWithTitle:NSLocalized(@"buscando_paradas")];
-    [loading show];
+    self.loading = [[SSHUDView alloc] initWithTitle:NSLocalized(@"buscando_paradas")];
+    [self.loading show];
 
-    [self.paradasDataSource buscaParadasParaOnibus:onibus];
+    [self.paradasDataSource buscaParadasParaOnibus:self.onibus];
+}
+- (void) setOnibus: (Onibus *) onibus {
+    _onibus = onibus;
+}
+- (void)splitViewController:(UISplitViewController *)splitController
+     willHideViewController:(UIViewController *)viewController
+          withBarButtonItem:(UIBarButtonItem *)barButtonItem
+       forPopoverController:(UIPopoverController *)popoverController{
+    barButtonItem.title = @"Master";
+    [self.navigationItem setLeftBarButtonItem:barButtonItem animated:YES];
+    self.masterPopoverController = popoverController;
+}
+
+- (void)splitViewController:(UISplitViewController *)splitController willShowViewController:(UIViewController *)viewController invalidatingBarButtonItem:(UIBarButtonItem *)barButtonItem{
+    [self.navigationItem setLeftBarButtonItem:nil animated:YES];
+    self.masterPopoverController = nil;
 }
 @end

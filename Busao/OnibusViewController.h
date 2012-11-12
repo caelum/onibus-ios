@@ -12,21 +12,10 @@
 #import "TempoRealDataSource.h"
 
 
-@interface OnibusViewController : UIViewController <ParadasDelegate, TempoRealDelegate>
+@interface OnibusViewController : UIViewController <UISplitViewControllerDelegate, ParadasDelegate, TempoRealDelegate>
 
-@property (unsafe_unretained, nonatomic) IBOutlet UILabel *letreiro;
-@property (unsafe_unretained, nonatomic) IBOutlet UILabel *sentido;
-@property (unsafe_unretained, nonatomic) IBOutlet UILabel *operacaoDiaUtil;
-@property (unsafe_unretained, nonatomic) IBOutlet UILabel *operacaoSabado;
-@property (unsafe_unretained, nonatomic) IBOutlet UILabel *operacaoDomingo;
-
-@property(nonatomic, strong) ParadaDataSource *paradasDataSource;
-@property(nonatomic, strong) TempoRealDataSource *tempoRealDataSource;
-
-- (IBAction)mostraPontos:(id)sender;
-- (IBAction)mostraLocalizacaoEmTempoReal:(id)sender;
-
-- (id)initWithOnibus: (Onibus*) _onibus;
+- (void) setOnibus: (Onibus *) onibus;
+- (void) configuraViewParaOnibus: (Onibus *) onibus;
 
 
 @end
