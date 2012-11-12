@@ -9,7 +9,6 @@
 #import "TempoRealViewController.h"
 #import "AnnotationViewFactory.h"
 #import "UILabel+DetailLabel.h"
-
 @interface TempoRealViewController ()
 
 @property(nonatomic, strong) NSArray* localizacoes;

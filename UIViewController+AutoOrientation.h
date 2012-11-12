@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface UIViewController (AutoOrientation)
-
+- (void) changeViewIfOnLandscape: (UIInterfaceOrientation) orientation;
 @end

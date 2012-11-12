@@ -34,7 +34,7 @@
 }
 
 -(NSString *)description{
-    return [NSString stringWithFormat:@"%d - %d", latitude, longitude];
+    return [NSString stringWithFormat:@"%f - %f", latitude, longitude];
 }
 
 - (BOOL)isEqual:(id)other {

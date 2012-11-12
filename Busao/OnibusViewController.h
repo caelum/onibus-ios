@@ -14,11 +14,11 @@
 
 @interface OnibusViewController : UIViewController <ParadasDelegate, TempoRealDelegate>
 
-@property (strong, nonatomic) IBOutlet UILabel *letreiro;
-@property (strong, nonatomic) IBOutlet UILabel *sentido;
-@property (strong, nonatomic) IBOutlet UILabel *operacaoDiaUtil;
-@property (strong, nonatomic) IBOutlet UILabel *operacaoSabado;
-@property (strong, nonatomic) IBOutlet UILabel *operacaoDomingo;
+@property (unsafe_unretained, nonatomic) IBOutlet UILabel *letreiro;
+@property (unsafe_unretained, nonatomic) IBOutlet UILabel *sentido;
+@property (unsafe_unretained, nonatomic) IBOutlet UILabel *operacaoDiaUtil;
+@property (unsafe_unretained, nonatomic) IBOutlet UILabel *operacaoSabado;
+@property (unsafe_unretained, nonatomic) IBOutlet UILabel *operacaoDomingo;
 
 @property(nonatomic, strong) ParadaDataSource *paradasDataSource;
 @property(nonatomic, strong) TempoRealDataSource *tempoRealDataSource;

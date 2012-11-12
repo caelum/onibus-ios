@@ -12,7 +12,7 @@
 #import "ParadasViewController.h"
 #import "TempoRealViewController.h"
 #import "Ponto.h"
-
+#import "UIViewController+AutoOrientation.h"
 @interface OnibusViewController () {
     Onibus* onibus;
     SSHUDView *loading;
@@ -20,14 +20,6 @@
 @end
 
 @implementation OnibusViewController
-
-@synthesize letreiro;
-@synthesize sentido;
-@synthesize operacaoDiaUtil;
-@synthesize operacaoSabado;
-@synthesize operacaoDomingo;
-@synthesize paradasDataSource;
-@synthesize tempoRealDataSource;
 
 - (id)initWithOnibus: (Onibus*) _onibus
 {
@@ -39,15 +31,17 @@
     return self;
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+    [self changeViewIfOnLandscape:self.interfaceOrientation];
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    [letreiro setText:[onibus letreiro]];
-    [sentido setText:[[onibus sentido] description ]];
-    [operacaoDiaUtil setText: [[onibus operacao] horarioDiaUtil ] ];
-    [operacaoSabado setText: [[onibus operacao] horarioSabado ] ];
-    [operacaoDomingo setText: [[onibus operacao] horarioDomingo ] ];
+    [self.letreiro setText:[onibus letreiro]];
+    [self.sentido setText:[[onibus sentido] description ]];
+    [self.operacaoDiaUtil setText: [[onibus operacao] horarioDiaUtil ] ];
+    [self.operacaoSabado setText: [[onibus operacao] horarioSabado ] ];
+    [self.operacaoDomingo setText: [[onibus operacao] horarioDomingo ] ];
     
 
 }
@@ -115,7 +109,7 @@
     loading = [[SSHUDView alloc] initWithTitle:@"Buscando localizações atuais"];
     [loading show];
 
-    [tempoRealDataSource buscaLocalizacoesParaOnibus:onibus];
+    [self.tempoRealDataSource buscaLocalizacoesParaOnibus:onibus];
 }
 
 - (IBAction)mostraPontos:(id)sender {
@@ -124,6 +118,6 @@
     loading = [[SSHUDView alloc] initWithTitle:NSLocalized(@"buscando_paradas")];
     [loading show];
 
-    [paradasDataSource buscaParadasParaOnibus:onibus];
+    [self.paradasDataSource buscaParadasParaOnibus:onibus];
 }
 @end
