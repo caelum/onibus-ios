@@ -17,48 +17,36 @@
 @property (nonatomic, strong) NSArray *paradas;
 @property (nonatomic, strong) Localizacao *localizacao;
 @property (nonatomic, strong) Onibus *onibus;
-- (void) adicionaPontos;
-- (BOOL)mesmaParadaParaLocalizacao: (Parada *) parada;
 @end
 
 @implementation ParadasViewController
-@synthesize mapView, paradas, localizacao, onibus;
 
--(id)initWithParadas: (NSArray *) _paradas doOnibus: (Onibus *) _onibus paraLocalizacao: (Localizacao *) _localizacao {
+-(id)initWithParadas: (NSArray *) paradas doOnibus: (Onibus *) onibus paraLocalizacao: (Localizacao *) localizacao {
     self = [super init];
     if (self) {
         self.mapView = [[MKMapView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]];
         self.mapView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-        self.paradas = _paradas;
-        self.localizacao = _localizacao;
-        self.onibus = _onibus;
+        self.paradas = paradas;
+        self.localizacao = localizacao;
+        self.onibus = onibus;
         self.title = NSLocalized(@"itinerario");
     }
     return self;
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad{
     self.mapView.delegate = self;
     [self adicionaPontos];
-    self.view = mapView;
-    [self.view addSubview:[UILabel detailLabelWithText:onibus.letreiro]];
+    [self.view addSubview:self.mapView];
+    [self.view addSubview:[UILabel detailLabelWithText:self.onibus.letreiro]];
 }
-
-- (void)viewDidUnload
-{
-    [self setMapView:nil];
-    [super viewDidUnload];
-}
-- (void) adicionaPontos {    
-    for (id<MKAnnotation> local in paradas) {
-        [mapView addAnnotation:local];
-    }
+- (void) adicionaPontos {
+    [self.mapView addAnnotations:self.paradas];
     [self.mapView zoomOut];
 }
 
-- (MKAnnotationView *)mapView:(MKMapView *)_mapView viewForAnnotation:(id <MKAnnotation>)annotation {   
-    MKAnnotationView *annotationView = [AnnotationViewFactory createViewForAnnotation:annotation inMapView:_mapView];
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation {
+    MKAnnotationView *annotationView = [AnnotationViewFactory createViewForAnnotation:annotation inMapView:self.mapView];
     
     if([annotation isKindOfClass:[Parada class]]){
         if([self mesmaParadaParaLocalizacao: annotation]){
@@ -70,10 +58,7 @@
     return annotationView;
 }
 - (BOOL)mesmaParadaParaLocalizacao: (Parada *) parada {
-    if (parada.localizacao.latitude == localizacao.latitude && parada.localizacao.longitude == localizacao.longitude) {
-        return YES;
-    }
-    return NO;
+    return [self.localizacao isEqual:parada.localizacao];
 }
 -(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation{
     return YES;
