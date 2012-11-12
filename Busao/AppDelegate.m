@@ -21,17 +21,15 @@
 @end
 
 @implementation AppDelegate
-@synthesize listaDeOnibus, onibusDisponiveis;
-@synthesize window = _window;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    listaDeOnibus = [[ListaPontoDeOnibusController alloc] init];
-    onibusDisponiveis = [[PontosPorProximidadeController alloc] init];
+    self.listaDeOnibus = [[ListaPontoDeOnibusController alloc] init];
+    self.onibusDisponiveis = [[PontosPorProximidadeController alloc] init];
     
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
-    tabBarController.viewControllers = [NSArray arrayWithObjects:[listaDeOnibus comNavigation], [onibusDisponiveis comNavigation], nil];
+    tabBarController.viewControllers = @[[self.listaDeOnibus comNavigation], [self.onibusDisponiveis comNavigation]];
        
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = tabBarController;
