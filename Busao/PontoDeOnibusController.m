@@ -12,6 +12,8 @@
 #import "OnibusViewController.h"
 #import "ParadaDataSource.h"
 #import "Ponto.h"
+#import "DetalhesDoOnibusController.h"
+
 
 @interface PontoDeOnibusController ()
 
@@ -95,15 +97,17 @@
     cell.detailTextLabel.text = [[onibus sentido] description];
     return cell;
 }
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     Onibus *onibus = [self buscaOnibus:indexPath paraTableView:tableView];
     [onibus setPonto:[self.pontos objectAtIndex:indexPath.section]];
     
-    [self.onibusController configuraViewParaOnibus:onibus];
-    if([UIDevice iPhone]){
-        [self.navigationController pushViewController:self.onibusController animated:YES];
-    }
+//    [self.onibusController configuraViewParaOnibus:onibus];
+//    if([UIDevice iPhone]){
+//        [self.navigationController pushViewController:self.onibusController animated:YES];
+//    }
+    [self.navigationController pushViewController:[[DetalhesDoOnibusController alloc] initWithOnibus:onibus andLocalizacao:self.localizacaoAtual] animated:YES];
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 

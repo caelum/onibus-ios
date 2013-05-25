@@ -11,6 +11,7 @@
 #import "Operacao.h"
 
 @class Ponto;
+
 @interface Onibus : NSObject
 
 @property(nonatomic, readonly) int identificador;

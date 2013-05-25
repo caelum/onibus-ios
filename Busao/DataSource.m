@@ -17,6 +17,7 @@
 @end
 
 @implementation DataSource
+
 @synthesize connection, mutableData, delegate;
 
 - (id)initWithDelegate: (id<DataSourceDelegate>) _delegate {

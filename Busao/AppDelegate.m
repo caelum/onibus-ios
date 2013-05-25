@@ -62,6 +62,7 @@
     tabBarController.viewControllers = @[[listaDeOnibus comNavigation], [onibusDisponiveis comNavigation]];
     self.window.rootViewController = tabBarController;
 }
+
 -(void)applicationWillEnterForeground:(UIApplication *)application{
     [Appirater appEnteredForeground:YES];
 }

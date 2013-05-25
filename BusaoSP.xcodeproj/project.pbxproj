@@ -79,6 +79,9 @@
 		774C57A0163744D800AAAF2A /* TempoRealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 774C579F163744D800AAAF2A /* TempoRealViewController.m */; };
 		7794BE671632215300E880F9 /* OnibusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7794BE651632215300E880F9 /* OnibusViewController.m */; };
 		7794BE681632215300E880F9 /* OnibusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7794BE661632215300E880F9 /* OnibusViewController.xib */; };
+		77C0A5B317501B6D005D4823 /* DetalhesDoOnibusController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C0A5B117501B6D005D4823 /* DetalhesDoOnibusController.m */; };
+		77C0A5B417501B6D005D4823 /* DetalhesDoOnibusController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77C0A5B217501B6D005D4823 /* DetalhesDoOnibusController.xib */; };
+		77C0A5B817514733005D4823 /* pin-busstop-transp.png in Resources */ = {isa = PBXBuildFile; fileRef = 77C0A5B717514733005D4823 /* pin-busstop-transp.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -189,6 +192,10 @@
 		7794BE641632215300E880F9 /* OnibusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnibusViewController.h; sourceTree = "<group>"; };
 		7794BE651632215300E880F9 /* OnibusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnibusViewController.m; sourceTree = "<group>"; };
 		7794BE661632215300E880F9 /* OnibusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OnibusViewController.xib; sourceTree = "<group>"; };
+		77C0A5B017501B6D005D4823 /* DetalhesDoOnibusController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetalhesDoOnibusController.h; sourceTree = "<group>"; };
+		77C0A5B117501B6D005D4823 /* DetalhesDoOnibusController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetalhesDoOnibusController.m; sourceTree = "<group>"; };
+		77C0A5B217501B6D005D4823 /* DetalhesDoOnibusController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetalhesDoOnibusController.xib; sourceTree = "<group>"; };
+		77C0A5B717514733005D4823 /* pin-busstop-transp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pin-busstop-transp.png"; sourceTree = "<group>"; };
 		946F015939FB4246B6A1EA08 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		BDDFF3F780CE4FAEBF6C9AE7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -366,6 +373,9 @@
 				201A05AB1651551E00CCC3B5 /* OnibusViewController-landscape.xib */,
 				774C579E163744D800AAAF2A /* TempoRealViewController.h */,
 				774C579F163744D800AAAF2A /* TempoRealViewController.m */,
+				77C0A5B017501B6D005D4823 /* DetalhesDoOnibusController.h */,
+				77C0A5B117501B6D005D4823 /* DetalhesDoOnibusController.m */,
+				77C0A5B217501B6D005D4823 /* DetalhesDoOnibusController.xib */,
 			);
 			name = Telas;
 			sourceTree = "<group>";
@@ -390,6 +400,7 @@
 		20D8E3C1152B6236006C7328 /* Icones */ = {
 			isa = PBXGroup;
 			children = (
+				77C0A5B717514733005D4823 /* pin-busstop-transp.png */,
 				20EB21DE152D283E0009BC49 /* pin-current.png */,
 				20EB21DC152D26660009BC49 /* pin-bus-selected.png */,
 				20EB21D6152D24250009BC49 /* pin-bus.png */,
@@ -533,6 +544,8 @@
 				20B974FA15360CA2008DAD44 /* SemGps.xib in Resources */,
 				7794BE681632215300E880F9 /* OnibusViewController.xib in Resources */,
 				201A05AC1651551E00CCC3B5 /* OnibusViewController-landscape.xib in Resources */,
+				77C0A5B417501B6D005D4823 /* DetalhesDoOnibusController.xib in Resources */,
+				77C0A5B817514733005D4823 /* pin-busstop-transp.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,6 +602,7 @@
 				774C57A0163744D800AAAF2A /* TempoRealViewController.m in Sources */,
 				201A05B01651563200CCC3B5 /* UIViewController+AutoOrientation.m in Sources */,
 				201A05F416516C8500CCC3B5 /* UIDevice+iPhone.m in Sources */,
+				77C0A5B317501B6D005D4823 /* DetalhesDoOnibusController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
