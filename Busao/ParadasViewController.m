@@ -38,7 +38,7 @@
     self.mapView.delegate = self;
     [self adicionaPontos];
     [self.view addSubview:self.mapView];
-    [self.view addSubview:[UILabel detailLabelWithText:self.onibus.letreiro]];
+    [self.view addSubview:[UILabel detailLabelWithText:self.onibus.letreiro withCentralization:NO]];
 }
 - (void) adicionaPontos {
     [self.mapView addAnnotations:self.paradas];

@@ -40,7 +40,7 @@
     [super viewDidLoad];
     self.mapView.delegate = self;
     self.view = mapView;
-    [self.view addSubview:[UILabel detailLabelWithText: self.onibus.letreiro ]];
+    [self.view addSubview:[UILabel detailLabelWithText: self.onibus.letreiro withCentralization:NO]];
     
     for (id<MKAnnotation> local in self.localizacoes) {
         [mapView addAnnotation:local];

@@ -57,7 +57,7 @@
     [self.mapView zoomOut];
     
     self.view = mapView;
-    [self.view addSubview:[UILabel detailLabelWithText:NSLocalized(@"pontos_proximos_pino")]];
+    [self.view addSubview:[UILabel detailLabelWithText:NSLocalized(@"pontos_proximos_pino") withCentralization:YES]];
 }
 - (void) verificaGps {
     if([GPSManager isGPSDisabled]){

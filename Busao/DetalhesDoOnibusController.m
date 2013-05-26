@@ -58,9 +58,30 @@
     self.view = self.mapView;
     self.tempoRealDatasources = [[NSMutableArray alloc] init];
     
-    if ([self.onibuses count] == 1) {
-        Onibus *onibus = [self.onibuses objectAtIndex:0];
-        [self.view addSubview:[UILabel detailLabelWithText: onibus.letreiro ]];
+    CGRect frame = [[UIScreen mainScreen] applicationFrame];
+    CGRect rectFundo = CGRectMake(0, 0, frame.size.width, 30);
+    UIView *fundo = [[UIView alloc] initWithFrame:rectFundo];
+    fundo.backgroundColor = [UIColor colorWithRed:0.0 green:0.1 blue:0.1 alpha:0.75];
+    [self.view addSubview:fundo];
+    
+    for (int i=0; i< [self.onibuses count]; i++) {
+        Onibus *onibus = [self.onibuses objectAtIndex:i];
+        UIImage *imagem = [self.imagemsVeiculos objectAtIndex:i];
+        
+        int larguraImagem = imagem.size.width;
+        int larguraLabel = 60;
+        int larguraEntreImagemELabel = 5;
+        int larguraTotal = larguraEntreImagemELabel + larguraLabel + larguraImagem;
+        
+        UILabel *label = [UILabel labelWithText:onibus.letreiro andStartingAtX:imagem.size.width+5+(i*larguraTotal) andY:0];
+        label.backgroundColor = [UIColor colorWithRed:0.0 green:0.1 blue:0.1 alpha:0.0];
+        
+
+        UIImageView *imageView = [[UIImageView alloc] initWithFrame: CGRectMake(5+i*larguraTotal, 0, imagem.size.width, imagem.size.height)];
+        [imageView setImage:imagem];
+        [self.view addSubview:imageView];
+        
+        [self.view addSubview:label];
     }
     
     [self buscaDetalhesDoOnibus];

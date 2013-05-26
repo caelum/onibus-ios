@@ -10,6 +10,8 @@
 
 @interface UILabel (DetailLabel)
 
-+ (UILabel *) detailLabelWithText: (NSString *) texto;
++ (UILabel *) detailLabelWithText: (NSString *) texto withCentralization: (BOOL) centralized;
+
++(UILabel*) labelWithText: (NSString*) text andStartingAtX: (int) x andY: (int) y;
     
 @end

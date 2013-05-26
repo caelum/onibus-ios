@@ -32,7 +32,7 @@
     if (self) {     
         self.pontos = [NSArray arrayWithObject:ponto];
         self.navigationItem.title = NSLocalized(@"onibus");
-        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Tempo real" style:UIBarButtonItemStyleBordered target:self action:@selector(irParaMapa)];
+
     }
     return self;
 }
@@ -55,9 +55,17 @@
     
     self.onibusFiltrados = [[NSMutableArray alloc] init];
     self.onibusSelecionados = [[NSMutableArray alloc] init];
-
+    
     self.tableView.allowsMultipleSelection = YES;
 }
+
+-(void) viewDidAppear:(BOOL)animated {
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Tempo real"
+                                                                              style:UIBarButtonItemStyleBordered
+                                                                             target:self
+                                                                             action:@selector(irParaMapa)];
+}
+
 - (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
 {
     [self.onibusFiltrados removeAllObjects];
