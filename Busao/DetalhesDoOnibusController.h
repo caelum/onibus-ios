@@ -15,6 +15,6 @@
 
 @interface DetalhesDoOnibusController : UIViewController <MKMapViewDelegate,ParadasDelegate, TempoRealDelegate>
 
-- (id)initWithOnibus: (Onibus*) onibus andLocalizacao: (Localizacao*) localizacao;
+- (id)initWithOnibuses: (NSArray*) onibuses andLocalizacao: (Localizacao*) localizacao;
 
 @end

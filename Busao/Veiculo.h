@@ -13,5 +13,6 @@
 
 @property(nonatomic, strong) Localizacao* localizacao;
 @property(nonatomic) int deficentes;
+@property(nonatomic) int onibus;
 
 @end

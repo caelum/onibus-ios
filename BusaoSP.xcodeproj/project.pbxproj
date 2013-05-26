@@ -82,6 +82,10 @@
 		77C0A5B317501B6D005D4823 /* DetalhesDoOnibusController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C0A5B117501B6D005D4823 /* DetalhesDoOnibusController.m */; };
 		77C0A5B417501B6D005D4823 /* DetalhesDoOnibusController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77C0A5B217501B6D005D4823 /* DetalhesDoOnibusController.xib */; };
 		77C0A5B817514733005D4823 /* pin-busstop-transp.png in Resources */ = {isa = PBXBuildFile; fileRef = 77C0A5B717514733005D4823 /* pin-busstop-transp.png */; };
+		77C0A5BE1751B0A9005D4823 /* pin-bus-orange.png in Resources */ = {isa = PBXBuildFile; fileRef = 77C0A5BA1751B0A9005D4823 /* pin-bus-orange.png */; };
+		77C0A5BF1751B0A9005D4823 /* pin-bus-red.png in Resources */ = {isa = PBXBuildFile; fileRef = 77C0A5BB1751B0A9005D4823 /* pin-bus-red.png */; };
+		77C0A5C01751B0A9005D4823 /* pin-bus-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 77C0A5BC1751B0A9005D4823 /* pin-bus-yellow.png */; };
+		77C0A5C21751B0C9005D4823 /* pin-bus-green.png in Resources */ = {isa = PBXBuildFile; fileRef = 77C0A5C11751B0C9005D4823 /* pin-bus-green.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -196,6 +200,10 @@
 		77C0A5B117501B6D005D4823 /* DetalhesDoOnibusController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetalhesDoOnibusController.m; sourceTree = "<group>"; };
 		77C0A5B217501B6D005D4823 /* DetalhesDoOnibusController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetalhesDoOnibusController.xib; sourceTree = "<group>"; };
 		77C0A5B717514733005D4823 /* pin-busstop-transp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pin-busstop-transp.png"; sourceTree = "<group>"; };
+		77C0A5BA1751B0A9005D4823 /* pin-bus-orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pin-bus-orange.png"; sourceTree = "<group>"; };
+		77C0A5BB1751B0A9005D4823 /* pin-bus-red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pin-bus-red.png"; sourceTree = "<group>"; };
+		77C0A5BC1751B0A9005D4823 /* pin-bus-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pin-bus-yellow.png"; sourceTree = "<group>"; };
+		77C0A5C11751B0C9005D4823 /* pin-bus-green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pin-bus-green.png"; sourceTree = "<group>"; };
 		946F015939FB4246B6A1EA08 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		BDDFF3F780CE4FAEBF6C9AE7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -400,6 +408,10 @@
 		20D8E3C1152B6236006C7328 /* Icones */ = {
 			isa = PBXGroup;
 			children = (
+				77C0A5C11751B0C9005D4823 /* pin-bus-green.png */,
+				77C0A5BA1751B0A9005D4823 /* pin-bus-orange.png */,
+				77C0A5BB1751B0A9005D4823 /* pin-bus-red.png */,
+				77C0A5BC1751B0A9005D4823 /* pin-bus-yellow.png */,
 				77C0A5B717514733005D4823 /* pin-busstop-transp.png */,
 				20EB21DE152D283E0009BC49 /* pin-current.png */,
 				20EB21DC152D26660009BC49 /* pin-bus-selected.png */,
@@ -546,6 +558,10 @@
 				201A05AC1651551E00CCC3B5 /* OnibusViewController-landscape.xib in Resources */,
 				77C0A5B417501B6D005D4823 /* DetalhesDoOnibusController.xib in Resources */,
 				77C0A5B817514733005D4823 /* pin-busstop-transp.png in Resources */,
+				77C0A5BE1751B0A9005D4823 /* pin-bus-orange.png in Resources */,
+				77C0A5BF1751B0A9005D4823 /* pin-bus-red.png in Resources */,
+				77C0A5C01751B0A9005D4823 /* pin-bus-yellow.png in Resources */,
+				77C0A5C21751B0C9005D4823 /* pin-bus-green.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

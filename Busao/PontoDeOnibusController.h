@@ -18,4 +18,6 @@
 
 - (id)initWithPonto: (Ponto *) ponto;
 - (BOOL) isSearching:(UITableView *)tableView;
+
+-(void) irParaMapa;
 @end

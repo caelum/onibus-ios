@@ -20,6 +20,8 @@
 @property(nonatomic, strong) UISearchBar *searchBar;
 @property(nonatomic, strong) UISearchDisplayController *searchController;
 @property(nonatomic, strong) NSMutableArray *onibusFiltrados;
+@property(nonatomic, strong) NSMutableArray *onibusSelecionados;
+
 @end
 
 @implementation PontoDeOnibusController
@@ -30,6 +32,7 @@
     if (self) {     
         self.pontos = [NSArray arrayWithObject:ponto];
         self.navigationItem.title = NSLocalized(@"onibus");
+        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Tempo real" style:UIBarButtonItemStyleBordered target:self action:@selector(irParaMapa)];
     }
     return self;
 }
@@ -51,6 +54,9 @@
     self.tableView.dataSource = self;
     
     self.onibusFiltrados = [[NSMutableArray alloc] init];
+    self.onibusSelecionados = [[NSMutableArray alloc] init];
+
+    self.tableView.allowsMultipleSelection = YES;
 }
 - (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
 {
@@ -93,22 +99,43 @@
     }
     Onibus *onibus = [self buscaOnibus:indexPath paraTableView:tableView];
     
+    if ([self.onibusSelecionados containsObject:onibus]) {
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    } else {
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    }
+    
     cell.textLabel.text = [onibus letreiro];
     cell.detailTextLabel.text = [[onibus sentido] description];
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    Onibus *onibus = [self buscaOnibus:indexPath paraTableView:tableView];
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    Onibus *onibus = [self buscaOnibus:indexPath paraTableView:self.tableView];
     [onibus setPonto:[self.pontos objectAtIndex:indexPath.section]];
     
-//    [self.onibusController configuraViewParaOnibus:onibus];
-//    if([UIDevice iPhone]){
-//        [self.navigationController pushViewController:self.onibusController animated:YES];
-//    }
-    [self.navigationController pushViewController:[[DetalhesDoOnibusController alloc] initWithOnibus:onibus andLocalizacao:self.localizacaoAtual] animated:YES];
-    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if (!self.onibusSelecionados) {
+        self.onibusSelecionados = [[NSMutableArray alloc] init];
+    }
+    
+    UITableViewCell *selecionada = [tableView cellForRowAtIndexPath:indexPath];
+    if (selecionada.accessoryType == UITableViewCellAccessoryCheckmark) {
+        selecionada.accessoryType = UITableViewCellAccessoryNone;
+        [self.onibusSelecionados removeObject:onibus];
+        
+    } else {
+        selecionada.accessoryType = UITableViewCellAccessoryCheckmark;
+        [self.onibusSelecionados addObject:onibus];
+    }
+}
+
+-(void) irParaMapa {
+    NSArray *linhasSelecionadas = [self.tableView indexPathsForSelectedRows];
+    
+    if ([linhasSelecionadas count] > 0) {
+        [self.navigationController pushViewController:[[DetalhesDoOnibusController alloc] initWithOnibuses:self.onibusSelecionados andLocalizacao:self.localizacaoAtual] animated:YES];
+    }
+    
 }
 
 - (Onibus *)buscaOnibus:(NSIndexPath *)index paraTableView: (UITableView *) tableView{

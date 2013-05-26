@@ -40,8 +40,12 @@
         UITabBarItem *listaItem = [[UITabBarItem alloc] initWithTitle:NSLocalized(@"localizacao")
                                                                 image:[UIImage imageNamed:@"082-Location.png"]
                                                                   tag:1];
+        
+
         self.tabBarItem = listaItem;
         self.navigationItem.title = NSLocalized(@"pontos_proximos");
+        
+        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Ver no mapa" style:UIBarButtonItemStylePlain target:self action:@selector(irParaMapa)];
     }
     return self;
 }

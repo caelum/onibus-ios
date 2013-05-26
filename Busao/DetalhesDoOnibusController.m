@@ -19,27 +19,33 @@
 
 @property(nonatomic, strong) MKMapView* mapView;
 
-@property(nonatomic, strong) Onibus* onibus;
-@property(nonatomic, strong) TempoRealDataSource *tempoRealDataSource;
-@property(nonatomic, strong) ParadaDataSource *paradasDataSource;
+@property(nonatomic, strong) NSArray* onibuses;
 @property(nonatomic, strong) Localizacao *localizacao;
+@property(nonatomic, strong) ParadaDataSource *paradasDataSource;
+@property(nonatomic, strong) NSMutableArray *tempoRealDatasources;
 
-@property(nonatomic, strong) UIImage *imagemVeiculo;
+@property(nonatomic, strong) NSArray *imagemsVeiculos;
 @property(nonatomic, strong) UIImage *imagemParada;
 
 @end
 
 @implementation DetalhesDoOnibusController
 
-- (id)initWithOnibus: (Onibus*) onibus andLocalizacao: (Localizacao*) localizacao
+- (id)initWithOnibuses: (NSArray*) onibuses andLocalizacao: (Localizacao*) localizacao
 {
     self = [super init];
     if (self) {
         self.mapView = [[MKMapView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]];
         self.mapView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-        self.onibus = onibus;
+        self.onibuses = onibuses;
         self.localizacao = localizacao;
-        self.imagemVeiculo = [UIImage imageNamed:@"pin-bus-selected.png"];
+        
+        self.imagemsVeiculos = @[
+                                 [UIImage imageNamed:@"pin-bus-green.png"],
+                                 [UIImage imageNamed:@"pin-bus-yellow.png"],
+                                 [UIImage imageNamed:@"pin-bus-orange.png"],
+                                 [UIImage imageNamed:@"pin-bus-red.png"]
+                                ];
         self.imagemParada = [UIImage imageNamed:@"pin-busstop-transp.png"];
     }
     return self;
@@ -50,7 +56,13 @@
     [super viewDidLoad];
     self.mapView.delegate = self;
     self.view = self.mapView;
-    [self.view addSubview:[UILabel detailLabelWithText: self.onibus.letreiro ]];
+    self.tempoRealDatasources = [[NSMutableArray alloc] init];
+    
+    if ([self.onibuses count] == 1) {
+        Onibus *onibus = [self.onibuses objectAtIndex:0];
+        [self.view addSubview:[UILabel detailLabelWithText: onibus.letreiro ]];
+    }
+    
     [self buscaDetalhesDoOnibus];
 }
 
@@ -67,7 +79,8 @@
     }
     
     if([annotation isKindOfClass:[Veiculo class]]){
-        annotationView.image = self.imagemVeiculo;
+        Veiculo *veiculo = (Veiculo*) annotation;
+        annotationView.image = [self.imagemsVeiculos objectAtIndex:veiculo.onibus];
     }
 
     
@@ -75,14 +88,19 @@
 }
 
 - (void)buscaDetalhesDoOnibus {
-    self.tempoRealDataSource = [[TempoRealDataSource alloc] initWithDelegate:self];
-    [self.tempoRealDataSource buscaLocalizacoesParaOnibus:self.onibus];
     
-    self.paradasDataSource = [[ParadaDataSource alloc] initWithDelegate:self];
-    [self.paradasDataSource buscaParadasParaOnibus:self.onibus];
     
-    //    self.loading = [[SSHUDView alloc] initWithTitle:NSLocalized(@"buscando_paradas")];
-    //    [self.loading show];
+    for (Onibus *onibus in self.onibuses) {
+        TempoRealDataSource *tempoRealDataSource = [[TempoRealDataSource alloc] initWithDelegate:self];
+        [tempoRealDataSource buscaLocalizacoesParaOnibus: onibus];
+        [self.tempoRealDatasources addObject:tempoRealDataSource];
+    }
+    
+    if ([self.onibuses count] == 1) {
+        Onibus *onibus = [self.onibuses objectAtIndex:0];
+        self.paradasDataSource = [[ParadaDataSource alloc] initWithDelegate:self];
+        [self.paradasDataSource buscaParadasParaOnibus:onibus];
+    }
     
 }
 
@@ -91,37 +109,37 @@
 }
 
 - (void) recebeParadas: (NSArray *) paradas paraOnibus: (Onibus *) onibus {
-//    [self.loading completeQuicklyWithTitle:NSLocalized(@"pronto")];
     [self.mapView addAnnotations:paradas];
+    [self.mapView zoomOut];
     
 }
 - (void) problemaParaBuscarParadas {
-//    [self.loading failQuicklyWithTitle:NSLocalized(@"problema_buscando_paradas")];
+    //TODO
 }
 
 -(void) problemaParaBuscarLocalizacoes {
-    
+    //TODO
 }
 
 - (void) recebeLocalizacoes: (NSArray *) localizacoes paraOnibus: (Onibus *) onibus {
-//    [self.loading completeQuicklyWithTitle:NSLocalized(@"pronto")];
+    NSLog(@"Recebendo locais do onibus: %@ ---> %@", onibus, localizacoes);
     
-    if ([localizacoes count] >0) {
-        for (id<MKAnnotation> local in localizacoes) {
-            [self.mapView addAnnotation:local];
+    if ([localizacoes count] > 0) {
+        for (Veiculo *veiculo in localizacoes) {
+            veiculo.onibus = [self.onibuses indexOfObject:onibus];
+            [self.mapView addAnnotation:veiculo];
         }
         [self.mapView zoomOut];
         
     } else {
+        NSString *mensagem = [NSString stringWithFormat:@"Nenhum veiculo da linha %@ localizado no momento", [onibus letreiro]];
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Tempo real"
-                                                        message:@"Nenhuma veiculo localizado no momento"
+                                                        message:mensagem
                                                        delegate:nil
                                               cancelButtonTitle:@"OK"
                                               otherButtonTitles:nil];
         [alert show];
     }
-    
-    
 }
 
 @end
