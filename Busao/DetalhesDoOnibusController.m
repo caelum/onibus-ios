@@ -19,7 +19,7 @@
 
 @property(nonatomic, strong) MKMapView* mapView;
 
-@property(nonatomic, strong) NSArray* onibuses;
+@property(nonatomic, weak) NSArray* onibuses;
 @property(nonatomic, strong) Localizacao *localizacao;
 @property(nonatomic, strong) ParadaDataSource *paradasDataSource;
 @property(nonatomic, strong) NSMutableArray *tempoRealDatasources;
@@ -42,7 +42,6 @@
         
         self.imagemsVeiculos = @[
                                  [UIImage imageNamed:@"pin-bus-green.png"],
-                                 [UIImage imageNamed:@"pin-bus-yellow.png"],
                                  [UIImage imageNamed:@"pin-bus-orange.png"],
                                  [UIImage imageNamed:@"pin-bus-red.png"]
                                 ];
@@ -57,6 +56,11 @@
     self.mapView.delegate = self;
     self.view = self.mapView;
     self.tempoRealDatasources = [[NSMutableArray alloc] init];
+    self.title = @"Tempo real";
+    
+    MKUserTrackingBarButtonItem *buttonItem = [[MKUserTrackingBarButtonItem alloc] initWithMapView:self.mapView];
+    self.navigationItem.rightBarButtonItem = buttonItem;
+
     
     CGRect frame = [[UIScreen mainScreen] applicationFrame];
     CGRect rectFundo = CGRectMake(0, 0, frame.size.width, 30);
@@ -69,7 +73,7 @@
         UIImage *imagem = [self.imagemsVeiculos objectAtIndex:i];
         
         int larguraImagem = imagem.size.width;
-        int larguraLabel = 60;
+        int larguraLabel = 70;
         int larguraEntreImagemELabel = 5;
         int larguraTotal = larguraEntreImagemELabel + larguraLabel + larguraImagem;
         

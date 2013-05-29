@@ -61,15 +61,15 @@
 }
 - (void) verificaGps {
     if([GPSManager isGPSDisabled]){
-        self.navigationItem.leftBarButtonItem = NULL;
+        self.navigationItem.rightBarButtonItem = NULL;
     }else{
         MKUserTrackingBarButtonItem *buttonItem = [[MKUserTrackingBarButtonItem alloc] initWithMapView:self.mapView];
-        self.navigationItem.leftBarButtonItem = buttonItem;        
+        self.navigationItem.rightBarButtonItem = buttonItem;
     }
 }
 - (void) criaDropPin{
     UIBarButtonItem *dropPin = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"242-Aim.png"] style:UIBarButtonItemStyleBordered target:self action:@selector(atualizarLocalizacao)];
-    self.navigationItem.rightBarButtonItem = dropPin;
+    self.navigationItem.leftBarButtonItem = dropPin;
 }
 - (void) criaSpinner {
     UIActivityIndicatorView *activityIndicator = 

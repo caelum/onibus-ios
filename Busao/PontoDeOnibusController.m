@@ -118,6 +118,7 @@
     return cell;
 }
 
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     Onibus *onibus = [self buscaOnibus:indexPath paraTableView:self.tableView];
     [onibus setPonto:[self.pontos objectAtIndex:indexPath.section]];
@@ -127,20 +128,25 @@
     }
     
     UITableViewCell *selecionada = [tableView cellForRowAtIndexPath:indexPath];
+    
     if (selecionada.accessoryType == UITableViewCellAccessoryCheckmark) {
         selecionada.accessoryType = UITableViewCellAccessoryNone;
         [self.onibusSelecionados removeObject:onibus];
         
     } else {
-        selecionada.accessoryType = UITableViewCellAccessoryCheckmark;
-        [self.onibusSelecionados addObject:onibus];
+        if ([self.onibusSelecionados count] == 3) {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Aviso" message:@"Só é possível selecionar 3 ônibus ao mesmo tempo." delegate:self cancelButtonTitle:nil otherButtonTitles: @"Ok", nil];
+            
+            [alert show];
+        } else {            
+            selecionada.accessoryType = UITableViewCellAccessoryCheckmark;
+            [self.onibusSelecionados addObject:onibus];
+        }
     }
 }
 
 -(void) irParaMapa {
-    NSArray *linhasSelecionadas = [self.tableView indexPathsForSelectedRows];
-    
-    if ([linhasSelecionadas count] > 0) {
+    if ([self.onibusSelecionados count] > 0) {
         [self.navigationController pushViewController:[[DetalhesDoOnibusController alloc] initWithOnibuses:self.onibusSelecionados andLocalizacao:self.localizacaoAtual] animated:YES];
     }
     

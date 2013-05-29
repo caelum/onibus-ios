@@ -28,7 +28,7 @@
 
 +(UILabel*) labelWithText: (NSString*) text andStartingAtX: (int) x andY: (int) y {
     UIFont *font = [UIFont fontWithName:@"Arial Rounded MT Bold" size:(14)];
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(x, y, 60, 30)];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(x, y, 70, 30)];
     [label setText:text];
     label.textColor = [UIColor whiteColor];
     label.font = font;
