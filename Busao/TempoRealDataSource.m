@@ -57,8 +57,14 @@
     
     DCKeyValueObjectMapping *parser = [DCKeyValueObjectMapping mapperForClass:[Veiculo class]
                                                              andConfiguration:config];
+    NSArray *veiculos = [parser parseArray:resultados];
     
-    return [parser parseArray:resultados];
+    for (Veiculo *veiculo in veiculos) {
+        [veiculo setLinha:[self.onibus.sentido description]];
+        [veiculo setLetreiro:self.onibus.letreiro];
+    }
+    
+    return veiculos;
 }
 
 

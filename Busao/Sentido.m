@@ -13,7 +13,7 @@
 @synthesize terminalPartida, terminalSecundario, circular;
 
 -(NSString *)description{
-    return [NSString stringWithFormat:@"%@ - %@", terminalPartida, terminalSecundario];
+    return [NSString stringWithFormat:@"%@", terminalPartida];
 }
 
 @end

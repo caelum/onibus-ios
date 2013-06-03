@@ -32,11 +32,11 @@
 }
 
 - (NSString *)title{
-    return @"";
+    return self.letreiro;
 }
 
 - (NSString *)subtitle{
-    return @"";
+    return self.linha;
 }
 
 @end

@@ -12,6 +12,7 @@
 #import "Parada.h"
 #import "AnnotationViewFactory.h"
 #import "Veiculo.h"
+#import "LegendaOnibus.h"
 
 
 
@@ -64,29 +65,26 @@
     
     CGRect frame = [[UIScreen mainScreen] applicationFrame];
     CGRect rectFundo = CGRectMake(0, 0, frame.size.width, 30);
-    UIView *fundo = [[UIView alloc] initWithFrame:rectFundo];
+
+    UIScrollView *fundo = [[UIScrollView alloc] initWithFrame:rectFundo];
+    
+    
     fundo.backgroundColor = [UIColor colorWithRed:0.0 green:0.1 blue:0.1 alpha:0.75];
     [self.view addSubview:fundo];
+    
+    CGPoint origem = CGPointMake(0, 0);
+    
+
     
     for (int i=0; i< [self.onibuses count]; i++) {
         Onibus *onibus = [self.onibuses objectAtIndex:i];
         UIImage *imagem = [self.imagemsVeiculos objectAtIndex:i];
         
-        int larguraImagem = imagem.size.width;
-        int larguraLabel = 70;
-        int larguraEntreImagemELabel = 5;
-        int larguraTotal = larguraEntreImagemELabel + larguraLabel + larguraImagem;
-        
-        UILabel *label = [UILabel labelWithText:onibus.letreiro andStartingAtX:imagem.size.width+5+(i*larguraTotal) andY:0];
-        label.backgroundColor = [UIColor colorWithRed:0.0 green:0.1 blue:0.1 alpha:0.0];
-        
-
-        UIImageView *imageView = [[UIImageView alloc] initWithFrame: CGRectMake(5+i*larguraTotal, 0, imagem.size.width, imagem.size.height)];
-        [imageView setImage:imagem];
-        [self.view addSubview:imageView];
-        
-        [self.view addSubview:label];
+        origem = [LegendaOnibus addOnibus:onibus andImage:imagem andStartingAt:origem inView:fundo];
     }
+    
+    fundo.contentSize = CGSizeMake(origem.x+10,30);
+
     
     [self buscaDetalhesDoOnibus];
 }
@@ -106,6 +104,7 @@
     if([annotation isKindOfClass:[Veiculo class]]){
         Veiculo *veiculo = (Veiculo*) annotation;
         annotationView.image = [self.imagemsVeiculos objectAtIndex:veiculo.onibus];
+        annotationView.canShowCallout = YES;
     }
 
     
@@ -147,8 +146,6 @@
 }
 
 - (void) recebeLocalizacoes: (NSArray *) localizacoes paraOnibus: (Onibus *) onibus {
-    NSLog(@"Recebendo locais do onibus: %@ ---> %@", onibus, localizacoes);
-    
     if ([localizacoes count] > 0) {
         for (Veiculo *veiculo in localizacoes) {
             veiculo.onibus = [self.onibuses indexOfObject:onibus];

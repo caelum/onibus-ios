@@ -9,7 +9,6 @@
 #import "EGORefreshTableHeaderView.h"
 #import "PontoDeOnibusController.h"
 #import "Onibus.h"
-#import "OnibusViewController.h"
 #import "ParadaDataSource.h"
 #import "Ponto.h"
 #import "DetalhesDoOnibusController.h"
@@ -171,10 +170,5 @@
     tableViewBounds.origin.y = tableViewBounds.origin.y + self.searchBar.bounds.size.height;
     self.tableView.bounds = tableViewBounds;
 }
-- (OnibusViewController *)onibusController{
-    if(!_onibusController){
-        _onibusController = [[OnibusViewController alloc] init];
-    }
-    return _onibusController;
-}
+
 @end

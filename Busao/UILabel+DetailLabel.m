@@ -27,9 +27,17 @@
 }
 
 +(UILabel*) labelWithText: (NSString*) text andStartingAtX: (int) x andY: (int) y {
-    UIFont *font = [UIFont fontWithName:@"Arial Rounded MT Bold" size:(14)];
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(x, y, 70, 30)];
-    [label setText:text];
+    return [self labelWithText:text andStartingAtX:x andY:y withFontSize:14];
+}
+
++(UILabel*) labelWithText: (NSString*) text andStartingAtX: (int) x andY: (int) y withFontSize: (int) fontSize {
+    UIFont *font = [UIFont fontWithName:@"Arial Rounded MT Bold" size:(fontSize)];
+    UILabel *label = [[UILabel alloc] init];
+    [label setText: [text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]];
+    [label sizeToFit];
+    [label setFrame:CGRectMake(x, y, label.frame.size.width, label.frame.size.height)];
+    label.backgroundColor = [UIColor colorWithRed:0.0 green:0.1 blue:0.1 alpha:0.0];
+    
     label.textColor = [UIColor whiteColor];
     label.font = font;
     

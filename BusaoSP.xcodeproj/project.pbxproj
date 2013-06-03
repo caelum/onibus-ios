@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		201A05AC1651551E00CCC3B5 /* OnibusViewController-landscape.xib in Resources */ = {isa = PBXBuildFile; fileRef = 201A05AB1651551E00CCC3B5 /* OnibusViewController-landscape.xib */; };
 		201A05B01651563200CCC3B5 /* UIViewController+AutoOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 201A05AF1651563200CCC3B5 /* UIViewController+AutoOrientation.m */; };
 		201A05F416516C8500CCC3B5 /* UIDevice+iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 201A05F316516C8500CCC3B5 /* UIDevice+iPhone.m */; };
 		202B23671533654900619462 /* NSStringWithMaxSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 202B23661533654900619462 /* NSStringWithMaxSize.m */; };
@@ -74,11 +73,9 @@
 		240DB81C15EC4E38B5D24AAB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BDDFF3F780CE4FAEBF6C9AE7 /* libPods.a */; };
 		772FAEDE162F903F000DAC1F /* Sentido.m in Sources */ = {isa = PBXBuildFile; fileRef = 772FAEDD162F903F000DAC1F /* Sentido.m */; };
 		772FAEE2162F9289000DAC1F /* Operacao.m in Sources */ = {isa = PBXBuildFile; fileRef = 772FAEE1162F9288000DAC1F /* Operacao.m */; };
+		77307D84175E996400B7B1E8 /* LegendaOnibus.m in Sources */ = {isa = PBXBuildFile; fileRef = 77307D83175E996400B7B1E8 /* LegendaOnibus.m */; };
 		774C579616373A9500AAAF2A /* TempoRealDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 774C579516373A9500AAAF2A /* TempoRealDataSource.m */; };
 		774C579A1637438F00AAAF2A /* Veiculo.m in Sources */ = {isa = PBXBuildFile; fileRef = 774C57991637438F00AAAF2A /* Veiculo.m */; };
-		774C57A0163744D800AAAF2A /* TempoRealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 774C579F163744D800AAAF2A /* TempoRealViewController.m */; };
-		7794BE671632215300E880F9 /* OnibusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7794BE651632215300E880F9 /* OnibusViewController.m */; };
-		7794BE681632215300E880F9 /* OnibusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7794BE661632215300E880F9 /* OnibusViewController.xib */; };
 		77C0A5B317501B6D005D4823 /* DetalhesDoOnibusController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C0A5B117501B6D005D4823 /* DetalhesDoOnibusController.m */; };
 		77C0A5B417501B6D005D4823 /* DetalhesDoOnibusController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77C0A5B217501B6D005D4823 /* DetalhesDoOnibusController.xib */; };
 		77C0A5B817514733005D4823 /* pin-busstop-transp.png in Resources */ = {isa = PBXBuildFile; fileRef = 77C0A5B717514733005D4823 /* pin-busstop-transp.png */; };
@@ -89,7 +86,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		201A05AB1651551E00CCC3B5 /* OnibusViewController-landscape.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "OnibusViewController-landscape.xib"; sourceTree = "<group>"; };
 		201A05AE1651563200CCC3B5 /* UIViewController+AutoOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+AutoOrientation.h"; path = "../UIViewController+AutoOrientation.h"; sourceTree = "<group>"; };
 		201A05AF1651563200CCC3B5 /* UIViewController+AutoOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+AutoOrientation.m"; path = "../UIViewController+AutoOrientation.m"; sourceTree = "<group>"; };
 		201A05F216516C8500CCC3B5 /* UIDevice+iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+iPhone.h"; sourceTree = "<group>"; };
@@ -187,15 +183,12 @@
 		772FAEDD162F903F000DAC1F /* Sentido.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sentido.m; sourceTree = "<group>"; };
 		772FAEE0162F9288000DAC1F /* Operacao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Operacao.h; sourceTree = "<group>"; };
 		772FAEE1162F9288000DAC1F /* Operacao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Operacao.m; sourceTree = "<group>"; };
+		77307D82175E996400B7B1E8 /* LegendaOnibus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LegendaOnibus.h; sourceTree = "<group>"; };
+		77307D83175E996400B7B1E8 /* LegendaOnibus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LegendaOnibus.m; sourceTree = "<group>"; };
 		774C579416373A9400AAAF2A /* TempoRealDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TempoRealDataSource.h; sourceTree = "<group>"; };
 		774C579516373A9500AAAF2A /* TempoRealDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TempoRealDataSource.m; sourceTree = "<group>"; };
 		774C57981637438F00AAAF2A /* Veiculo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Veiculo.h; sourceTree = "<group>"; };
 		774C57991637438F00AAAF2A /* Veiculo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Veiculo.m; sourceTree = "<group>"; };
-		774C579E163744D800AAAF2A /* TempoRealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TempoRealViewController.h; sourceTree = "<group>"; };
-		774C579F163744D800AAAF2A /* TempoRealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TempoRealViewController.m; sourceTree = "<group>"; };
-		7794BE641632215300E880F9 /* OnibusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnibusViewController.h; sourceTree = "<group>"; };
-		7794BE651632215300E880F9 /* OnibusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnibusViewController.m; sourceTree = "<group>"; };
-		7794BE661632215300E880F9 /* OnibusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OnibusViewController.xib; sourceTree = "<group>"; };
 		77C0A5B017501B6D005D4823 /* DetalhesDoOnibusController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetalhesDoOnibusController.h; sourceTree = "<group>"; };
 		77C0A5B117501B6D005D4823 /* DetalhesDoOnibusController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetalhesDoOnibusController.m; sourceTree = "<group>"; };
 		77C0A5B217501B6D005D4823 /* DetalhesDoOnibusController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetalhesDoOnibusController.xib; sourceTree = "<group>"; };
@@ -311,6 +304,7 @@
 		208A1C221524F7FE00335F87 /* Busao */ = {
 			isa = PBXGroup;
 			children = (
+				77307D81175E994C00B7B1E8 /* Widget */,
 				202B23641533653100619462 /* Utilities */,
 				20EB2190152CBB370009BC49 /* Factories */,
 				20EB21B1152D04190009BC49 /* Imagens */,
@@ -375,12 +369,6 @@
 				20D8E413152B77DC006C7328 /* PontosPorProximidadeController.h */,
 				20D8E414152B77DC006C7328 /* PontosPorProximidadeController.m */,
 				20B974FC15360CA2008DAD44 /* SemGps.xib */,
-				7794BE641632215300E880F9 /* OnibusViewController.h */,
-				7794BE651632215300E880F9 /* OnibusViewController.m */,
-				7794BE661632215300E880F9 /* OnibusViewController.xib */,
-				201A05AB1651551E00CCC3B5 /* OnibusViewController-landscape.xib */,
-				774C579E163744D800AAAF2A /* TempoRealViewController.h */,
-				774C579F163744D800AAAF2A /* TempoRealViewController.m */,
 				77C0A5B017501B6D005D4823 /* DetalhesDoOnibusController.h */,
 				77C0A5B117501B6D005D4823 /* DetalhesDoOnibusController.m */,
 				77C0A5B217501B6D005D4823 /* DetalhesDoOnibusController.xib */,
@@ -469,6 +457,15 @@
 			name = Imagens;
 			sourceTree = "<group>";
 		};
+		77307D81175E994C00B7B1E8 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				77307D82175E996400B7B1E8 /* LegendaOnibus.h */,
+				77307D83175E996400B7B1E8 /* LegendaOnibus.m */,
+			);
+			name = Widget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -554,8 +551,6 @@
 				20F5804C1535267500F1CAAB /* compass.png in Resources */,
 				20F5804D1535267500F1CAAB /* compass@2x.png in Resources */,
 				20B974FA15360CA2008DAD44 /* SemGps.xib in Resources */,
-				7794BE681632215300E880F9 /* OnibusViewController.xib in Resources */,
-				201A05AC1651551E00CCC3B5 /* OnibusViewController-landscape.xib in Resources */,
 				77C0A5B417501B6D005D4823 /* DetalhesDoOnibusController.xib in Resources */,
 				77C0A5B817514733005D4823 /* pin-busstop-transp.png in Resources */,
 				77C0A5BE1751B0A9005D4823 /* pin-bus-orange.png in Resources */,
@@ -612,13 +607,12 @@
 				2053E9871549FE1900B9F3FD /* Appirater.m in Sources */,
 				772FAEDE162F903F000DAC1F /* Sentido.m in Sources */,
 				772FAEE2162F9289000DAC1F /* Operacao.m in Sources */,
-				7794BE671632215300E880F9 /* OnibusViewController.m in Sources */,
 				774C579616373A9500AAAF2A /* TempoRealDataSource.m in Sources */,
 				774C579A1637438F00AAAF2A /* Veiculo.m in Sources */,
-				774C57A0163744D800AAAF2A /* TempoRealViewController.m in Sources */,
 				201A05B01651563200CCC3B5 /* UIViewController+AutoOrientation.m in Sources */,
 				201A05F416516C8500CCC3B5 /* UIDevice+iPhone.m in Sources */,
 				77C0A5B317501B6D005D4823 /* DetalhesDoOnibusController.m in Sources */,
+				77307D84175E996400B7B1E8 /* LegendaOnibus.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

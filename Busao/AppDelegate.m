@@ -9,7 +9,6 @@
 #import "UIViewController+NavigationController.h"
 #import "ListaPontoDeOnibusController.h"
 #import "PontosPorProximidadeController.h"
-#import "OnibusViewController.h"
 #import "OnibusDataSource.h"
 #import "AppDelegate.h"
 #import "Appirater.h"
@@ -38,12 +37,8 @@
 - (void) configuraViewParaIPad {
     UISplitViewController *splitView = [[UISplitViewController alloc] init];
     ListaPontoDeOnibusController *listaDeOnibus = [[ListaPontoDeOnibusController alloc] init];
-    OnibusViewController *onibusViewController = [[OnibusViewController alloc] init];
-    listaDeOnibus.onibusController = onibusViewController;
-    
-    splitView.delegate = onibusViewController;
-    
-    splitView.viewControllers = @[[listaDeOnibus comNavigation], [onibusViewController comNavigation]];
+   
+    //TODO
     
     splitView.tabBarItem = listaDeOnibus.tabBarItem;
     
