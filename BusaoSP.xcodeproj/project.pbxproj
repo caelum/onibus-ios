@@ -74,6 +74,11 @@
 		772FAEDE162F903F000DAC1F /* Sentido.m in Sources */ = {isa = PBXBuildFile; fileRef = 772FAEDD162F903F000DAC1F /* Sentido.m */; };
 		772FAEE2162F9289000DAC1F /* Operacao.m in Sources */ = {isa = PBXBuildFile; fileRef = 772FAEE1162F9288000DAC1F /* Operacao.m */; };
 		77307D84175E996400B7B1E8 /* LegendaOnibus.m in Sources */ = {isa = PBXBuildFile; fileRef = 77307D83175E996400B7B1E8 /* LegendaOnibus.m */; };
+		77307D87175E9C0C00B7B1E8 /* list.png in Resources */ = {isa = PBXBuildFile; fileRef = 77307D85175E9C0C00B7B1E8 /* list.png */; };
+		77307D88175E9C0C00B7B1E8 /* list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77307D86175E9C0C00B7B1E8 /* list@2x.png */; };
+		77307D8B175E9D6800B7B1E8 /* favorite_star.png in Resources */ = {isa = PBXBuildFile; fileRef = 77307D89175E9D6800B7B1E8 /* favorite_star.png */; };
+		77307D8C175E9D6800B7B1E8 /* favorite_star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77307D8A175E9D6800B7B1E8 /* favorite_star@2x.png */; };
+		77307D8F175F7ED300B7B1E8 /* PontoUITableSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 77307D8E175F7ED300B7B1E8 /* PontoUITableSection.m */; };
 		774C579616373A9500AAAF2A /* TempoRealDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 774C579516373A9500AAAF2A /* TempoRealDataSource.m */; };
 		774C579A1637438F00AAAF2A /* Veiculo.m in Sources */ = {isa = PBXBuildFile; fileRef = 774C57991637438F00AAAF2A /* Veiculo.m */; };
 		77C0A5B317501B6D005D4823 /* DetalhesDoOnibusController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C0A5B117501B6D005D4823 /* DetalhesDoOnibusController.m */; };
@@ -185,6 +190,12 @@
 		772FAEE1162F9288000DAC1F /* Operacao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Operacao.m; sourceTree = "<group>"; };
 		77307D82175E996400B7B1E8 /* LegendaOnibus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LegendaOnibus.h; sourceTree = "<group>"; };
 		77307D83175E996400B7B1E8 /* LegendaOnibus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LegendaOnibus.m; sourceTree = "<group>"; };
+		77307D85175E9C0C00B7B1E8 /* list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list.png; sourceTree = "<group>"; };
+		77307D86175E9C0C00B7B1E8 /* list@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "list@2x.png"; sourceTree = "<group>"; };
+		77307D89175E9D6800B7B1E8 /* favorite_star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favorite_star.png; sourceTree = "<group>"; };
+		77307D8A175E9D6800B7B1E8 /* favorite_star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "favorite_star@2x.png"; sourceTree = "<group>"; };
+		77307D8D175F7ED300B7B1E8 /* PontoUITableSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PontoUITableSection.h; sourceTree = "<group>"; };
+		77307D8E175F7ED300B7B1E8 /* PontoUITableSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PontoUITableSection.m; sourceTree = "<group>"; };
 		774C579416373A9400AAAF2A /* TempoRealDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TempoRealDataSource.h; sourceTree = "<group>"; };
 		774C579516373A9500AAAF2A /* TempoRealDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TempoRealDataSource.m; sourceTree = "<group>"; };
 		774C57981637438F00AAAF2A /* Veiculo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Veiculo.h; sourceTree = "<group>"; };
@@ -396,6 +407,10 @@
 		20D8E3C1152B6236006C7328 /* Icones */ = {
 			isa = PBXGroup;
 			children = (
+				77307D89175E9D6800B7B1E8 /* favorite_star.png */,
+				77307D8A175E9D6800B7B1E8 /* favorite_star@2x.png */,
+				77307D85175E9C0C00B7B1E8 /* list.png */,
+				77307D86175E9C0C00B7B1E8 /* list@2x.png */,
 				77C0A5C11751B0C9005D4823 /* pin-bus-green.png */,
 				77C0A5BA1751B0A9005D4823 /* pin-bus-orange.png */,
 				77C0A5BB1751B0A9005D4823 /* pin-bus-red.png */,
@@ -462,6 +477,8 @@
 			children = (
 				77307D82175E996400B7B1E8 /* LegendaOnibus.h */,
 				77307D83175E996400B7B1E8 /* LegendaOnibus.m */,
+				77307D8D175F7ED300B7B1E8 /* PontoUITableSection.h */,
+				77307D8E175F7ED300B7B1E8 /* PontoUITableSection.m */,
 			);
 			name = Widget;
 			sourceTree = "<group>";
@@ -557,6 +574,10 @@
 				77C0A5BF1751B0A9005D4823 /* pin-bus-red.png in Resources */,
 				77C0A5C01751B0A9005D4823 /* pin-bus-yellow.png in Resources */,
 				77C0A5C21751B0C9005D4823 /* pin-bus-green.png in Resources */,
+				77307D87175E9C0C00B7B1E8 /* list.png in Resources */,
+				77307D88175E9C0C00B7B1E8 /* list@2x.png in Resources */,
+				77307D8B175E9D6800B7B1E8 /* favorite_star.png in Resources */,
+				77307D8C175E9D6800B7B1E8 /* favorite_star@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -613,6 +634,7 @@
 				201A05F416516C8500CCC3B5 /* UIDevice+iPhone.m in Sources */,
 				77C0A5B317501B6D005D4823 /* DetalhesDoOnibusController.m in Sources */,
 				77307D84175E996400B7B1E8 /* LegendaOnibus.m in Sources */,
+				77307D8F175F7ED300B7B1E8 /* PontoUITableSection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

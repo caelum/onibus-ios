@@ -12,6 +12,7 @@
 #import "ParadaDataSource.h"
 #import "Ponto.h"
 #import "DetalhesDoOnibusController.h"
+#import "PontoUITableSection.h"
 
 
 @interface PontoDeOnibusController ()
@@ -59,10 +60,18 @@
 }
 
 -(void) viewDidAppear:(BOOL)animated {
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Tempo real"
-                                                                              style:UIBarButtonItemStyleBordered
-                                                                             target:self
-                                                                             action:@selector(irParaMapa)];
+    UIBarButtonItem *mapa = [[UIBarButtonItem alloc] initWithTitle:@"Tempo real"
+                                                             style:UIBarButtonItemStyleBordered
+                                                            target:self
+                                                            action:@selector(irParaMapa)];
+    
+    UIBarButtonItem *favoritar = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"favorite_star.png"]
+                                                                  style:UIBarButtonItemStylePlain
+                                                                 target:self
+                                                                 action:@selector(favoritar)];
+    
+    self.navigationItem.rightBarButtonItem = mapa;
+    self.navigationItem.leftBarButtonItem = favoritar;
 }
 
 - (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
@@ -78,6 +87,11 @@
     }
     return YES;
 }
+
+-(void) favoritar {
+    
+}
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     if([self isSearching:tableView]){
         return 1;
@@ -92,10 +106,10 @@
     Ponto *ponto = [self.pontos objectAtIndex:section];
     return [ponto.onibuses count];
 }
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
-    Ponto *ponto = [self.pontos objectAtIndex:section];
-    return ponto.descricao;
-}
+//- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+//    Ponto *ponto = [self.pontos objectAtIndex:section];
+//    return ponto.descricao;
+//}
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
@@ -149,6 +163,17 @@
         [self.navigationController pushViewController:[[DetalhesDoOnibusController alloc] initWithOnibuses:self.onibusSelecionados andLocalizacao:self.localizacaoAtual] animated:YES];
     }
     
+}
+
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    Ponto *ponto = [self.pontos objectAtIndex:section];
+    
+    return [[PontoUITableSection alloc] initWithPonto:ponto andLocalizacaoAtual: self.localizacaoAtual];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return [PontoUITableSection height];
 }
 
 - (Onibus *)buscaOnibus:(NSIndexPath *)index paraTableView: (UITableView *) tableView{
