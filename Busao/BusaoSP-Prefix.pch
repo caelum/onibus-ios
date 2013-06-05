@@ -12,6 +12,7 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
     #import "UIDevice+iPhone.h"
+    #import <CoreData/CoreData.h>
 #define NSLocalized(key) \
 [[NSBundle mainBundle] localizedStringForKey:(key) value:@"" table:nil]
 

@@ -18,6 +18,7 @@
 @property(nonatomic, strong) CLLocationManager *locationManager;
 @property(nonatomic, strong) UIViewController *semGps;
 @property(nonatomic, strong) EGORefreshTableHeaderView *pullToRefresh;
+
 - (void) atualizarListagem;
 @end
 
@@ -40,10 +41,9 @@
         UITabBarItem *listaItem = [[UITabBarItem alloc] initWithTitle:NSLocalized(@"localizacao")
                                                                 image:[UIImage imageNamed:@"082-Location.png"]
                                                                   tag:1];
-        
-
         self.tabBarItem = listaItem;
         self.navigationItem.title = NSLocalized(@"pontos_proximos");
+        self.pontosSelecionados = [[NSMutableArray alloc] init];
     }
     return self;
 }

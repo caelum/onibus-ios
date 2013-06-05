@@ -15,12 +15,16 @@
 #import "PontoUITableSection.h"
 
 
+
 @interface PontoDeOnibusController ()
 
 @property(nonatomic, strong) UISearchBar *searchBar;
 @property(nonatomic, strong) UISearchDisplayController *searchController;
 @property(nonatomic, strong) NSMutableArray *onibusFiltrados;
 @property(nonatomic, strong) NSMutableArray *onibusSelecionados;
+
+@property(nonatomic, strong) UIColor *corLinhaSelecionada;
+@property(nonatomic, strong) UIColor *corLinhaPadrao;
 
 @end
 
@@ -32,6 +36,8 @@
     if (self) {     
         self.pontos = [NSArray arrayWithObject:ponto];
         self.navigationItem.title = NSLocalized(@"onibus");
+        self.pontosSelecionados = [[NSMutableArray alloc] init];
+        [self.pontosSelecionados addObject:ponto];
 
     }
     return self;
@@ -60,18 +66,17 @@
 }
 
 -(void) viewDidAppear:(BOOL)animated {
+    //TODO isso tah aqui pela heranca mal usada, REFACTOR!!
+    self.corLinhaSelecionada = [UIColor redColor];
+    self.corLinhaPadrao = [UIColor whiteColor];
+    
     UIBarButtonItem *mapa = [[UIBarButtonItem alloc] initWithTitle:@"Tempo real"
                                                              style:UIBarButtonItemStyleBordered
                                                             target:self
                                                             action:@selector(irParaMapa)];
     
-    UIBarButtonItem *favoritar = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"favorite_star.png"]
-                                                                  style:UIBarButtonItemStylePlain
-                                                                 target:self
-                                                                 action:@selector(favoritar)];
-    
     self.navigationItem.rightBarButtonItem = mapa;
-    self.navigationItem.leftBarButtonItem = favoritar;
+
 }
 
 - (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
@@ -88,10 +93,6 @@
     return YES;
 }
 
--(void) favoritar {
-    
-}
-
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     if([self isSearching:tableView]){
         return 1;
@@ -103,13 +104,21 @@
     if([self isSearching:tableView]){
         return [self.onibusFiltrados count];
     }
+    
     Ponto *ponto = [self.pontos objectAtIndex:section];
-    return [ponto.onibuses count];
+    
+    if ([self.pontosSelecionados containsObject:ponto]) {
+        return [ponto.onibuses count];
+    } else {
+        return 0;
+    }
 }
+
 //- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
 //    Ponto *ponto = [self.pontos objectAtIndex:section];
 //    return ponto.descricao;
 //}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
@@ -121,13 +130,19 @@
     Onibus *onibus = [self buscaOnibus:indexPath paraTableView:tableView];
     
     if ([self.onibusSelecionados containsObject:onibus]) {
-        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+        cell.backgroundColor = self.corLinhaSelecionada;
     } else {
-        cell.accessoryType = UITableViewCellAccessoryNone;
+        cell.backgroundColor = self.corLinhaPadrao;
     }
     
+    cell.accessoryView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"favorite-star-gray.png"]];
+    
     cell.textLabel.text = [onibus letreiro];
+    cell.textLabel.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0];
+    
     cell.detailTextLabel.text = [[onibus sentido] description];
+    cell.detailTextLabel.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0];
+    
     return cell;
 }
 
@@ -142,8 +157,8 @@
     
     UITableViewCell *selecionada = [tableView cellForRowAtIndexPath:indexPath];
     
-    if (selecionada.accessoryType == UITableViewCellAccessoryCheckmark) {
-        selecionada.accessoryType = UITableViewCellAccessoryNone;
+    if ([self.onibusSelecionados containsObject:onibus]) {
+        selecionada.backgroundColor = self.corLinhaPadrao;
         [self.onibusSelecionados removeObject:onibus];
         
     } else {
@@ -152,7 +167,7 @@
             
             [alert show];
         } else {            
-            selecionada.accessoryType = UITableViewCellAccessoryCheckmark;
+            selecionada.backgroundColor = self.corLinhaSelecionada;
             [self.onibusSelecionados addObject:onibus];
         }
     }
@@ -169,7 +184,24 @@
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     Ponto *ponto = [self.pontos objectAtIndex:section];
     
-    return [[PontoUITableSection alloc] initWithPonto:ponto andLocalizacaoAtual: self.localizacaoAtual];
+    UIView *viewSection = [[PontoUITableSection alloc] initWithPonto:ponto
+                                                 andLocalizacaoAtual: self.localizacaoAtual
+                                                         andCallback:^{
+                                                             if ([self.pontosSelecionados containsObject:ponto]) {
+                                                                 [self.pontosSelecionados removeObject:ponto];
+                                                             } else {
+                                                                 [self.pontosSelecionados addObject:ponto];
+                                                             }
+                                                             [self.tableView reloadData];
+                                                         }];
+    
+    UITapGestureRecognizer *onTap = [[UITapGestureRecognizer alloc] initWithTarget:viewSection action:@selector(executaSelecao)];
+    [onTap setNumberOfTapsRequired:1];
+    
+    [viewSection addGestureRecognizer:onTap];
+    [viewSection setUserInteractionEnabled:YES];
+    
+    return viewSection;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {

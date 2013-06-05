@@ -76,9 +76,13 @@
 		77307D84175E996400B7B1E8 /* LegendaOnibus.m in Sources */ = {isa = PBXBuildFile; fileRef = 77307D83175E996400B7B1E8 /* LegendaOnibus.m */; };
 		77307D87175E9C0C00B7B1E8 /* list.png in Resources */ = {isa = PBXBuildFile; fileRef = 77307D85175E9C0C00B7B1E8 /* list.png */; };
 		77307D88175E9C0C00B7B1E8 /* list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77307D86175E9C0C00B7B1E8 /* list@2x.png */; };
-		77307D8B175E9D6800B7B1E8 /* favorite_star.png in Resources */ = {isa = PBXBuildFile; fileRef = 77307D89175E9D6800B7B1E8 /* favorite_star.png */; };
-		77307D8C175E9D6800B7B1E8 /* favorite_star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77307D8A175E9D6800B7B1E8 /* favorite_star@2x.png */; };
 		77307D8F175F7ED300B7B1E8 /* PontoUITableSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 77307D8E175F7ED300B7B1E8 /* PontoUITableSection.m */; };
+		77307D91175FDB5900B7B1E8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77307D90175FDB5900B7B1E8 /* CoreData.framework */; };
+		77307D95175FDD3000B7B1E8 /* BusaoSP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77307D93175FDD3000B7B1E8 /* BusaoSP.xcdatamodeld */; };
+		77307D9B175FE0E200B7B1E8 /* LinhaDeOnibus.m in Sources */ = {isa = PBXBuildFile; fileRef = 77307D9A175FE0E200B7B1E8 /* LinhaDeOnibus.m */; };
+		77307D9E175FE1EC00B7B1E8 /* NSManagedObject+ComFacilitadores.m in Sources */ = {isa = PBXBuildFile; fileRef = 77307D9C175FE1EC00B7B1E8 /* NSManagedObject+ComFacilitadores.m */; };
+		77307DA5175FFEF600B7B1E8 /* favorite-star-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 77307DA3175FFEF600B7B1E8 /* favorite-star-gray.png */; };
+		77307DA6175FFEF600B7B1E8 /* favorite-star.png in Resources */ = {isa = PBXBuildFile; fileRef = 77307DA4175FFEF600B7B1E8 /* favorite-star.png */; };
 		774C579616373A9500AAAF2A /* TempoRealDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 774C579516373A9500AAAF2A /* TempoRealDataSource.m */; };
 		774C579A1637438F00AAAF2A /* Veiculo.m in Sources */ = {isa = PBXBuildFile; fileRef = 774C57991637438F00AAAF2A /* Veiculo.m */; };
 		77C0A5B317501B6D005D4823 /* DetalhesDoOnibusController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C0A5B117501B6D005D4823 /* DetalhesDoOnibusController.m */; };
@@ -192,10 +196,16 @@
 		77307D83175E996400B7B1E8 /* LegendaOnibus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LegendaOnibus.m; sourceTree = "<group>"; };
 		77307D85175E9C0C00B7B1E8 /* list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list.png; sourceTree = "<group>"; };
 		77307D86175E9C0C00B7B1E8 /* list@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "list@2x.png"; sourceTree = "<group>"; };
-		77307D89175E9D6800B7B1E8 /* favorite_star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favorite_star.png; sourceTree = "<group>"; };
-		77307D8A175E9D6800B7B1E8 /* favorite_star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "favorite_star@2x.png"; sourceTree = "<group>"; };
 		77307D8D175F7ED300B7B1E8 /* PontoUITableSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PontoUITableSection.h; sourceTree = "<group>"; };
 		77307D8E175F7ED300B7B1E8 /* PontoUITableSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PontoUITableSection.m; sourceTree = "<group>"; };
+		77307D90175FDB5900B7B1E8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		77307D94175FDD3000B7B1E8 /* BusaoSP.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BusaoSP.xcdatamodel; sourceTree = "<group>"; };
+		77307D99175FE0E200B7B1E8 /* LinhaDeOnibus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinhaDeOnibus.h; sourceTree = "<group>"; };
+		77307D9A175FE0E200B7B1E8 /* LinhaDeOnibus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinhaDeOnibus.m; sourceTree = "<group>"; };
+		77307D9C175FE1EC00B7B1E8 /* NSManagedObject+ComFacilitadores.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+ComFacilitadores.m"; sourceTree = "<group>"; };
+		77307D9D175FE1EC00B7B1E8 /* NSManagedObject+ComFacilitadores.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+ComFacilitadores.h"; sourceTree = "<group>"; };
+		77307DA3175FFEF600B7B1E8 /* favorite-star-gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "favorite-star-gray.png"; sourceTree = "<group>"; };
+		77307DA4175FFEF600B7B1E8 /* favorite-star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "favorite-star.png"; sourceTree = "<group>"; };
 		774C579416373A9400AAAF2A /* TempoRealDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TempoRealDataSource.h; sourceTree = "<group>"; };
 		774C579516373A9500AAAF2A /* TempoRealDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TempoRealDataSource.m; sourceTree = "<group>"; };
 		774C57981637438F00AAAF2A /* Veiculo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Veiculo.h; sourceTree = "<group>"; };
@@ -217,6 +227,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77307D91175FDB5900B7B1E8 /* CoreData.framework in Frameworks */,
 				2053E98B1549FF2E00B9F3FD /* CFNetwork.framework in Frameworks */,
 				2053E9891549FF2900B9F3FD /* SystemConfiguration.framework in Frameworks */,
 				20EB21AC152CFBFB0009BC49 /* QuartzCore.framework in Frameworks */,
@@ -297,6 +308,7 @@
 		208A1C1B1524F7FE00335F87 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				77307D90175FDB5900B7B1E8 /* CoreData.framework */,
 				2053E98A1549FF2E00B9F3FD /* CFNetwork.framework */,
 				2053E9881549FF2900B9F3FD /* SystemConfiguration.framework */,
 				20EB21AB152CFBFB0009BC49 /* QuartzCore.framework */,
@@ -315,6 +327,7 @@
 		208A1C221524F7FE00335F87 /* Busao */ = {
 			isa = PBXGroup;
 			children = (
+				77307D92175FDD1400B7B1E8 /* Persistence */,
 				77307D81175E994C00B7B1E8 /* Widget */,
 				202B23641533653100619462 /* Utilities */,
 				20EB2190152CBB370009BC49 /* Factories */,
@@ -390,6 +403,8 @@
 		208DD3D7152A2B1400D730F8 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				77307D9C175FE1EC00B7B1E8 /* NSManagedObject+ComFacilitadores.m */,
+				77307D9D175FE1EC00B7B1E8 /* NSManagedObject+ComFacilitadores.h */,
 				201A05AE1651563200CCC3B5 /* UIViewController+AutoOrientation.h */,
 				201A05AF1651563200CCC3B5 /* UIViewController+AutoOrientation.m */,
 				208DD3D3152A2B1100D730F8 /* MKMapView+ZoomOut.h */,
@@ -407,8 +422,8 @@
 		20D8E3C1152B6236006C7328 /* Icones */ = {
 			isa = PBXGroup;
 			children = (
-				77307D89175E9D6800B7B1E8 /* favorite_star.png */,
-				77307D8A175E9D6800B7B1E8 /* favorite_star@2x.png */,
+				77307DA3175FFEF600B7B1E8 /* favorite-star-gray.png */,
+				77307DA4175FFEF600B7B1E8 /* favorite-star.png */,
 				77307D85175E9C0C00B7B1E8 /* list.png */,
 				77307D86175E9C0C00B7B1E8 /* list@2x.png */,
 				77C0A5C11751B0C9005D4823 /* pin-bus-green.png */,
@@ -481,6 +496,16 @@
 				77307D8E175F7ED300B7B1E8 /* PontoUITableSection.m */,
 			);
 			name = Widget;
+			sourceTree = "<group>";
+		};
+		77307D92175FDD1400B7B1E8 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				77307D99175FE0E200B7B1E8 /* LinhaDeOnibus.h */,
+				77307D9A175FE0E200B7B1E8 /* LinhaDeOnibus.m */,
+				77307D93175FDD3000B7B1E8 /* BusaoSP.xcdatamodeld */,
+			);
+			name = Persistence;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -576,8 +601,8 @@
 				77C0A5C21751B0C9005D4823 /* pin-bus-green.png in Resources */,
 				77307D87175E9C0C00B7B1E8 /* list.png in Resources */,
 				77307D88175E9C0C00B7B1E8 /* list@2x.png in Resources */,
-				77307D8B175E9D6800B7B1E8 /* favorite_star.png in Resources */,
-				77307D8C175E9D6800B7B1E8 /* favorite_star@2x.png in Resources */,
+				77307DA5175FFEF600B7B1E8 /* favorite-star-gray.png in Resources */,
+				77307DA6175FFEF600B7B1E8 /* favorite-star.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -635,6 +660,9 @@
 				77C0A5B317501B6D005D4823 /* DetalhesDoOnibusController.m in Sources */,
 				77307D84175E996400B7B1E8 /* LegendaOnibus.m in Sources */,
 				77307D8F175F7ED300B7B1E8 /* PontoUITableSection.m in Sources */,
+				77307D95175FDD3000B7B1E8 /* BusaoSP.xcdatamodeld in Sources */,
+				77307D9B175FE0E200B7B1E8 /* LinhaDeOnibus.m in Sources */,
+				77307D9E175FE1EC00B7B1E8 /* NSManagedObject+ComFacilitadores.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -919,6 +947,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		77307D93175FDD3000B7B1E8 /* BusaoSP.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				77307D94175FDD3000B7B1E8 /* BusaoSP.xcdatamodel */,
+			);
+			currentVersion = 77307D94175FDD3000B7B1E8 /* BusaoSP.xcdatamodel */;
+			path = BusaoSP.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 208A1C0F1524F7FE00335F87 /* Project object */;
 }

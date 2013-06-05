@@ -8,14 +8,23 @@
 
 #import "PontoUITableSection.h"
 
+@interface PontoUITableSection()
+
+@property (nonatomic, strong) void (^selecaoSection) (void);
+
+@end
+
 
 @implementation PontoUITableSection
 
 
--(id) initWithPonto: (Ponto*) ponto andLocalizacaoAtual: (Localizacao*) localizacao {
+-(id) initWithPonto: (Ponto*) ponto andLocalizacaoAtual: (Localizacao*) localizacao andCallback: (void (^)(void)) callback {
+    
     CGRect frameTela = [[UIScreen mainScreen] applicationFrame];
     
     if (self = [super initWithFrame:CGRectMake(0, 0, frameTela.size.width, [PontoUITableSection height])]) {
+        self.selecaoSection = callback;
+        
         UILabel *labelPonto = [self labelWithText:ponto.descricao andStartingAtX:5 andY:5 withFontSize:15];
         [self addSubview:labelPonto];
         
@@ -24,6 +33,10 @@
         [self addSubview:labelDistancia];
     }
     return self;
+}
+
+-(void) executaSelecao {
+    self.selecaoSection();
 }
 
 -(UILabel*) labelWithText: (NSString*) text andStartingAtX: (int) x andY: (int) y withFontSize: (int) fontSize {

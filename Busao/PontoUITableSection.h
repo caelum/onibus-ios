@@ -10,9 +10,12 @@
 #import "Ponto.h"
 #import "Localizacao.h"
 
+
 @interface PontoUITableSection : UIView
 
--(id) initWithPonto: (Ponto*) ponto andLocalizacaoAtual: (Localizacao*) localizacao;
+-(id) initWithPonto: (Ponto*) ponto andLocalizacaoAtual: (Localizacao*) localizacao andCallback: (void (^)(void)) callback;
+
+-(void) executaSelecao;
 
 +(CGFloat) height;
 

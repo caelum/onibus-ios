@@ -15,6 +15,7 @@
 @property(nonatomic, strong) Localizacao *localizacaoAtual;
 @property(nonatomic, strong) NSArray *pontos;
 @property(nonatomic, strong) OnibusViewController *onibusController;
+@property(nonatomic, strong) NSMutableArray *pontosSelecionados;
 
 - (id)initWithPonto: (Ponto *) ponto;
 - (BOOL) isSearching:(UITableView *)tableView;
