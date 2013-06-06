@@ -12,6 +12,8 @@
 
 - (UINavigationController *) comNavigation{
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:self];
+    navigationController.navigationBar.barStyle = UIBarStyleBlack;
+    
     return navigationController;
 }
 

@@ -13,7 +13,7 @@
 #import "Ponto.h"
 #import "DetalhesDoOnibusController.h"
 #import "PontoUITableSection.h"
-
+#import "LinhaDeOnibus.h"
 
 
 @interface PontoDeOnibusController ()
@@ -25,6 +25,7 @@
 
 @property(nonatomic, strong) UIColor *corLinhaSelecionada;
 @property(nonatomic, strong) UIColor *corLinhaPadrao;
+
 
 @end
 
@@ -67,6 +68,7 @@
 
 -(void) viewDidAppear:(BOOL)animated {
     //TODO isso tah aqui pela heranca mal usada, REFACTOR!!
+    self.tableView.rowHeight = 55;
     self.corLinhaSelecionada = [UIColor redColor];
     self.corLinhaPadrao = [UIColor whiteColor];
     
@@ -74,6 +76,7 @@
                                                              style:UIBarButtonItemStyleBordered
                                                             target:self
                                                             action:@selector(irParaMapa)];
+    [self atualizaBotaoTempoReal];
     
     self.navigationItem.rightBarButtonItem = mapa;
 
@@ -114,11 +117,6 @@
     }
 }
 
-//- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
-//    Ponto *ponto = [self.pontos objectAtIndex:section];
-//    return ponto.descricao;
-//}
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
@@ -129,13 +127,23 @@
     }
     Onibus *onibus = [self buscaOnibus:indexPath paraTableView:tableView];
     
-    if ([self.onibusSelecionados containsObject:onibus]) {
-        cell.backgroundColor = self.corLinhaSelecionada;
+    NSString *imagem = nil;
+    
+    if (onibus.favorito) {
+        imagem = @"favorite-star.png";
     } else {
-        cell.backgroundColor = self.corLinhaPadrao;
+        imagem = @"favorite-star-gray.png";
     }
     
-    cell.accessoryView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"favorite-star-gray.png"]];
+    UIImageView *estrelaFavorito = [[UIImageView alloc]initWithImage:[UIImage imageNamed:imagem]];
+    
+    UITapGestureRecognizer *onTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(favorita:)];
+    [onTap setNumberOfTapsRequired:1];
+    
+    [estrelaFavorito addGestureRecognizer:onTap];
+    [estrelaFavorito setUserInteractionEnabled:YES];
+    
+    cell.accessoryView = estrelaFavorito;
     
     cell.textLabel.text = [onibus letreiro];
     cell.textLabel.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0];
@@ -143,7 +151,33 @@
     cell.detailTextLabel.text = [[onibus sentido] description];
     cell.detailTextLabel.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0];
     
+    if ([self.onibusSelecionados containsObject:onibus]) {
+        cell.backgroundColor = self.corLinhaSelecionada;
+    } else {
+        cell.backgroundColor = self.corLinhaPadrao;
+    }
+
+    
     return cell;
+}
+
+-(void) tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    Onibus *onibus = [self buscaOnibus:indexPath paraTableView:tableView];
+    
+    if ([self.onibusSelecionados containsObject:onibus]) {
+        cell.backgroundColor = self.corLinhaSelecionada;
+    } else {
+        cell.backgroundColor = self.corLinhaPadrao;
+    }
+}
+
+- (void)favorita:(UIGestureRecognizer *)gestureRecognizer {
+    CGPoint ponto = [gestureRecognizer locationInView:self.tableView];
+    NSIndexPath *indexPath = [self.tableView indexPathForRowAtPoint:ponto];
+    
+    Onibus *selecionado = [self buscaOnibus:indexPath paraTableView:self.tableView];
+    [LinhaDeOnibus mudaStatusDeFavoritoParaOnibus:selecionado noContext:[self context]];
+    [self.tableView reloadData];
 }
 
 
@@ -170,6 +204,20 @@
             selecionada.backgroundColor = self.corLinhaSelecionada;
             [self.onibusSelecionados addObject:onibus];
         }
+    }
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    [self atualizaBotaoTempoReal];
+    NSLog(@"SELECIONADOS %@", self.onibusSelecionados);
+}
+
+-(void) atualizaBotaoTempoReal {
+    if ([self.onibusSelecionados count] > 0) {
+        self.navigationItem.rightBarButtonItem.enabled = YES;
+        [self.navigationItem.rightBarButtonItem setTintColor:[UIColor redColor]];
+    } else {
+        self.navigationItem.rightBarButtonItem.enabled = NO;
+        [self.navigationItem.rightBarButtonItem setTintColor:nil];
     }
 }
 

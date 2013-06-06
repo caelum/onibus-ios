@@ -17,3 +17,39 @@
 [[NSBundle mainBundle] localizedStringForKey:(key) value:@"" table:nil]
 
 #endif
+
+#import "AppDelegate.h"
+
+
+@interface UIViewController (WithContextAcess)
+
+-(NSManagedObjectContext*) context;
+
+-(void) saveManagedContext;
+
+-(AppDelegate*) appDelegate;
+
+@end
+
+@implementation UIViewController (WithContextAcess)
+
+
+-(AppDelegate*) appDelegate {
+    AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+    
+    return delegate;
+}
+
+-(NSManagedObjectContext*) context {
+    AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+    
+    return [delegate managedObjectContext];
+}
+
+-(void) saveManagedContext {
+    AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+    
+    [delegate saveContext];
+}
+
+@end

@@ -22,4 +22,6 @@
 @property(nonatomic, strong) Ponto *ponto;
 @property(nonatomic, strong) NSArray *paradas;
 
+@property(nonatomic) BOOL favorito;
+
 @end

@@ -18,6 +18,17 @@
 @dynamic origem;
 @dynamic destino;
 
++(void) mudaStatusDeFavoritoParaOnibus: (Onibus*) onibus noContext: (NSManagedObjectContext*) ctx {
+    if (onibus.favorito) {
+        LinhaDeOnibus *favoritado = [self buscaPorId:onibus.identificador noContext:ctx];
+        [ctx deleteObject:favoritado];
+        onibus.favorito = NO;
+    } else {
+        [self linhaFromOnibus:onibus andContext:ctx];
+        onibus.favorito = YES;
+    }
+}
+
 +(LinhaDeOnibus*) linhaFromOnibus: (Onibus*) onibus andContext: (NSManagedObjectContext*) ctx {
     LinhaDeOnibus *linha = [self buscaPorId:onibus.identificador noContext:ctx];
     

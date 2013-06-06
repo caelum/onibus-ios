@@ -19,7 +19,7 @@
 @property (nonatomic, retain) NSString * origem;
 @property (nonatomic, retain) NSString * destino;
 
-+(LinhaDeOnibus*) linhaFromOnibus: (Onibus*) onibus andContext: (NSManagedObjectContext*) ctx;
++(void) mudaStatusDeFavoritoParaOnibus: (Onibus*) onibus noContext: (NSManagedObjectContext*) ctx;
 
 +(NSArray*) todasWithContext: (NSManagedObjectContext*) ctx;
 

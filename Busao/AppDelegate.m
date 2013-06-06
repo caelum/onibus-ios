@@ -26,7 +26,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    
+
     if([UIDevice iPhone]){
         [self configuraViewParaIPhone];
     }else{
@@ -42,7 +42,8 @@
 - (void) configuraViewParaIPad {
     UISplitViewController *splitView = [[UISplitViewController alloc] init];
     ListaPontoDeOnibusController *listaDeOnibus = [[ListaPontoDeOnibusController alloc] init];
-   
+
+    
     //TODO
     
     splitView.tabBarItem = listaDeOnibus.tabBarItem;
