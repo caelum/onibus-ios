@@ -69,7 +69,7 @@
 -(void) viewDidAppear:(BOOL)animated {
     //TODO isso tah aqui pela heranca mal usada, REFACTOR!!
     self.tableView.rowHeight = 55;
-    self.corLinhaSelecionada = [UIColor redColor];
+    self.corLinhaSelecionada = [UIColor colorWithRed:50.0/255 green:120.0/255 blue:250.0/255 alpha:1];
     self.corLinhaPadrao = [UIColor whiteColor];
     
     UIBarButtonItem *mapa = [[UIBarButtonItem alloc] initWithTitle:@"Tempo real"
@@ -151,24 +151,13 @@
     cell.detailTextLabel.text = [[onibus sentido] description];
     cell.detailTextLabel.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0];
     
-    if ([self.onibusSelecionados containsObject:onibus]) {
-        cell.backgroundColor = self.corLinhaSelecionada;
-    } else {
-        cell.backgroundColor = self.corLinhaPadrao;
-    }
-
-    
     return cell;
 }
 
 -(void) tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
     Onibus *onibus = [self buscaOnibus:indexPath paraTableView:tableView];
     
-    if ([self.onibusSelecionados containsObject:onibus]) {
-        cell.backgroundColor = self.corLinhaSelecionada;
-    } else {
-        cell.backgroundColor = self.corLinhaPadrao;
-    }
+    [self atualizaCorDaCelula:cell andOnibus:onibus];
 }
 
 - (void)favorita:(UIGestureRecognizer *)gestureRecognizer {
@@ -189,10 +178,7 @@
         self.onibusSelecionados = [[NSMutableArray alloc] init];
     }
     
-    UITableViewCell *selecionada = [tableView cellForRowAtIndexPath:indexPath];
-    
     if ([self.onibusSelecionados containsObject:onibus]) {
-        selecionada.backgroundColor = self.corLinhaPadrao;
         [self.onibusSelecionados removeObject:onibus];
         
     } else {
@@ -201,20 +187,31 @@
             
             [alert show];
         } else {            
-            selecionada.backgroundColor = self.corLinhaSelecionada;
             [self.onibusSelecionados addObject:onibus];
         }
     }
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     [self atualizaBotaoTempoReal];
-    NSLog(@"SELECIONADOS %@", self.onibusSelecionados);
+    [self atualizaCorDaCelula:[self.tableView cellForRowAtIndexPath:indexPath] andOnibus:onibus];
+}
+
+-(void) atualizaCorDaCelula: (UITableViewCell*) cell andOnibus: (Onibus*) onibus {
+    if ([self.onibusSelecionados containsObject:onibus]) {
+        cell.backgroundColor = self.corLinhaSelecionada;
+        cell.detailTextLabel.textColor = [UIColor whiteColor];
+        cell.textLabel.textColor = [UIColor whiteColor];
+    } else {
+        cell.backgroundColor = self.corLinhaPadrao;
+        cell.detailTextLabel.textColor = [UIColor grayColor];
+        cell.textLabel.textColor = [UIColor blackColor];
+    }
 }
 
 -(void) atualizaBotaoTempoReal {
     if ([self.onibusSelecionados count] > 0) {
         self.navigationItem.rightBarButtonItem.enabled = YES;
-        [self.navigationItem.rightBarButtonItem setTintColor:[UIColor redColor]];
+        [self.navigationItem.rightBarButtonItem setTintColor: self.corLinhaSelecionada];
     } else {
         self.navigationItem.rightBarButtonItem.enabled = NO;
         [self.navigationItem.rightBarButtonItem setTintColor:nil];

@@ -60,20 +60,15 @@
     return 45;
 }
 
--(CGGradientRef) verticalGradientWithStartColor: (UIColor*) startColor andMiddleColor: (UIColor*) middleColor andEndColor: (UIColor*) endColor {
+-(CGGradientRef) verticalGradientWithStartColor: (UIColor*) startColor andEndColor: (UIColor*) endColor {
     CGFloat *startColorComponents = (CGFloat *)CGColorGetComponents([startColor CGColor]);
-    CGFloat *middleColorComponents = (CGFloat *)CGColorGetComponents([middleColor CGColor]);
     CGFloat *endColorComponents = (CGFloat *)CGColorGetComponents([endColor CGColor]);
     
-    CGFloat colorComponents[12] = {
+    CGFloat colorComponents[8] = {
         startColorComponents[0],
         startColorComponents[1],
         startColorComponents[2],
         startColorComponents[3],
-        middleColorComponents[0],
-        middleColorComponents[1],
-        middleColorComponents[2],
-        middleColorComponents[3],
         endColorComponents[0],
         endColorComponents[1],
         endColorComponents[2],
@@ -81,10 +76,10 @@
     };
     
 
-    CGFloat locations[3] = { 0.05f, 0.45f, 0.95f };
+    CGFloat locations[2] = { 0.05f, 0.95f };
     
-    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
-    CGGradientRef treeStepsGradient = CGGradientCreateWithColorComponents(colorSpace, colorComponents, locations, 3);
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceGray();
+    CGGradientRef treeStepsGradient = CGGradientCreateWithColorComponents(colorSpace, colorComponents, locations, 2);
     CGColorSpaceRelease(colorSpace);
     
     return treeStepsGradient;
@@ -94,9 +89,9 @@
 {
     CGContextRef context = UIGraphicsGetCurrentContext();
     
-    UIColor *start = [UIColor colorWithRed:2.0/255 green:90.0/255 blue:170.0/255 alpha:1];
+    UIColor *start = [UIColor colorWithRed:200.0/255 green:200.0/255 blue:200.0/255 alpha:1];
     
-    CGGradientRef gradient = [self verticalGradientWithStartColor:start andMiddleColor:start andEndColor:[UIColor blueColor]];
+    CGGradientRef gradient = [self verticalGradientWithStartColor:start andEndColor:[UIColor blackColor]];
     
     CGPoint startPoint = CGPointMake(CGRectGetMidX(self.bounds), 0.0);
     CGPoint endPoint = CGPointMake(CGRectGetMidX(self.bounds), CGRectGetMaxY(self.bounds));
