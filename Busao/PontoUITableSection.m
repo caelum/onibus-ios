@@ -7,6 +7,7 @@
 //
 
 #import "PontoUITableSection.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface PontoUITableSection()
 
@@ -24,12 +25,25 @@
     
     if (self = [super initWithFrame:CGRectMake(0, 0, frameTela.size.width, [PontoUITableSection height])]) {
         self.selecaoSection = callback;
+        self.backgroundColor = [UIColor grayColor];
         
-        UILabel *labelPonto = [self labelWithText:ponto.descricao andStartingAtX:5 andY:5 withFontSize:15];
+        self.layer.borderColor = [UIColor colorWithWhite:0.4f alpha:1].CGColor;
+        self.layer.borderWidth = 1.0f;
+        
+        UILabel *labelPonto = [self labelWithText:ponto.descricao
+                                   andStartingAtX:5
+                                             andY:5
+                                     withFontSize:17];
+        
         [self addSubview:labelPonto];
         
         NSString *localAtual = [NSString stringWithFormat:@"Distância: %.0fm", [ponto.localizacao distanciaEntrePonto:localizacao]];
-        UILabel *labelDistancia = [self labelWithText:localAtual andStartingAtX:5 andY:25 withFontSize:12];
+        
+        UILabel *labelDistancia = [self labelWithText:localAtual
+                                       andStartingAtX:5
+                                                 andY:labelPonto.frame.size.height + 7
+                                         withFontSize:12];
+        
         [self addSubview:labelDistancia];
     }
     return self;
@@ -57,50 +71,7 @@
 }
 
 +(CGFloat) height {
-    return 45;
+    return 50;
 }
-
--(CGGradientRef) verticalGradientWithStartColor: (UIColor*) startColor andEndColor: (UIColor*) endColor {
-    CGFloat *startColorComponents = (CGFloat *)CGColorGetComponents([startColor CGColor]);
-    CGFloat *endColorComponents = (CGFloat *)CGColorGetComponents([endColor CGColor]);
-    
-    CGFloat colorComponents[8] = {
-        startColorComponents[0],
-        startColorComponents[1],
-        startColorComponents[2],
-        startColorComponents[3],
-        endColorComponents[0],
-        endColorComponents[1],
-        endColorComponents[2],
-        endColorComponents[3],
-    };
-    
-
-    CGFloat locations[2] = { 0.05f, 0.95f };
-    
-    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceGray();
-    CGGradientRef treeStepsGradient = CGGradientCreateWithColorComponents(colorSpace, colorComponents, locations, 2);
-    CGColorSpaceRelease(colorSpace);
-    
-    return treeStepsGradient;
-};
-
--(void)drawRect:(CGRect)rect
-{
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    
-    UIColor *start = [UIColor colorWithRed:200.0/255 green:200.0/255 blue:200.0/255 alpha:1];
-    
-    CGGradientRef gradient = [self verticalGradientWithStartColor:start andEndColor:[UIColor blackColor]];
-    
-    CGPoint startPoint = CGPointMake(CGRectGetMidX(self.bounds), 0.0);
-    CGPoint endPoint = CGPointMake(CGRectGetMidX(self.bounds), CGRectGetMaxY(self.bounds));
-    CGContextDrawLinearGradient(context, gradient, startPoint, endPoint, nil);
-    
-
-    CGGradientRelease(gradient);
-}
-
-
 
 @end
