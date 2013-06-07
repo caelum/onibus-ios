@@ -39,7 +39,6 @@
         self.navigationItem.title = NSLocalized(@"onibus");
         self.pontosSelecionados = [[NSMutableArray alloc] init];
         [self.pontosSelecionados addObject:ponto];
-
     }
     return self;
 }
@@ -66,7 +65,9 @@
     self.tableView.allowsMultipleSelection = YES;
 }
 
--(void) viewDidAppear:(BOOL)animated {
+
+
+-(void) viewWillAppear:(BOOL)animated {
     //TODO isso tah aqui pela heranca mal usada, REFACTOR!!
     self.tableView.rowHeight = 55;
     self.corLinhaSelecionada = [UIColor colorWithRed:50.0/255 green:120.0/255 blue:250.0/255 alpha:1];
@@ -183,7 +184,7 @@
         
     } else {
         if ([self.onibusSelecionados count] == 3) {
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Aviso" message:@"Só é possível selecionar 3 ônibus ao mesmo tempo." delegate:self cancelButtonTitle:nil otherButtonTitles: @"Ok", nil];
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Aviso" message:@"Só é possível selecionar 3 ônibus ao mesmo tempo." delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: @"Limpar Seleção", nil];
             
             [alert show];
         } else {            
@@ -194,6 +195,14 @@
     
     [self atualizaBotaoTempoReal];
     [self atualizaCorDaCelula:[self.tableView cellForRowAtIndexPath:indexPath] andOnibus:onibus];
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if(buttonIndex == 1) {
+        [self.onibusSelecionados removeAllObjects];
+        [self.tableView reloadData];
+        [self atualizaBotaoTempoReal];
+    }
 }
 
 -(void) atualizaCorDaCelula: (UITableViewCell*) cell andOnibus: (Onibus*) onibus {

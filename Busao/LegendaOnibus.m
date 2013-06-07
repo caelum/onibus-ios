@@ -7,21 +7,44 @@
 //
 
 #import "LegendaOnibus.h"
+#import "UILabel+DetailLabel.h"
 
 @implementation LegendaOnibus
 
-+(CGPoint) addOnibus: (Onibus*) onibus andImage: (UIImage*) imagem andStartingAt: (CGPoint) origem inView: (UIView*) view{
+-(id) initWithOnibuses: (NSArray*) onibuses andImagens:(NSArray*) imagemsVeiculos andLargura: (float) width {
+    CGRect rectFundo = CGRectMake(0, 0, width, 30);
+    
+    if (self = [super initWithFrame:rectFundo]) {
+        self.backgroundColor = [UIColor colorWithRed:0.0 green:0.1 blue:0.1 alpha:0.75];
+        
+        CGPoint origem = CGPointMake(0, 0);
+        
+        for (int i=0; i< [onibuses count]; i++) {
+            Onibus *onibus = [onibuses objectAtIndex:i];
+            UIImage *imagem = [imagemsVeiculos objectAtIndex:i];
+            
+            origem = [self addOnibus:onibus andImage:imagem andStartingAt:origem inView:self];
+        }
+        
+        self.contentSize = CGSizeMake(origem.x+10,30);
+        [self setAutoresizingMask:UIViewAutoresizingFlexibleWidth];
+
+    }
+    return self;
+}
+
+-(CGPoint) addOnibus: (Onibus*) onibus andImage: (UIImage*) imagem andStartingAt: (CGPoint) origem inView: (UIView*) view{
     int tamanhoImagem = imagem.size.width;
     CGPoint novaOrigem = CGPointMake(origem.x+5, origem.y);
     
     UIImageView *imageView = [[UIImageView alloc] initWithFrame: CGRectMake(novaOrigem.x, 0, imagem.size.width, imagem.size.height)];
     [imageView setImage:imagem];
     
-    UILabel *letreiro = [self labelWithText:onibus.letreiro
+    UILabel *letreiro = [UILabel labelWithText:onibus.letreiro
                                          andStartingAtX:novaOrigem.x + tamanhoImagem
                                                    andY:novaOrigem.y];
     
-    UILabel *linha = [self labelWithText:[onibus.sentido description]
+    UILabel *linha = [UILabel labelWithText:[onibus.sentido description]
                                       andStartingAtX:novaOrigem.x + tamanhoImagem
                                                 andY:novaOrigem.y+15 withFontSize:10];
     
@@ -36,27 +59,6 @@
     int larguraTotal = tamanhoImagem + maiorLarguraDeTexto;
     
     return CGPointMake(novaOrigem.x + larguraTotal, novaOrigem.y);
-}
-
-+(UILabel*) labelWithText: (NSString*) text andStartingAtX: (int) x andY: (int) y {
-    return [self labelWithText:text andStartingAtX:x andY:y withFontSize:14];
-}
-
-+(UILabel*) labelWithText: (NSString*) text andStartingAtX: (int) x andY: (int) y withFontSize: (int) fontSize {
-    UIFont *font = [UIFont fontWithName:@"Arial Rounded MT Bold" size:(fontSize)];
-    
-    CGSize tamanhoLabel = [text sizeWithFont:font];
-    
-    UILabel *label = [[UILabel alloc] init];
-    [label setText: [text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]];
-    [label sizeToFit];
-    [label setFrame:CGRectMake(x, y, tamanhoLabel.width, tamanhoLabel.height)];
-    label.backgroundColor = [UIColor colorWithRed:0.0 green:0.1 blue:0.1 alpha:0.0];
-    
-    label.textColor = [UIColor whiteColor];
-    label.font = font;
-    
-    return label;
 }
 
 @end

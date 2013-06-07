@@ -28,6 +28,8 @@
 @property(nonatomic, strong) NSArray *imagemsVeiculos;
 @property(nonatomic, strong) UIImage *imagemParada;
 
+@property(nonatomic, strong) LegendaOnibus *legenda;
+
 @end
 
 @implementation DetalhesDoOnibusController
@@ -47,6 +49,7 @@
                                  [UIImage imageNamed:@"pin-bus-red.png"]
                                 ];
         self.imagemParada = [UIImage imageNamed:@"pin-busstop-transp.png"];
+        self.mapView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
     }
     return self;
 }
@@ -61,30 +64,13 @@
     
     MKUserTrackingBarButtonItem *buttonItem = [[MKUserTrackingBarButtonItem alloc] initWithMapView:self.mapView];
     self.navigationItem.rightBarButtonItem = buttonItem;
-
     
-    CGRect frame = [[UIScreen mainScreen] applicationFrame];
-    CGRect rectFundo = CGRectMake(0, 0, frame.size.width, 30);
-
-    UIScrollView *fundo = [[UIScrollView alloc] initWithFrame:rectFundo];
-    
-    
-    fundo.backgroundColor = [UIColor colorWithRed:0.0 green:0.1 blue:0.1 alpha:0.75];
-    [self.view addSubview:fundo];
-    
-    CGPoint origem = CGPointMake(0, 0);
-    
-
-    
-    for (int i=0; i< [self.onibuses count]; i++) {
-        Onibus *onibus = [self.onibuses objectAtIndex:i];
-        UIImage *imagem = [self.imagemsVeiculos objectAtIndex:i];
-        
-        origem = [LegendaOnibus addOnibus:onibus andImage:imagem andStartingAt:origem inView:fundo];
+    if (self.legenda) {
+        [self.legenda removeFromSuperview];
     }
-    
-    fundo.contentSize = CGSizeMake(origem.x+10,30);
-
+    self.legenda = [[LegendaOnibus alloc] initWithOnibuses:self.onibuses
+                                                andImagens:self.imagemsVeiculos andLargura:self.view.frame.size.width];
+    [self.view addSubview: self.legenda];
     
     [self buscaDetalhesDoOnibus];
 }

@@ -9,8 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "Onibus.h"
 
-@interface LegendaOnibus : NSObject
+@interface LegendaOnibus : UIScrollView
 
-+(CGPoint) addOnibus: (Onibus*) onibus andImage: (UIImage*) imagem andStartingAt: (CGPoint) origem inView: (UIView*) view;
+-(id) initWithOnibuses: (NSArray*) onibuses andImagens:(NSArray*) imagemsVeiculos  andLargura: (float) width;
 
 @end
