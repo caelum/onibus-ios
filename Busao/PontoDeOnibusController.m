@@ -136,7 +136,14 @@
         imagem = @"favorite-star-gray.png";
     }
     
-    UIImageView *estrelaFavorito = [[UIImageView alloc]initWithImage:[UIImage imageNamed:imagem]];
+    if ([self.onibusSelecionados containsObject:onibus]) {
+        cell.textLabel.text = [NSString stringWithFormat:@"\u2611 %@", onibus.letreiro];
+    } else {
+        cell.textLabel.text = [NSString stringWithFormat:@"\u2B1C %@", onibus.letreiro];
+    }
+    
+    UIImageView *estrelaFavorito = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 30, 30)];
+    estrelaFavorito.image = [UIImage imageNamed:imagem];
     
     UITapGestureRecognizer *onTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(favorita:)];
     [onTap setNumberOfTapsRequired:1];
@@ -146,7 +153,6 @@
     
     cell.accessoryView = estrelaFavorito;
     
-    cell.textLabel.text = [onibus letreiro];
     cell.textLabel.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0];
     
     cell.detailTextLabel.text = [[onibus sentido] description];
@@ -167,6 +173,8 @@
     
     Onibus *selecionado = [self buscaOnibus:indexPath paraTableView:self.tableView];
     [LinhaDeOnibus mudaStatusDeFavoritoParaOnibus:selecionado noContext:[self context]];
+    
+    [self saveManagedContext];
     [self.tableView reloadData];
 }
 
@@ -214,6 +222,11 @@
         cell.backgroundColor = self.corLinhaPadrao;
         cell.detailTextLabel.textColor = [UIColor grayColor];
         cell.textLabel.textColor = [UIColor blackColor];
+    }
+    if ([self.onibusSelecionados containsObject:onibus]) {
+        cell.textLabel.text = [NSString stringWithFormat:@"\u2611 %@", onibus.letreiro];
+    } else {
+        cell.textLabel.text = [NSString stringWithFormat:@"\u2B1C %@", onibus.letreiro];
     }
 }
 

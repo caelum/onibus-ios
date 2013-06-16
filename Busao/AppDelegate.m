@@ -12,6 +12,7 @@
 #import "OnibusDataSource.h"
 #import "AppDelegate.h"
 #import "Appirater.h"
+#import "FavoritosController.h"
 
 
 @interface AppDelegate()
@@ -58,9 +59,10 @@
 - (void) configuraViewParaIPhone {
     ListaPontoDeOnibusController *listaDeOnibus = [[ListaPontoDeOnibusController alloc] init];
     PontosPorProximidadeController *onibusDisponiveis = [[PontosPorProximidadeController alloc] init];
+    FavoritosController *favoritos = [[FavoritosController alloc]init];
     
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
-    tabBarController.viewControllers = @[[listaDeOnibus comNavigation], [onibusDisponiveis comNavigation]];
+    tabBarController.viewControllers = @[[listaDeOnibus comNavigation], [favoritos comNavigation], [onibusDisponiveis comNavigation]];
     self.window.rootViewController = tabBarController;
 }
 

@@ -83,6 +83,7 @@
 		77307D9E175FE1EC00B7B1E8 /* NSManagedObject+ComFacilitadores.m in Sources */ = {isa = PBXBuildFile; fileRef = 77307D9C175FE1EC00B7B1E8 /* NSManagedObject+ComFacilitadores.m */; };
 		77307DA5175FFEF600B7B1E8 /* favorite-star-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 77307DA3175FFEF600B7B1E8 /* favorite-star-gray.png */; };
 		77307DA6175FFEF600B7B1E8 /* favorite-star.png in Resources */ = {isa = PBXBuildFile; fileRef = 77307DA4175FFEF600B7B1E8 /* favorite-star.png */; };
+		7742E5FF17628F5700157A84 /* FavoritosController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7742E5FE17628F5700157A84 /* FavoritosController.m */; };
 		774C579616373A9500AAAF2A /* TempoRealDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 774C579516373A9500AAAF2A /* TempoRealDataSource.m */; };
 		774C579A1637438F00AAAF2A /* Veiculo.m in Sources */ = {isa = PBXBuildFile; fileRef = 774C57991637438F00AAAF2A /* Veiculo.m */; };
 		77C0A5B317501B6D005D4823 /* DetalhesDoOnibusController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C0A5B117501B6D005D4823 /* DetalhesDoOnibusController.m */; };
@@ -206,6 +207,8 @@
 		77307D9D175FE1EC00B7B1E8 /* NSManagedObject+ComFacilitadores.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+ComFacilitadores.h"; sourceTree = "<group>"; };
 		77307DA3175FFEF600B7B1E8 /* favorite-star-gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "favorite-star-gray.png"; sourceTree = "<group>"; };
 		77307DA4175FFEF600B7B1E8 /* favorite-star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "favorite-star.png"; sourceTree = "<group>"; };
+		7742E5FD17628F5700157A84 /* FavoritosController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritosController.h; sourceTree = "<group>"; };
+		7742E5FE17628F5700157A84 /* FavoritosController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritosController.m; sourceTree = "<group>"; };
 		774C579416373A9400AAAF2A /* TempoRealDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TempoRealDataSource.h; sourceTree = "<group>"; };
 		774C579516373A9500AAAF2A /* TempoRealDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TempoRealDataSource.m; sourceTree = "<group>"; };
 		774C57981637438F00AAAF2A /* Veiculo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Veiculo.h; sourceTree = "<group>"; };
@@ -396,6 +399,8 @@
 				77C0A5B017501B6D005D4823 /* DetalhesDoOnibusController.h */,
 				77C0A5B117501B6D005D4823 /* DetalhesDoOnibusController.m */,
 				77C0A5B217501B6D005D4823 /* DetalhesDoOnibusController.xib */,
+				7742E5FD17628F5700157A84 /* FavoritosController.h */,
+				7742E5FE17628F5700157A84 /* FavoritosController.m */,
 			);
 			name = Telas;
 			sourceTree = "<group>";
@@ -663,6 +668,7 @@
 				77307D95175FDD3000B7B1E8 /* BusaoSP.xcdatamodeld in Sources */,
 				77307D9B175FE0E200B7B1E8 /* LinhaDeOnibus.m in Sources */,
 				77307D9E175FE1EC00B7B1E8 /* NSManagedObject+ComFacilitadores.m in Sources */,
+				7742E5FF17628F5700157A84 /* FavoritosController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
