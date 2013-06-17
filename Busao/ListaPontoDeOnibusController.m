@@ -116,6 +116,8 @@
     [self.locationManager startUpdatingLocation];
 }
 - (void) recebePontos: (NSArray *) _pontos paraLocalizacao:(Localizacao *)localizacao{
+    [self.pontosSelecionados removeAllObjects];
+    [self.onibusSelecionados removeAllObjects];
     self.pontos = _pontos;
     [self.tableView reloadData];
     [self listagemAtualizada];
@@ -129,7 +131,7 @@
 }
 #pragma mark - PullToRefresh methods
 - (void)egoRefreshTableHeaderDidTriggerRefresh:(EGORefreshTableHeaderView*)view{
-	[self atualizarListagem];	
+	[self atualizarListagem];
 }
 - (BOOL)egoRefreshTableHeaderDataSourceIsLoading:(EGORefreshTableHeaderView*)view{
 	return reloading;

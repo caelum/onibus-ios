@@ -16,15 +16,12 @@
 #import "LinhaDeOnibus.h"
 
 
+
 @interface PontoDeOnibusController ()
 
 @property(nonatomic, strong) UISearchBar *searchBar;
 @property(nonatomic, strong) UISearchDisplayController *searchController;
 @property(nonatomic, strong) NSMutableArray *onibusFiltrados;
-@property(nonatomic, strong) NSMutableArray *onibusSelecionados;
-
-@property(nonatomic, strong) UIColor *corLinhaSelecionada;
-@property(nonatomic, strong) UIColor *corLinhaPadrao;
 
 
 @end
@@ -70,16 +67,14 @@
 -(void) viewWillAppear:(BOOL)animated {
     //TODO isso tah aqui pela heranca mal usada, REFACTOR!!
     self.tableView.rowHeight = 55;
-    self.corLinhaSelecionada = [UIColor colorWithRed:50.0/255 green:120.0/255 blue:250.0/255 alpha:1];
-    self.corLinhaPadrao = [UIColor whiteColor];
     
     UIBarButtonItem *mapa = [[UIBarButtonItem alloc] initWithTitle:@"Tempo real"
                                                              style:UIBarButtonItemStyleBordered
                                                             target:self
                                                             action:@selector(irParaMapa)];
-    [self atualizaBotaoTempoReal];
-    
     self.navigationItem.rightBarButtonItem = mapa;
+    
+    [self atualizaBotaoTempoReal];
 
 }
 
@@ -118,53 +113,22 @@
     }
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[OnibusTableCell identifier]];
     
-    if(!cell){
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
-    }
     Onibus *onibus = [self buscaOnibus:indexPath paraTableView:tableView];
     
-    NSString *imagem = nil;
-    
-    if (onibus.favorito) {
-        imagem = @"favorite-star.png";
-    } else {
-        imagem = @"favorite-star-gray.png";
+    if(!cell){
+        cell = [[OnibusTableCell alloc] initWithOnibus:onibus andDelegate:self];
     }
     
-    if ([self.onibusSelecionados containsObject:onibus]) {
-        cell.textLabel.text = [NSString stringWithFormat:@"\u2611 %@", onibus.letreiro];
-    } else {
-        cell.textLabel.text = [NSString stringWithFormat:@"\u2B1C %@", onibus.letreiro];
-    }
-    
-    UIImageView *estrelaFavorito = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 30, 30)];
-    estrelaFavorito.image = [UIImage imageNamed:imagem];
-    
-    UITapGestureRecognizer *onTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(favorita:)];
-    [onTap setNumberOfTapsRequired:1];
-    
-    [estrelaFavorito addGestureRecognizer:onTap];
-    [estrelaFavorito setUserInteractionEnabled:YES];
-    
-    cell.accessoryView = estrelaFavorito;
-    
-    cell.textLabel.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0];
-    
-    cell.detailTextLabel.text = [[onibus sentido] description];
-    cell.detailTextLabel.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0];
     
     return cell;
 }
 
 -(void) tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
-    Onibus *onibus = [self buscaOnibus:indexPath paraTableView:tableView];
-    
-    [self atualizaCorDaCelula:cell andOnibus:onibus];
+
+    [(OnibusTableCell*)cell aplicaCorDaCelulaParaOnibusSelecionados:self.onibusSelecionados];
 }
 
 - (void)favorita:(UIGestureRecognizer *)gestureRecognizer {
@@ -202,7 +166,8 @@
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     [self atualizaBotaoTempoReal];
-    [self atualizaCorDaCelula:[self.tableView cellForRowAtIndexPath:indexPath] andOnibus:onibus];
+    OnibusTableCell *cell = (OnibusTableCell*) [self.tableView cellForRowAtIndexPath:indexPath];
+    [cell aplicaCorDaCelulaParaOnibusSelecionados:self.onibusSelecionados];
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
@@ -213,27 +178,11 @@
     }
 }
 
--(void) atualizaCorDaCelula: (UITableViewCell*) cell andOnibus: (Onibus*) onibus {
-    if ([self.onibusSelecionados containsObject:onibus]) {
-        cell.backgroundColor = self.corLinhaSelecionada;
-        cell.detailTextLabel.textColor = [UIColor whiteColor];
-        cell.textLabel.textColor = [UIColor whiteColor];
-    } else {
-        cell.backgroundColor = self.corLinhaPadrao;
-        cell.detailTextLabel.textColor = [UIColor grayColor];
-        cell.textLabel.textColor = [UIColor blackColor];
-    }
-    if ([self.onibusSelecionados containsObject:onibus]) {
-        cell.textLabel.text = [NSString stringWithFormat:@"\u2611 %@", onibus.letreiro];
-    } else {
-        cell.textLabel.text = [NSString stringWithFormat:@"\u2B1C %@", onibus.letreiro];
-    }
-}
 
 -(void) atualizaBotaoTempoReal {
     if ([self.onibusSelecionados count] > 0) {
         self.navigationItem.rightBarButtonItem.enabled = YES;
-        [self.navigationItem.rightBarButtonItem setTintColor: self.corLinhaSelecionada];
+        [self.navigationItem.rightBarButtonItem setTintColor: [OnibusTableCell corLinhaSelecionada]];
     } else {
         self.navigationItem.rightBarButtonItem.enabled = NO;
         [self.navigationItem.rightBarButtonItem setTintColor:nil];
