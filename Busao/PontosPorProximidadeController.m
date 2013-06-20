@@ -47,30 +47,35 @@
         self.tabBarItem = listaItem;
         self.navigationItem.title = NSLocalized(@"busque_no_mapa");
         
+        UIBarButtonItem *dropPin = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"242-Aim.png"]
+                                                                    style:UIBarButtonItemStyleBordered
+                                                                   target:self
+                                                                   action:@selector(atualizarLocalizacao)];
+        
+        MKUserTrackingBarButtonItem *localiza = [[MKUserTrackingBarButtonItem alloc] initWithMapView:self.mapView];
+        
+        self.navigationItem.rightBarButtonItems = @[localiza, dropPin];
+        
         dataSource = [[OnibusDataSource alloc] initWithDelegate:self];
     }
     return self;
 }
 
--(void)viewDidLoad {    
-    [self criaDropPin];
-    [self.mapView zoomOut];
-    
+-(void)viewDidLoad {
     self.view = mapView;
     [self.view addSubview:[UILabel detailLabelWithText:NSLocalized(@"pontos_proximos_pino") withCentralization:YES]];
+    
+    [self.mapView zoomOut];
+    
 }
 - (void) verificaGps {
     if([GPSManager isGPSDisabled]){
-        self.navigationItem.rightBarButtonItem = NULL;
+        [[self.navigationItem.rightBarButtonItems objectAtIndex:0] setEnabled:NO];
     }else{
-        MKUserTrackingBarButtonItem *buttonItem = [[MKUserTrackingBarButtonItem alloc] initWithMapView:self.mapView];
-        self.navigationItem.rightBarButtonItem = buttonItem;
+        [[self.navigationItem.rightBarButtonItems objectAtIndex:0] setEnabled:YES];
     }
 }
-- (void) criaDropPin{
-    UIBarButtonItem *dropPin = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"242-Aim.png"] style:UIBarButtonItemStyleBordered target:self action:@selector(atualizarLocalizacao)];
-    self.navigationItem.leftBarButtonItem = dropPin;
-}
+
 - (void) criaSpinner {
     UIActivityIndicatorView *activityIndicator = 
     [[UIActivityIndicatorView alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
@@ -126,7 +131,6 @@
         [self.mapView addAnnotation:obj];
     }];
     [self.mapView zoomOut];
-    [self criaDropPin];
 }
 - (void) problemaParaBuscarPontos{
 

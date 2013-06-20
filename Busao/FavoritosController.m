@@ -23,8 +23,8 @@
 
 
 - (void)viewDidLoad {
-    self.title = @"Favoritos";
     [super viewDidLoad];
+    self.title = @"Favoritos";
     self.favoritos = [[NSMutableArray alloc] init];
     self.tableView.rowHeight = 55;
 }

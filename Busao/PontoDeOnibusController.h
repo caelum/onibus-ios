@@ -19,8 +19,8 @@
 @property(nonatomic, strong) NSMutableArray *pontosSelecionados;
 @property(nonatomic, strong) NSMutableArray *onibusSelecionados;
 
+
 - (id)initWithPonto: (Ponto *) ponto;
 - (BOOL) isSearching:(UITableView *)tableView;
 
--(void) irParaMapa;
 @end

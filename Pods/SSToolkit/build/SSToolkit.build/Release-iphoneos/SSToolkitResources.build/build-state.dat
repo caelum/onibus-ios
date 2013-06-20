@@ -1,0 +1,820 @@
+TSSToolkitResources
+v5
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/Info.plist Resources/SSToolkitResources-Info.plist
+cCopyStringsFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/en.lproj/SSToolkit.strings Resources/en.lproj/SSToolkit.strings
+cCopyStringsFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/de.lproj/SSToolkit.strings Resources/de.lproj/SSToolkit.strings
+cCopyStringsFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/es.lproj/SSToolkit.strings Resources/es.lproj/SSToolkit.strings
+cCopyStringsFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/fr.lproj/SSToolkit.strings Resources/fr.lproj/SSToolkit.strings
+cCopyStringsFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/id.lproj/SSToolkit.strings Resources/id.lproj/SSToolkit.strings
+cCopyStringsFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/it.lproj/SSToolkit.strings Resources/it.lproj/SSToolkit.strings
+cCopyStringsFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/ja.lproj/SSToolkit.strings Resources/ja.lproj/SSToolkit.strings
+cCopyStringsFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/ko.lproj/SSToolkit.strings Resources/ko.lproj/SSToolkit.strings
+cCopyStringsFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/ms.lproj/SSToolkit.strings Resources/ms.lproj/SSToolkit.strings
+cCopyStringsFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/nl.lproj/SSToolkit.strings Resources/nl.lproj/SSToolkit.strings
+cCopyStringsFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/pt_PT.lproj/SSToolkit.strings Resources/pt_PT.lproj/SSToolkit.strings
+cCopyStringsFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/pt.lproj/SSToolkit.strings Resources/pt.lproj/SSToolkit.strings
+cCopyStringsFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/ru.lproj/SSToolkit.strings Resources/ru.lproj/SSToolkit.strings
+cCopyStringsFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/sv.lproj/SSToolkit.strings Resources/sv.lproj/SSToolkit.strings
+cCopyStringsFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/zh_Hans.lproj/SSToolkit.strings Resources/zh_Hans.lproj/SSToolkit.strings
+cCopyStringsFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/zh_Hant.lproj/SSToolkit.strings Resources/zh_Hant.lproj/SSToolkit.strings
+cCopyPNGFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/hud-check.png Resources/Images/hud-check.png
+cCopyPNGFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/hud-check@2x.png Resources/Images/hud-check@2x.png
+cCopyPNGFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/hud-x.png Resources/Images/hud-x.png
+cCopyPNGFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/hud-x@2x.png Resources/Images/hud-x@2x.png
+cCopyPNGFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/gray-star.png Resources/Images/gray-star.png
+cCopyPNGFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/gray-star@2x.png Resources/Images/gray-star@2x.png
+cCopyPNGFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/orange-star.png Resources/Images/orange-star.png
+cCopyPNGFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/orange-star@2x.png Resources/Images/orange-star@2x.png
+cCopyPNGFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/SSAddressBarTextFieldBackground.png Resources/Images/SSAddressBarTextFieldBackground.png
+cCopyPNGFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/SSAddressBarTextFieldBackground@2x.png Resources/Images/SSAddressBarTextFieldBackground@2x.png
+cCopyPNGFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/SSAddressBarTextFieldReload.png Resources/Images/SSAddressBarTextFieldReload.png
+cCopyPNGFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/SSAddressBarTextFieldReload@2x.png Resources/Images/SSAddressBarTextFieldReload@2x.png
+cCopyPNGFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/SSAddressBarTextFieldStop.png Resources/Images/SSAddressBarTextFieldStop.png
+cCopyPNGFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/SSAddressBarTextFieldStop@2x.png Resources/Images/SSAddressBarTextFieldStop@2x.png
+cCopyPNGFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/SSVignetteiPad.png Resources/Images/SSVignetteiPad.png
+cCopyPNGFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/SSVignetteiPhone.png Resources/Images/SSVignetteiPhone.png
+cCopyPNGFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/SSVignetteiPhone@2x.png Resources/Images/SSVignetteiPhone@2x.png
+cCopyPNGFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/UISegmentBarButton.png Resources/Images/UISegmentBarButton.png
+cCopyPNGFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/UISegmentBarButton@2x.png Resources/Images/UISegmentBarButton@2x.png
+cCopyPNGFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/UISegmentBarButtonHighlighted.png Resources/Images/UISegmentBarButtonHighlighted.png
+cCopyPNGFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/UISegmentBarButtonHighlighted@2x.png Resources/Images/UISegmentBarButtonHighlighted@2x.png
+cCopyPNGFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/UISegmentBarDivider.png Resources/Images/UISegmentBarDivider.png
+cCopyPNGFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/UISegmentBarDivider@2x.png Resources/Images/UISegmentBarDivider@2x.png
+cCopyPNGFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/UISegmentBarDividerHighlighted.png Resources/Images/UISegmentBarDividerHighlighted.png
+cCopyPNGFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/UISegmentBarDividerHighlighted@2x.png Resources/Images/UISegmentBarDividerHighlighted@2x.png
+cTouch /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle
+t2
+s0
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/Info.plist
+t2
+s0
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/SSAddressBarTextFieldBackground.png
+t2
+s0
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/SSAddressBarTextFieldBackground@2x.png
+t2
+s0
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/SSAddressBarTextFieldReload.png
+t2
+s0
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/SSAddressBarTextFieldReload@2x.png
+t2
+s0
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/SSAddressBarTextFieldStop.png
+t2
+s0
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/SSAddressBarTextFieldStop@2x.png
+t2
+s0
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/SSVignetteiPad.png
+t2
+s0
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/SSVignetteiPhone.png
+t2
+s0
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/SSVignetteiPhone@2x.png
+t2
+s0
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/UISegmentBarButton.png
+t2
+s0
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/UISegmentBarButton@2x.png
+t2
+s0
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/UISegmentBarButtonHighlighted.png
+t2
+s0
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/UISegmentBarButtonHighlighted@2x.png
+t2
+s0
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/UISegmentBarDivider.png
+t2
+s0
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/UISegmentBarDivider@2x.png
+t2
+s0
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/UISegmentBarDividerHighlighted.png
+t2
+s0
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/UISegmentBarDividerHighlighted@2x.png
+t2
+s0
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/de.lproj/SSToolkit.strings
+t2
+s0
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/en.lproj/SSToolkit.strings
+t2
+s0
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/es.lproj/SSToolkit.strings
+t2
+s0
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/fr.lproj/SSToolkit.strings
+t2
+s0
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/gray-star.png
+t2
+s0
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/gray-star@2x.png
+t2
+s0
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/hud-check.png
+t2
+s0
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/hud-check@2x.png
+t2
+s0
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/hud-x.png
+t2
+s0
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/hud-x@2x.png
+t2
+s0
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/id.lproj/SSToolkit.strings
+t2
+s0
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/it.lproj/SSToolkit.strings
+t2
+s0
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/ja.lproj/SSToolkit.strings
+t2
+s0
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/ko.lproj/SSToolkit.strings
+t2
+s0
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/ms.lproj/SSToolkit.strings
+t2
+s0
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/nl.lproj/SSToolkit.strings
+t2
+s0
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/orange-star.png
+t2
+s0
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/orange-star@2x.png
+t2
+s0
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/pt.lproj/SSToolkit.strings
+t2
+s0
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/pt_PT.lproj/SSToolkit.strings
+t2
+s0
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/ru.lproj/SSToolkit.strings
+t2
+s0
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/sv.lproj/SSToolkit.strings
+t2
+s0
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/zh_Hans.lproj/SSToolkit.strings
+t2
+s0
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/zh_Hant.lproj/SSToolkit.strings
+t2
+s0
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/SSAddressBarTextFieldBackground.png
+c0000000051C138F80000000000000100
+t1371617528
+s256
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/SSAddressBarTextFieldBackground@2x.png
+c0000000051C138F8000000000000015E
+t1371617528
+s350
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/SSAddressBarTextFieldReload.png
+c0000000051C138F8000000000000036F
+t1371617528
+s879
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/SSAddressBarTextFieldReload@2x.png
+c0000000051C138F800000000000004E0
+t1371617528
+s1248
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/SSAddressBarTextFieldStop.png
+c0000000051C138F8000000000000027C
+t1371617528
+s636
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/SSAddressBarTextFieldStop@2x.png
+c0000000051C138F800000000000003C9
+t1371617528
+s969
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/SSVignetteiPad.png
+c0000000051C138F80000000000011E69
+t1371617528
+s73321
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/SSVignetteiPhone.png
+c0000000051C138F80000000000007AC5
+t1371617528
+s31429
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/SSVignetteiPhone@2x.png
+c0000000051C138F80000000000012181
+t1371617528
+s74113
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/UISegmentBarButton.png
+c0000000051C138F80000000000000240
+t1371617528
+s576
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/UISegmentBarButton@2x.png
+c0000000051C138F80000000000000525
+t1371617528
+s1317
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/UISegmentBarButtonHighlighted.png
+c0000000051C138F80000000000000248
+t1371617528
+s584
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/UISegmentBarButtonHighlighted@2x.png
+c0000000051C138F8000000000000053E
+t1371617528
+s1342
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/UISegmentBarDivider.png
+c0000000051C138F8000000000000008E
+t1371617528
+s142
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/UISegmentBarDivider@2x.png
+c0000000051C138F800000000000000CC
+t1371617528
+s204
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/UISegmentBarDividerHighlighted.png
+c0000000051C138F8000000000000008E
+t1371617528
+s142
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/UISegmentBarDividerHighlighted@2x.png
+c0000000051C138F800000000000000E7
+t1371617528
+s231
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/gray-star.png
+c0000000051C138F80000000000000DC4
+t1371617528
+s3524
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/gray-star@2x.png
+c0000000051C138F8000000000000118E
+t1371617528
+s4494
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/hud-check.png
+c0000000051C138F800000000000001A1
+t1371617528
+s417
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/hud-check@2x.png
+c0000000051C138F80000000000000299
+t1371617528
+s665
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/hud-x.png
+c0000000051C138F800000000000001BA
+t1371617528
+s442
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/hud-x@2x.png
+c0000000051C138F80000000000000310
+t1371617528
+s784
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/orange-star.png
+c0000000051C138F80000000000000EB3
+t1371617528
+s3763
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/orange-star@2x.png
+c0000000051C138F80000000000001456
+t1371617528
+s5206
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/de.lproj/SSToolkit.strings
+c0000000051C138F8000000000000035B
+t1371617528
+s859
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/en.lproj/SSToolkit.strings
+c0000000051C138F80000000000000352
+t1371617528
+s850
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/es.lproj/SSToolkit.strings
+c0000000051C138F80000000000000374
+t1371617528
+s884
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/fr.lproj/SSToolkit.strings
+c0000000051C138F80000000000000361
+t1371617528
+s865
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/id.lproj/SSToolkit.strings
+c0000000051C138F80000000000000361
+t1371617528
+s865
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/it.lproj/SSToolkit.strings
+c0000000051C138F8000000000000035C
+t1371617528
+s860
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/ja.lproj/SSToolkit.strings
+c0000000051C138F800000000000005F0
+t1371617528
+s1520
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/ko.lproj/SSToolkit.strings
+c0000000051C138F8000000000000033A
+t1371617528
+s826
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/ms.lproj/SSToolkit.strings
+c0000000051C138F80000000000000370
+t1371617528
+s880
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/nl.lproj/SSToolkit.strings
+c0000000051C138F80000000000000376
+t1371617528
+s886
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/pt.lproj/SSToolkit.strings
+c0000000051C138F8000000000000035A
+t1371617528
+s858
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/pt_PT.lproj/SSToolkit.strings
+c0000000051C138F80000000000000361
+t1371617528
+s865
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/ru.lproj/SSToolkit.strings
+c0000000051C138F80000000000000382
+t1371617528
+s898
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/sv.lproj/SSToolkit.strings
+c0000000051C138F8000000000000036C
+t1371617528
+s876
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/zh_Hans.lproj/SSToolkit.strings
+c0000000051C138F8000000000000035A
+t1371617528
+s858
+
+N/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/zh_Hant.lproj/SSToolkit.strings
+c0000000051C138F80000000000000358
+t1371617528
+s856
+
+NResources/SSToolkitResources-Info.plist
+c0000000051C138F80000000000000572
+t1371617528
+s1394
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciescf103e7c7071b741^b48f597c7071b741^---0#1#0#--18"Check dependencies36"D530D9F8-352A-4BEE-8950-4EA3A8D2D1E2-
+
+CCopyPNGFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/SSAddressBarTextFieldBackground.png Resources/Images/SSAddressBarTextFieldBackground.png
+s393310332.984167
+e393310333.042047
+r1
+xCopyPNGFile
+x/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/SSAddressBarTextFieldBackground.png
+xResources/Images/SSAddressBarTextFieldBackground.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection139"CopyPNGFile ../Resources/SSToolkitResources.bundle/SSAddressBarTextFieldBackground.png Resources/Images/SSAddressBarTextFieldBackground.pngec17fc7c7071b741^16dd0a7d7071b741^---0#0#0#-19%DVTDocumentLocation2@139"file://localhost/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/SSAddressBarTextFieldBackground.png0000000000000000^1365"CopyPNGFile ../Resources/SSToolkitResources.bundle/SSAddressBarTextFieldBackground.png Resources/Images/SSAddressBarTextFieldBackground.png    cd /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@utils/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@global/bin:/Users/erich/.rvm/rubies/ruby-1.9.3-p392/bin:/Users/erich/.rvm/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/usr/local/bin:/usr/local/sbin:/Developer/SDKs/scala-2.9.1.final/bin:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/platform-tools/:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/tools/:/usr/local/mysql/bin/:~/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:/Users/erich/Documents/inst/forge-1.0.0.Beta3/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/SSAddressBarTextFieldBackground.png /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/SSAddressBarTextFieldBackground.png36"79AE0CC8-A644-4FC8-B77C-49D0B0D8F562-
+
+CCopyPNGFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/SSAddressBarTextFieldBackground@2x.png Resources/Images/SSAddressBarTextFieldBackground@2x.png
+s393310333.003174
+e393310333.070164
+r1
+xCopyPNGFile
+x/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/SSAddressBarTextFieldBackground@2x.png
+xResources/Images/SSAddressBarTextFieldBackground@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection145"CopyPNGFile ../Resources/SSToolkitResources.bundle/SSAddressBarTextFieldBackground@2x.png Resources/Images/SSAddressBarTextFieldBackground@2x.png62f8007d7071b741^8a05127d7071b741^---0#0#0#-19%DVTDocumentLocation2@142"file://localhost/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/SSAddressBarTextFieldBackground@2x.png0000000000000000^1385"CopyPNGFile "../Resources/SSToolkitResources.bundle/SSAddressBarTextFieldBackground@2x.png" "Resources/Images/SSAddressBarTextFieldBackground@2x.png"    cd /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@utils/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@global/bin:/Users/erich/.rvm/rubies/ruby-1.9.3-p392/bin:/Users/erich/.rvm/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/usr/local/bin:/usr/local/sbin:/Developer/SDKs/scala-2.9.1.final/bin:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/platform-tools/:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/tools/:/usr/local/mysql/bin/:~/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:/Users/erich/Documents/inst/forge-1.0.0.Beta3/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/SSAddressBarTextFieldBackground@2x.png" "/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/SSAddressBarTextFieldBackground@2x.png"36"97D159DB-E9FC-4ED6-83F6-1D996832E5BC-
+
+CCopyPNGFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/SSAddressBarTextFieldReload.png Resources/Images/SSAddressBarTextFieldReload.png
+s393310333.005760
+e393310333.065451
+r1
+xCopyPNGFile
+x/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/SSAddressBarTextFieldReload.png
+xResources/Images/SSAddressBarTextFieldReload.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection131"CopyPNGFile ../Resources/SSToolkitResources.bundle/SSAddressBarTextFieldReload.png Resources/Images/SSAddressBarTextFieldReload.png7ba0017d7071b741^04e3107d7071b741^---0#0#0#-19%DVTDocumentLocation2@135"file://localhost/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/SSAddressBarTextFieldReload.png0000000000000000^1349"CopyPNGFile ../Resources/SSToolkitResources.bundle/SSAddressBarTextFieldReload.png Resources/Images/SSAddressBarTextFieldReload.png    cd /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@utils/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@global/bin:/Users/erich/.rvm/rubies/ruby-1.9.3-p392/bin:/Users/erich/.rvm/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/usr/local/bin:/usr/local/sbin:/Developer/SDKs/scala-2.9.1.final/bin:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/platform-tools/:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/tools/:/usr/local/mysql/bin/:~/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:/Users/erich/Documents/inst/forge-1.0.0.Beta3/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/SSAddressBarTextFieldReload.png /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/SSAddressBarTextFieldReload.png36"31A7FFE2-1F2D-4BD7-9E5C-572B396FE305-
+
+CCopyPNGFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/SSAddressBarTextFieldReload@2x.png Resources/Images/SSAddressBarTextFieldReload@2x.png
+s393310333.019085
+e393310333.101052
+r1
+xCopyPNGFile
+x/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/SSAddressBarTextFieldReload@2x.png
+xResources/Images/SSAddressBarTextFieldReload@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection137"CopyPNGFile ../Resources/SSToolkitResources.bundle/SSAddressBarTextFieldReload@2x.png Resources/Images/SSAddressBarTextFieldReload@2x.png4c18057d7071b741^f4f8197d7071b741^---0#0#0#-19%DVTDocumentLocation2@138"file://localhost/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/SSAddressBarTextFieldReload@2x.png0000000000000000^1369"CopyPNGFile "../Resources/SSToolkitResources.bundle/SSAddressBarTextFieldReload@2x.png" "Resources/Images/SSAddressBarTextFieldReload@2x.png"    cd /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@utils/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@global/bin:/Users/erich/.rvm/rubies/ruby-1.9.3-p392/bin:/Users/erich/.rvm/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/usr/local/bin:/usr/local/sbin:/Developer/SDKs/scala-2.9.1.final/bin:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/platform-tools/:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/tools/:/usr/local/mysql/bin/:~/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:/Users/erich/Documents/inst/forge-1.0.0.Beta3/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/SSAddressBarTextFieldReload@2x.png" "/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/SSAddressBarTextFieldReload@2x.png"36"36FF3C04-4BA9-421C-A9B9-B3F5E168CC7E-
+
+CCopyPNGFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/SSAddressBarTextFieldStop.png Resources/Images/SSAddressBarTextFieldStop.png
+s393310333.046201
+e393310333.089323
+r1
+xCopyPNGFile
+x/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/SSAddressBarTextFieldStop.png
+xResources/Images/SSAddressBarTextFieldStop.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection127"CopyPNGFile ../Resources/SSToolkitResources.bundle/SSAddressBarTextFieldStop.png Resources/Images/SSAddressBarTextFieldStop.pngf5f60b7d7071b741^cf13177d7071b741^---0#0#0#-19%DVTDocumentLocation2@133"file://localhost/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/SSAddressBarTextFieldStop.png0000000000000000^1341"CopyPNGFile ../Resources/SSToolkitResources.bundle/SSAddressBarTextFieldStop.png Resources/Images/SSAddressBarTextFieldStop.png    cd /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@utils/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@global/bin:/Users/erich/.rvm/rubies/ruby-1.9.3-p392/bin:/Users/erich/.rvm/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/usr/local/bin:/usr/local/sbin:/Developer/SDKs/scala-2.9.1.final/bin:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/platform-tools/:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/tools/:/usr/local/mysql/bin/:~/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:/Users/erich/Documents/inst/forge-1.0.0.Beta3/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/SSAddressBarTextFieldStop.png /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/SSAddressBarTextFieldStop.png36"776F0C17-CDE5-4AD2-B40E-7914C327C145-
+
+CCopyPNGFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/SSAddressBarTextFieldStop@2x.png Resources/Images/SSAddressBarTextFieldStop@2x.png
+s393310333.068412
+e393310333.114765
+r1
+xCopyPNGFile
+x/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/SSAddressBarTextFieldStop@2x.png
+xResources/Images/SSAddressBarTextFieldStop@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection133"CopyPNGFile ../Resources/SSToolkitResources.bundle/SSAddressBarTextFieldStop@2x.png Resources/Images/SSAddressBarTextFieldStop@2x.png2ec9117d7071b741^0a651d7d7071b741^---0#0#0#-19%DVTDocumentLocation2@136"file://localhost/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/SSAddressBarTextFieldStop@2x.png0000000000000000^1361"CopyPNGFile "../Resources/SSToolkitResources.bundle/SSAddressBarTextFieldStop@2x.png" "Resources/Images/SSAddressBarTextFieldStop@2x.png"    cd /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@utils/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@global/bin:/Users/erich/.rvm/rubies/ruby-1.9.3-p392/bin:/Users/erich/.rvm/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/usr/local/bin:/usr/local/sbin:/Developer/SDKs/scala-2.9.1.final/bin:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/platform-tools/:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/tools/:/usr/local/mysql/bin/:~/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:/Users/erich/Documents/inst/forge-1.0.0.Beta3/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/SSAddressBarTextFieldStop@2x.png" "/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/SSAddressBarTextFieldStop@2x.png"36"E4DBE38D-7714-49A0-BEF9-12E8BF56F4FA-
+
+CCopyPNGFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/SSVignetteiPad.png Resources/Images/SSVignetteiPad.png
+s393310333.071402
+e393310333.473734
+r1
+xCopyPNGFile
+x/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/SSVignetteiPad.png
+xResources/Images/SSVignetteiPad.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"CopyPNGFile ../Resources/SSToolkitResources.bundle/SSVignetteiPad.png Resources/Images/SSVignetteiPad.png016e127d7071b741^9850797d7071b741^---0#0#0#-19%DVTDocumentLocation2@122"file://localhost/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/SSVignetteiPad.png0000000000000000^1297"CopyPNGFile ../Resources/SSToolkitResources.bundle/SSVignetteiPad.png Resources/Images/SSVignetteiPad.png    cd /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@utils/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@global/bin:/Users/erich/.rvm/rubies/ruby-1.9.3-p392/bin:/Users/erich/.rvm/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/usr/local/bin:/usr/local/sbin:/Developer/SDKs/scala-2.9.1.final/bin:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/platform-tools/:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/tools/:/usr/local/mysql/bin/:~/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:/Users/erich/Documents/inst/forge-1.0.0.Beta3/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/SSVignetteiPad.png /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/SSVignetteiPad.png36"031979E3-707B-42B3-861D-48C890E12E92-
+
+CCopyPNGFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/SSVignetteiPhone.png Resources/Images/SSVignetteiPhone.png
+s393310333.090534
+e393310333.346594
+r1
+xCopyPNGFile
+x/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/SSVignetteiPhone.png
+xResources/Images/SSVignetteiPhone.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection109"CopyPNGFile ../Resources/SSToolkitResources.bundle/SSVignetteiPhone.png Resources/Images/SSVignetteiPhone.png7e54177d7071b741^b0c7587d7071b741^---0#0#0#-19%DVTDocumentLocation2@124"file://localhost/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/SSVignetteiPhone.png0000000000000000^1305"CopyPNGFile ../Resources/SSToolkitResources.bundle/SSVignetteiPhone.png Resources/Images/SSVignetteiPhone.png    cd /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@utils/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@global/bin:/Users/erich/.rvm/rubies/ruby-1.9.3-p392/bin:/Users/erich/.rvm/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/usr/local/bin:/usr/local/sbin:/Developer/SDKs/scala-2.9.1.final/bin:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/platform-tools/:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/tools/:/usr/local/mysql/bin/:~/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:/Users/erich/Documents/inst/forge-1.0.0.Beta3/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/SSVignetteiPhone.png /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/SSVignetteiPhone.png36"CF147C84-164C-4EF6-9B24-0911E03E47B3-
+
+CCopyPNGFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/SSVignetteiPhone@2x.png Resources/Images/SSVignetteiPhone@2x.png
+s393310333.102525
+e393310333.517595
+r1
+xCopyPNGFile
+x/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/SSVignetteiPhone@2x.png
+xResources/Images/SSVignetteiPhone@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection115"CopyPNGFile ../Resources/SSToolkitResources.bundle/SSVignetteiPhone@2x.png Resources/Images/SSVignetteiPhone@2x.pngbb621a7d7071b741^f38d847d7071b741^---0#0#0#-19%DVTDocumentLocation2@127"file://localhost/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/SSVignetteiPhone@2x.png0000000000000000^1325"CopyPNGFile "../Resources/SSToolkitResources.bundle/SSVignetteiPhone@2x.png" "Resources/Images/SSVignetteiPhone@2x.png"    cd /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@utils/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@global/bin:/Users/erich/.rvm/rubies/ruby-1.9.3-p392/bin:/Users/erich/.rvm/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/usr/local/bin:/usr/local/sbin:/Developer/SDKs/scala-2.9.1.final/bin:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/platform-tools/:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/tools/:/usr/local/mysql/bin/:~/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:/Users/erich/Documents/inst/forge-1.0.0.Beta3/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/SSVignetteiPhone@2x.png" "/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/SSVignetteiPhone@2x.png"36"446F0EA5-67AF-4E38-B6FE-02CCDAD8ED8C-
+
+CCopyPNGFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/UISegmentBarButton.png Resources/Images/UISegmentBarButton.png
+s393310333.118241
+e393310333.172785
+r1
+xCopyPNGFile
+x/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/UISegmentBarButton.png
+xResources/Images/UISegmentBarButton.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection113"CopyPNGFile ../Resources/SSToolkitResources.bundle/UISegmentBarButton.png Resources/Images/UISegmentBarButton.png016a1e7d7071b741^35412c7d7071b741^---0#0#0#-19%DVTDocumentLocation2@126"file://localhost/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/UISegmentBarButton.png0000000000000000^1313"CopyPNGFile ../Resources/SSToolkitResources.bundle/UISegmentBarButton.png Resources/Images/UISegmentBarButton.png    cd /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@utils/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@global/bin:/Users/erich/.rvm/rubies/ruby-1.9.3-p392/bin:/Users/erich/.rvm/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/usr/local/bin:/usr/local/sbin:/Developer/SDKs/scala-2.9.1.final/bin:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/platform-tools/:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/tools/:/usr/local/mysql/bin/:~/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:/Users/erich/Documents/inst/forge-1.0.0.Beta3/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/UISegmentBarButton.png /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/UISegmentBarButton.png36"C3155873-3738-49BB-81B2-D437E6788503-
+
+CCopyPNGFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/UISegmentBarButton@2x.png Resources/Images/UISegmentBarButton@2x.png
+s393310333.174065
+e393310333.237997
+r1
+xCopyPNGFile
+x/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/UISegmentBarButton@2x.png
+xResources/Images/UISegmentBarButton@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection119"CopyPNGFile ../Resources/SSToolkitResources.bundle/UISegmentBarButton@2x.png Resources/Images/UISegmentBarButton@2x.png96b22c7d7071b741^85073d7d7071b741^---0#0#0#-19%DVTDocumentLocation2@129"file://localhost/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/UISegmentBarButton@2x.png0000000000000000^1333"CopyPNGFile "../Resources/SSToolkitResources.bundle/UISegmentBarButton@2x.png" "Resources/Images/UISegmentBarButton@2x.png"    cd /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@utils/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@global/bin:/Users/erich/.rvm/rubies/ruby-1.9.3-p392/bin:/Users/erich/.rvm/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/usr/local/bin:/usr/local/sbin:/Developer/SDKs/scala-2.9.1.final/bin:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/platform-tools/:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/tools/:/usr/local/mysql/bin/:~/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:/Users/erich/Documents/inst/forge-1.0.0.Beta3/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/UISegmentBarButton@2x.png" "/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/UISegmentBarButton@2x.png"36"23731DBA-B952-4119-A1EA-864F3A15B779-
+
+CCopyPNGFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/UISegmentBarButtonHighlighted.png Resources/Images/UISegmentBarButtonHighlighted.png
+s393310333.239408
+e393310333.278190
+r1
+xCopyPNGFile
+x/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/UISegmentBarButtonHighlighted.png
+xResources/Images/UISegmentBarButtonHighlighted.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection135"CopyPNGFile ../Resources/SSToolkitResources.bundle/UISegmentBarButtonHighlighted.png Resources/Images/UISegmentBarButtonHighlighted.pngca6b3d7d7071b741^9965477d7071b741^---0#0#0#-19%DVTDocumentLocation2@137"file://localhost/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/UISegmentBarButtonHighlighted.png0000000000000000^1357"CopyPNGFile ../Resources/SSToolkitResources.bundle/UISegmentBarButtonHighlighted.png Resources/Images/UISegmentBarButtonHighlighted.png    cd /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@utils/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@global/bin:/Users/erich/.rvm/rubies/ruby-1.9.3-p392/bin:/Users/erich/.rvm/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/usr/local/bin:/usr/local/sbin:/Developer/SDKs/scala-2.9.1.final/bin:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/platform-tools/:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/tools/:/usr/local/mysql/bin/:~/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:/Users/erich/Documents/inst/forge-1.0.0.Beta3/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/UISegmentBarButtonHighlighted.png /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/UISegmentBarButtonHighlighted.png36"2B291EAF-BA58-4C03-B730-35F4589CDA93-
+
+CCopyPNGFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/UISegmentBarButtonHighlighted@2x.png Resources/Images/UISegmentBarButtonHighlighted@2x.png
+s393310333.284755
+e393310333.332210
+r1
+xCopyPNGFile
+x/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/UISegmentBarButtonHighlighted@2x.png
+xResources/Images/UISegmentBarButtonHighlighted@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection141"CopyPNGFile ../Resources/SSToolkitResources.bundle/UISegmentBarButtonHighlighted@2x.png Resources/Images/UISegmentBarButtonHighlighted@2x.png5a81497d7071b741^ee0a557d7071b741^---0#0#0#-19%DVTDocumentLocation2@140"file://localhost/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/UISegmentBarButtonHighlighted@2x.png0000000000000000^1377"CopyPNGFile "../Resources/SSToolkitResources.bundle/UISegmentBarButtonHighlighted@2x.png" "Resources/Images/UISegmentBarButtonHighlighted@2x.png"    cd /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@utils/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@global/bin:/Users/erich/.rvm/rubies/ruby-1.9.3-p392/bin:/Users/erich/.rvm/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/usr/local/bin:/usr/local/sbin:/Developer/SDKs/scala-2.9.1.final/bin:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/platform-tools/:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/tools/:/usr/local/mysql/bin/:~/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:/Users/erich/Documents/inst/forge-1.0.0.Beta3/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/UISegmentBarButtonHighlighted@2x.png" "/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/UISegmentBarButtonHighlighted@2x.png"36"EE8FF3B8-3497-4358-B92C-FBF94D331527-
+
+CCopyPNGFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/UISegmentBarDivider.png Resources/Images/UISegmentBarDivider.png
+s393310333.333493
+e393310333.370242
+r1
+xCopyPNGFile
+x/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/UISegmentBarDivider.png
+xResources/Images/UISegmentBarDivider.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection115"CopyPNGFile ../Resources/SSToolkitResources.bundle/UISegmentBarDivider.png Resources/Images/UISegmentBarDivider.png8080557d7071b741^55de5e7d7071b741^---0#0#0#-19%DVTDocumentLocation2@127"file://localhost/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/UISegmentBarDivider.png0000000000000000^1317"CopyPNGFile ../Resources/SSToolkitResources.bundle/UISegmentBarDivider.png Resources/Images/UISegmentBarDivider.png    cd /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@utils/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@global/bin:/Users/erich/.rvm/rubies/ruby-1.9.3-p392/bin:/Users/erich/.rvm/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/usr/local/bin:/usr/local/sbin:/Developer/SDKs/scala-2.9.1.final/bin:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/platform-tools/:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/tools/:/usr/local/mysql/bin/:~/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:/Users/erich/Documents/inst/forge-1.0.0.Beta3/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/UISegmentBarDivider.png /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/UISegmentBarDivider.png36"800D7659-1002-4510-A732-6F51223B11A9-
+
+CCopyPNGFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/UISegmentBarDivider@2x.png Resources/Images/UISegmentBarDivider@2x.png
+s393310333.347876
+e393310333.388779
+r1
+xCopyPNGFile
+x/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/UISegmentBarDivider@2x.png
+xResources/Images/UISegmentBarDivider@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection121"CopyPNGFile ../Resources/SSToolkitResources.bundle/UISegmentBarDivider@2x.png Resources/Images/UISegmentBarDivider@2x.png0131597d7071b741^2313647d7071b741^---0#0#0#-19%DVTDocumentLocation2@130"file://localhost/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/UISegmentBarDivider@2x.png0000000000000000^1337"CopyPNGFile "../Resources/SSToolkitResources.bundle/UISegmentBarDivider@2x.png" "Resources/Images/UISegmentBarDivider@2x.png"    cd /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@utils/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@global/bin:/Users/erich/.rvm/rubies/ruby-1.9.3-p392/bin:/Users/erich/.rvm/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/usr/local/bin:/usr/local/sbin:/Developer/SDKs/scala-2.9.1.final/bin:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/platform-tools/:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/tools/:/usr/local/mysql/bin/:~/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:/Users/erich/Documents/inst/forge-1.0.0.Beta3/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/UISegmentBarDivider@2x.png" "/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/UISegmentBarDivider@2x.png"36"43132A7A-3E92-4577-9C90-2D90A7834931-
+
+CCopyPNGFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/UISegmentBarDividerHighlighted.png Resources/Images/UISegmentBarDividerHighlighted.png
+s393310333.371500
+e393310333.416837
+r1
+xCopyPNGFile
+x/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/UISegmentBarDividerHighlighted.png
+xResources/Images/UISegmentBarDividerHighlighted.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection137"CopyPNGFile ../Resources/SSToolkitResources.bundle/UISegmentBarDividerHighlighted.png Resources/Images/UISegmentBarDividerHighlighted.png9a425f7d7071b741^babf6a7d7071b741^---0#0#0#-19%DVTDocumentLocation2@138"file://localhost/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/UISegmentBarDividerHighlighted.png0000000000000000^1361"CopyPNGFile ../Resources/SSToolkitResources.bundle/UISegmentBarDividerHighlighted.png Resources/Images/UISegmentBarDividerHighlighted.png    cd /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@utils/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@global/bin:/Users/erich/.rvm/rubies/ruby-1.9.3-p392/bin:/Users/erich/.rvm/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/usr/local/bin:/usr/local/sbin:/Developer/SDKs/scala-2.9.1.final/bin:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/platform-tools/:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/tools/:/usr/local/mysql/bin/:~/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:/Users/erich/Documents/inst/forge-1.0.0.Beta3/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/UISegmentBarDividerHighlighted.png /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/UISegmentBarDividerHighlighted.png36"AE937DF3-DC79-4456-A030-AB9598402D26-
+
+CCopyPNGFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/UISegmentBarDividerHighlighted@2x.png Resources/Images/UISegmentBarDividerHighlighted@2x.png
+s393310333.390136
+e393310333.432698
+r1
+xCopyPNGFile
+x/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/UISegmentBarDividerHighlighted@2x.png
+xResources/Images/UISegmentBarDividerHighlighted@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection143"CopyPNGFile ../Resources/SSToolkitResources.bundle/UISegmentBarDividerHighlighted@2x.png Resources/Images/UISegmentBarDividerHighlighted@2x.png1902647d7071b741^7ec56e7d7071b741^---0#0#0#-19%DVTDocumentLocation2@141"file://localhost/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/UISegmentBarDividerHighlighted@2x.png0000000000000000^1381"CopyPNGFile "../Resources/SSToolkitResources.bundle/UISegmentBarDividerHighlighted@2x.png" "Resources/Images/UISegmentBarDividerHighlighted@2x.png"    cd /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@utils/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@global/bin:/Users/erich/.rvm/rubies/ruby-1.9.3-p392/bin:/Users/erich/.rvm/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/usr/local/bin:/usr/local/sbin:/Developer/SDKs/scala-2.9.1.final/bin:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/platform-tools/:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/tools/:/usr/local/mysql/bin/:~/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:/Users/erich/Documents/inst/forge-1.0.0.Beta3/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/UISegmentBarDividerHighlighted@2x.png" "/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/UISegmentBarDividerHighlighted@2x.png"36"030CA2D0-3932-4ED5-AD33-52AFA3C6A747-
+
+CCopyPNGFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/gray-star.png Resources/Images/gray-star.png
+s393310332.917225
+e393310332.982915
+r1
+xCopyPNGFile
+x/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/gray-star.png
+xResources/Images/gray-star.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection95"CopyPNGFile ../Resources/SSToolkitResources.bundle/gray-star.png Resources/Images/gray-star.png6bf4ea7c7071b741^1bb8fb7c7071b741^---0#0#0#-19%DVTDocumentLocation2@117"file://localhost/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/gray-star.png0000000000000000^1277"CopyPNGFile ../Resources/SSToolkitResources.bundle/gray-star.png Resources/Images/gray-star.png    cd /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@utils/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@global/bin:/Users/erich/.rvm/rubies/ruby-1.9.3-p392/bin:/Users/erich/.rvm/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/usr/local/bin:/usr/local/sbin:/Developer/SDKs/scala-2.9.1.final/bin:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/platform-tools/:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/tools/:/usr/local/mysql/bin/:~/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:/Users/erich/Documents/inst/forge-1.0.0.Beta3/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/gray-star.png /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/gray-star.png36"BDCC0F03-C2D2-46F5-B0E3-32A0476EADC0-
+
+CCopyPNGFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/gray-star@2x.png Resources/Images/gray-star@2x.png
+s393310332.918000
+e393310332.992859
+r1
+xCopyPNGFile
+x/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/gray-star@2x.png
+xResources/Images/gray-star@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection101"CopyPNGFile ../Resources/SSToolkitResources.bundle/gray-star@2x.png Resources/Images/gray-star@2x.png5723eb7c7071b741^7847fe7c7071b741^---0#0#0#-19%DVTDocumentLocation2@120"file://localhost/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/gray-star@2x.png0000000000000000^1297"CopyPNGFile "../Resources/SSToolkitResources.bundle/gray-star@2x.png" "Resources/Images/gray-star@2x.png"    cd /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@utils/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@global/bin:/Users/erich/.rvm/rubies/ruby-1.9.3-p392/bin:/Users/erich/.rvm/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/usr/local/bin:/usr/local/sbin:/Developer/SDKs/scala-2.9.1.final/bin:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/platform-tools/:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/tools/:/usr/local/mysql/bin/:~/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:/Users/erich/Documents/inst/forge-1.0.0.Beta3/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/gray-star@2x.png" "/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/gray-star@2x.png"36"E9838108-9CFC-4418-8A48-72249850D3F6-
+
+CCopyPNGFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/hud-check.png Resources/Images/hud-check.png
+s393310332.417882
+e393310332.915733
+r1
+xCopyPNGFile
+x/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/hud-check.png
+xResources/Images/hud-check.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection95"CopyPNGFile ../Resources/SSToolkitResources.bundle/hud-check.png Resources/Images/hud-check.png302c6b7c7071b741^b895ea7c7071b741^---0#0#0#-19%DVTDocumentLocation2@117"file://localhost/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/hud-check.png0000000000000000^1277"CopyPNGFile ../Resources/SSToolkitResources.bundle/hud-check.png Resources/Images/hud-check.png    cd /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@utils/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@global/bin:/Users/erich/.rvm/rubies/ruby-1.9.3-p392/bin:/Users/erich/.rvm/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/usr/local/bin:/usr/local/sbin:/Developer/SDKs/scala-2.9.1.final/bin:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/platform-tools/:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/tools/:/usr/local/mysql/bin/:~/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:/Users/erich/Documents/inst/forge-1.0.0.Beta3/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/hud-check.png /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/hud-check.png36"705DDB61-87C1-47D8-BF83-5CFF7E72C685-
+
+CCopyPNGFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/hud-check@2x.png Resources/Images/hud-check@2x.png
+s393310332.419567
+e393310332.919060
+r1
+xCopyPNGFile
+x/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/hud-check@2x.png
+xResources/Images/hud-check@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection101"CopyPNGFile ../Resources/SSToolkitResources.bundle/hud-check@2x.png Resources/Images/hud-check@2x.png268b6b7c7071b741^3c67eb7c7071b741^---0#0#0#-19%DVTDocumentLocation2@120"file://localhost/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/hud-check@2x.png0000000000000000^1297"CopyPNGFile "../Resources/SSToolkitResources.bundle/hud-check@2x.png" "Resources/Images/hud-check@2x.png"    cd /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@utils/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@global/bin:/Users/erich/.rvm/rubies/ruby-1.9.3-p392/bin:/Users/erich/.rvm/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/usr/local/bin:/usr/local/sbin:/Developer/SDKs/scala-2.9.1.final/bin:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/platform-tools/:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/tools/:/usr/local/mysql/bin/:~/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:/Users/erich/Documents/inst/forge-1.0.0.Beta3/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/hud-check@2x.png" "/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/hud-check@2x.png"36"C624B203-D118-4357-A1B1-AA2D145DF66D-
+
+CCopyPNGFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/hud-x.png Resources/Images/hud-x.png
+s393310332.419684
+e393310332.919252
+r1
+xCopyPNGFile
+x/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/hud-x.png
+xResources/Images/hud-x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"CopyPNGFile ../Resources/SSToolkitResources.bundle/hud-x.png Resources/Images/hud-x.pngb8906b7c7071b741^2f6eeb7c7071b741^---0#0#0#-19%DVTDocumentLocation2@113"file://localhost/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/hud-x.png0000000000000000^1261"CopyPNGFile ../Resources/SSToolkitResources.bundle/hud-x.png Resources/Images/hud-x.png    cd /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@utils/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@global/bin:/Users/erich/.rvm/rubies/ruby-1.9.3-p392/bin:/Users/erich/.rvm/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/usr/local/bin:/usr/local/sbin:/Developer/SDKs/scala-2.9.1.final/bin:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/platform-tools/:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/tools/:/usr/local/mysql/bin/:~/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:/Users/erich/Documents/inst/forge-1.0.0.Beta3/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/hud-x.png /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/hud-x.png36"79D14035-7ED2-408C-9581-C359BF376E56-
+
+CCopyPNGFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/hud-x@2x.png Resources/Images/hud-x@2x.png
+s393310332.425718
+e393310332.916171
+r1
+xCopyPNGFile
+x/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/hud-x@2x.png
+xResources/Images/hud-x@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection93"CopyPNGFile ../Resources/SSToolkitResources.bundle/hud-x@2x.png Resources/Images/hud-x@2x.png57216d7c7071b741^55a0ea7c7071b741^---0#0#0#-19%DVTDocumentLocation2@116"file://localhost/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/hud-x@2x.png0000000000000000^1281"CopyPNGFile "../Resources/SSToolkitResources.bundle/hud-x@2x.png" "Resources/Images/hud-x@2x.png"    cd /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@utils/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@global/bin:/Users/erich/.rvm/rubies/ruby-1.9.3-p392/bin:/Users/erich/.rvm/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/usr/local/bin:/usr/local/sbin:/Developer/SDKs/scala-2.9.1.final/bin:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/platform-tools/:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/tools/:/usr/local/mysql/bin/:~/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:/Users/erich/Documents/inst/forge-1.0.0.Beta3/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/hud-x@2x.png" "/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/hud-x@2x.png"36"AF61D308-A94D-4896-BF71-42545EACD9A6-
+
+CCopyPNGFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/orange-star.png Resources/Images/orange-star.png
+s393310332.920209
+e393310333.013602
+r1
+xCopyPNGFile
+x/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/orange-star.png
+xResources/Images/orange-star.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection99"CopyPNGFile ../Resources/SSToolkitResources.bundle/orange-star.png Resources/Images/orange-star.pngb038ec7c7071b741^f566047d7071b741^---0#0#0#-19%DVTDocumentLocation2@119"file://localhost/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/orange-star.png0000000000000000^1285"CopyPNGFile ../Resources/SSToolkitResources.bundle/orange-star.png Resources/Images/orange-star.png    cd /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@utils/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@global/bin:/Users/erich/.rvm/rubies/ruby-1.9.3-p392/bin:/Users/erich/.rvm/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/usr/local/bin:/usr/local/sbin:/Developer/SDKs/scala-2.9.1.final/bin:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/platform-tools/:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/tools/:/usr/local/mysql/bin/:~/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:/Users/erich/Documents/inst/forge-1.0.0.Beta3/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/orange-star.png /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/orange-star.png36"9E0FE6D3-39F0-432D-9070-C31D8ADC2166-
+
+CCopyPNGFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/orange-star@2x.png Resources/Images/orange-star@2x.png
+s393310332.924701
+e393310333.004504
+r1
+xCopyPNGFile
+x/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/orange-star@2x.png
+xResources/Images/orange-star@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"CopyPNGFile ../Resources/SSToolkitResources.bundle/orange-star@2x.png Resources/Images/orange-star@2x.png0c23ed7c7071b741^10b1017d7071b741^---0#0#0#-19%DVTDocumentLocation2@122"file://localhost/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/orange-star@2x.png0000000000000000^1305"CopyPNGFile "../Resources/SSToolkitResources.bundle/orange-star@2x.png" "Resources/Images/orange-star@2x.png"    cd /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@utils/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@global/bin:/Users/erich/.rvm/rubies/ruby-1.9.3-p392/bin:/Users/erich/.rvm/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/usr/local/bin:/usr/local/sbin:/Developer/SDKs/scala-2.9.1.final/bin:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/platform-tools/:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/tools/:/usr/local/mysql/bin/:~/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:/Users/erich/Documents/inst/forge-1.0.0.Beta3/bin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/Images/orange-star@2x.png" "/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/orange-star@2x.png"36"95C31FFE-F9EA-49D3-AD1B-9778235E7FD7-
+
+CCopyStringsFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/de.lproj/SSToolkit.strings Resources/de.lproj/SSToolkit.strings
+s393310332.367880
+e393310332.394534
+r1
+xCopyStringsFile
+x/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/de.lproj/SSToolkit.strings
+xResources/de.lproj/SSToolkit.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection41"Copy Resources/de.lproj/SSToolkit.strings00535e7c7071b741^5f0c657c7071b741^---0#0#0#-19%DVTDocumentLocation2@123"file://localhost/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/de.lproj/SSToolkit.strings0000000000000000^1209"CopyStringsFile ../Resources/SSToolkitResources.bundle/de.lproj/SSToolkit.strings Resources/de.lproj/SSToolkit.strings    cd /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@utils/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@global/bin:/Users/erich/.rvm/rubies/ruby-1.9.3-p392/bin:/Users/erich/.rvm/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/usr/local/bin:/usr/local/sbin:/Developer/SDKs/scala-2.9.1.final/bin:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/platform-tools/:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/tools/:/usr/local/mysql/bin/:~/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:/Users/erich/Documents/inst/forge-1.0.0.Beta3/bin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/de.lproj -- Resources/de.lproj/SSToolkit.strings36"4C8DF313-DCD1-48D2-A15A-C64C9C2C995E-
+
+CCopyStringsFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/en.lproj/SSToolkit.strings Resources/en.lproj/SSToolkit.strings
+s393310332.366049
+e393310332.372447
+r1
+xCopyStringsFile
+x/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/en.lproj/SSToolkit.strings
+xResources/en.lproj/SSToolkit.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection41"Copy Resources/en.lproj/SSToolkit.strings00e35d7c7071b741^63625f7c7071b741^---0#0#0#-19%DVTDocumentLocation2@123"file://localhost/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/en.lproj/SSToolkit.strings0000000000000000^1209"CopyStringsFile ../Resources/SSToolkitResources.bundle/en.lproj/SSToolkit.strings Resources/en.lproj/SSToolkit.strings    cd /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@utils/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@global/bin:/Users/erich/.rvm/rubies/ruby-1.9.3-p392/bin:/Users/erich/.rvm/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/usr/local/bin:/usr/local/sbin:/Developer/SDKs/scala-2.9.1.final/bin:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/platform-tools/:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/tools/:/usr/local/mysql/bin/:~/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:/Users/erich/Documents/inst/forge-1.0.0.Beta3/bin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/en.lproj -- Resources/en.lproj/SSToolkit.strings36"F4F5396C-7BE9-49E7-B88B-29E7B0FB3B6F-
+
+CCopyStringsFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/es.lproj/SSToolkit.strings Resources/es.lproj/SSToolkit.strings
+s393310332.368616
+e393310332.395068
+r1
+xCopyStringsFile
+x/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/es.lproj/SSToolkit.strings
+xResources/es.lproj/SSToolkit.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection41"Copy Resources/es.lproj/SSToolkit.stringsb77e5e7c7071b741^3e23657c7071b741^---0#0#0#-19%DVTDocumentLocation2@123"file://localhost/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/es.lproj/SSToolkit.strings0000000000000000^1209"CopyStringsFile ../Resources/SSToolkitResources.bundle/es.lproj/SSToolkit.strings Resources/es.lproj/SSToolkit.strings    cd /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@utils/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@global/bin:/Users/erich/.rvm/rubies/ruby-1.9.3-p392/bin:/Users/erich/.rvm/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/usr/local/bin:/usr/local/sbin:/Developer/SDKs/scala-2.9.1.final/bin:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/platform-tools/:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/tools/:/usr/local/mysql/bin/:~/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:/Users/erich/Documents/inst/forge-1.0.0.Beta3/bin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/es.lproj -- Resources/es.lproj/SSToolkit.strings36"4BCDAFEB-D2E6-4170-B1B3-E8C1FB9866B3-
+
+CCopyStringsFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/fr.lproj/SSToolkit.strings Resources/fr.lproj/SSToolkit.strings
+s393310332.368821
+e393310332.395302
+r1
+xCopyStringsFile
+x/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/fr.lproj/SSToolkit.strings
+xResources/fr.lproj/SSToolkit.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection41"Copy Resources/fr.lproj/SSToolkit.stringsb58a5e7c7071b741^7232657c7071b741^---0#0#0#-19%DVTDocumentLocation2@123"file://localhost/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/fr.lproj/SSToolkit.strings0000000000000000^1209"CopyStringsFile ../Resources/SSToolkitResources.bundle/fr.lproj/SSToolkit.strings Resources/fr.lproj/SSToolkit.strings    cd /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@utils/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@global/bin:/Users/erich/.rvm/rubies/ruby-1.9.3-p392/bin:/Users/erich/.rvm/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/usr/local/bin:/usr/local/sbin:/Developer/SDKs/scala-2.9.1.final/bin:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/platform-tools/:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/tools/:/usr/local/mysql/bin/:~/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:/Users/erich/Documents/inst/forge-1.0.0.Beta3/bin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/fr.lproj -- Resources/fr.lproj/SSToolkit.strings36"F3466DB8-52FC-4D8D-BC62-CE81A33E49DB-
+
+CCopyStringsFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/id.lproj/SSToolkit.strings Resources/id.lproj/SSToolkit.strings
+s393310332.373694
+e393310332.395590
+r1
+xCopyStringsFile
+x/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/id.lproj/SSToolkit.strings
+xResources/id.lproj/SSToolkit.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection41"Copy Resources/id.lproj/SSToolkit.strings1cd35f7c7071b741^2045657c7071b741^---0#0#0#-19%DVTDocumentLocation2@123"file://localhost/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/id.lproj/SSToolkit.strings0000000000000000^1209"CopyStringsFile ../Resources/SSToolkitResources.bundle/id.lproj/SSToolkit.strings Resources/id.lproj/SSToolkit.strings    cd /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@utils/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@global/bin:/Users/erich/.rvm/rubies/ruby-1.9.3-p392/bin:/Users/erich/.rvm/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/usr/local/bin:/usr/local/sbin:/Developer/SDKs/scala-2.9.1.final/bin:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/platform-tools/:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/tools/:/usr/local/mysql/bin/:~/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:/Users/erich/Documents/inst/forge-1.0.0.Beta3/bin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/id.lproj -- Resources/id.lproj/SSToolkit.strings36"F5472F72-8913-44FC-8CD5-28A1EA56E647-
+
+CCopyStringsFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/it.lproj/SSToolkit.strings Resources/it.lproj/SSToolkit.strings
+s393310332.395709
+e393310332.406175
+r1
+xCopyStringsFile
+x/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/it.lproj/SSToolkit.strings
+xResources/it.lproj/SSToolkit.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection41"Copy Resources/it.lproj/SSToolkit.strings467e657c7071b741^6e19687c7071b741^---0#0#0#-19%DVTDocumentLocation2@123"file://localhost/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/it.lproj/SSToolkit.strings0000000000000000^1209"CopyStringsFile ../Resources/SSToolkitResources.bundle/it.lproj/SSToolkit.strings Resources/it.lproj/SSToolkit.strings    cd /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@utils/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@global/bin:/Users/erich/.rvm/rubies/ruby-1.9.3-p392/bin:/Users/erich/.rvm/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/usr/local/bin:/usr/local/sbin:/Developer/SDKs/scala-2.9.1.final/bin:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/platform-tools/:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/tools/:/usr/local/mysql/bin/:~/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:/Users/erich/Documents/inst/forge-1.0.0.Beta3/bin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/it.lproj -- Resources/it.lproj/SSToolkit.strings36"749309A1-9000-4F0D-8C4C-2A337073F2EE-
+
+CCopyStringsFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/ja.lproj/SSToolkit.strings Resources/ja.lproj/SSToolkit.strings
+s393310332.395781
+e393310332.406970
+r1
+xCopyStringsFile
+x/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/ja.lproj/SSToolkit.strings
+xResources/ja.lproj/SSToolkit.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection41"Copy Resources/ja.lproj/SSToolkit.stringsd670657c7071b741^da1e697c7071b741^---0#0#0#-19%DVTDocumentLocation2@123"file://localhost/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/ja.lproj/SSToolkit.strings0000000000000000^1209"CopyStringsFile ../Resources/SSToolkitResources.bundle/ja.lproj/SSToolkit.strings Resources/ja.lproj/SSToolkit.strings    cd /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@utils/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@global/bin:/Users/erich/.rvm/rubies/ruby-1.9.3-p392/bin:/Users/erich/.rvm/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/usr/local/bin:/usr/local/sbin:/Developer/SDKs/scala-2.9.1.final/bin:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/platform-tools/:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/tools/:/usr/local/mysql/bin/:~/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:/Users/erich/Documents/inst/forge-1.0.0.Beta3/bin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/ja.lproj -- Resources/ja.lproj/SSToolkit.strings36"192E9D26-2B29-4199-864C-B47C4B706A04-
+
+CCopyStringsFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/ko.lproj/SSToolkit.strings Resources/ko.lproj/SSToolkit.strings
+s393310332.396189
+e393310332.406389
+r1
+xCopyStringsFile
+x/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/ko.lproj/SSToolkit.strings
+xResources/ko.lproj/SSToolkit.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection41"Copy Resources/ko.lproj/SSToolkit.stringsf089657c7071b741^f817697c7071b741^---0#0#0#-19%DVTDocumentLocation2@123"file://localhost/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/ko.lproj/SSToolkit.strings0000000000000000^1209"CopyStringsFile ../Resources/SSToolkitResources.bundle/ko.lproj/SSToolkit.strings Resources/ko.lproj/SSToolkit.strings    cd /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@utils/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@global/bin:/Users/erich/.rvm/rubies/ruby-1.9.3-p392/bin:/Users/erich/.rvm/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/usr/local/bin:/usr/local/sbin:/Developer/SDKs/scala-2.9.1.final/bin:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/platform-tools/:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/tools/:/usr/local/mysql/bin/:~/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:/Users/erich/Documents/inst/forge-1.0.0.Beta3/bin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/ko.lproj -- Resources/ko.lproj/SSToolkit.strings36"A7603548-BE0E-4964-A73E-0EBC7C703447-
+
+CCopyStringsFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/ms.lproj/SSToolkit.strings Resources/ms.lproj/SSToolkit.strings
+s393310332.396745
+e393310332.406517
+r1
+xCopyStringsFile
+x/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/ms.lproj/SSToolkit.strings
+xResources/ms.lproj/SSToolkit.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection41"Copy Resources/ms.lproj/SSToolkit.strings7ba4657c7071b741^b51b697c7071b741^---0#0#0#-19%DVTDocumentLocation2@123"file://localhost/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/ms.lproj/SSToolkit.strings0000000000000000^1209"CopyStringsFile ../Resources/SSToolkitResources.bundle/ms.lproj/SSToolkit.strings Resources/ms.lproj/SSToolkit.strings    cd /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@utils/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@global/bin:/Users/erich/.rvm/rubies/ruby-1.9.3-p392/bin:/Users/erich/.rvm/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/usr/local/bin:/usr/local/sbin:/Developer/SDKs/scala-2.9.1.final/bin:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/platform-tools/:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/tools/:/usr/local/mysql/bin/:~/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:/Users/erich/Documents/inst/forge-1.0.0.Beta3/bin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/ms.lproj -- Resources/ms.lproj/SSToolkit.strings36"83B44CB5-40C3-4B25-A3BF-EBC95AE1BEB8-
+
+CCopyStringsFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/nl.lproj/SSToolkit.strings Resources/nl.lproj/SSToolkit.strings
+s393310332.408201
+e393310332.412387
+r1
+xCopyStringsFile
+x/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/nl.lproj/SSToolkit.strings
+xResources/nl.lproj/SSToolkit.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection41"Copy Resources/nl.lproj/SSToolkit.strings22a6687c7071b741^8e94697c7071b741^---0#0#0#-19%DVTDocumentLocation2@123"file://localhost/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/nl.lproj/SSToolkit.strings0000000000000000^1209"CopyStringsFile ../Resources/SSToolkitResources.bundle/nl.lproj/SSToolkit.strings Resources/nl.lproj/SSToolkit.strings    cd /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@utils/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@global/bin:/Users/erich/.rvm/rubies/ruby-1.9.3-p392/bin:/Users/erich/.rvm/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/usr/local/bin:/usr/local/sbin:/Developer/SDKs/scala-2.9.1.final/bin:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/platform-tools/:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/tools/:/usr/local/mysql/bin/:~/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:/Users/erich/Documents/inst/forge-1.0.0.Beta3/bin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/nl.lproj -- Resources/nl.lproj/SSToolkit.strings36"5BEC696D-290D-4FB2-BA2F-C2935D004E97-
+
+CCopyStringsFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/pt.lproj/SSToolkit.strings Resources/pt.lproj/SSToolkit.strings
+s393310332.409220
+e393310332.414861
+r1
+xCopyStringsFile
+x/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/pt.lproj/SSToolkit.strings
+xResources/pt.lproj/SSToolkit.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection41"Copy Resources/pt.lproj/SSToolkit.strings60e5687c7071b741^5c3a6a7c7071b741^---0#0#0#-19%DVTDocumentLocation2@123"file://localhost/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/pt.lproj/SSToolkit.strings0000000000000000^1209"CopyStringsFile ../Resources/SSToolkitResources.bundle/pt.lproj/SSToolkit.strings Resources/pt.lproj/SSToolkit.strings    cd /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@utils/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@global/bin:/Users/erich/.rvm/rubies/ruby-1.9.3-p392/bin:/Users/erich/.rvm/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/usr/local/bin:/usr/local/sbin:/Developer/SDKs/scala-2.9.1.final/bin:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/platform-tools/:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/tools/:/usr/local/mysql/bin/:~/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:/Users/erich/Documents/inst/forge-1.0.0.Beta3/bin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/pt.lproj -- Resources/pt.lproj/SSToolkit.strings36"B756BE75-E352-4FB0-9CB6-E7DAE30CD2E1-
+
+CCopyStringsFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/pt_PT.lproj/SSToolkit.strings Resources/pt_PT.lproj/SSToolkit.strings
+s393310332.408584
+e393310332.413865
+r1
+xCopyStringsFile
+x/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/pt_PT.lproj/SSToolkit.strings
+xResources/pt_PT.lproj/SSToolkit.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection44"Copy Resources/pt_PT.lproj/SSToolkit.stringsedb9687c7071b741^7afd697c7071b741^---0#0#0#-19%DVTDocumentLocation2@126"file://localhost/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/pt_PT.lproj/SSToolkit.strings0000000000000000^1221"CopyStringsFile ../Resources/SSToolkitResources.bundle/pt_PT.lproj/SSToolkit.strings Resources/pt_PT.lproj/SSToolkit.strings    cd /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@utils/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@global/bin:/Users/erich/.rvm/rubies/ruby-1.9.3-p392/bin:/Users/erich/.rvm/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/usr/local/bin:/usr/local/sbin:/Developer/SDKs/scala-2.9.1.final/bin:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/platform-tools/:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/tools/:/usr/local/mysql/bin/:~/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:/Users/erich/Documents/inst/forge-1.0.0.Beta3/bin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/pt_PT.lproj -- Resources/pt_PT.lproj/SSToolkit.strings36"3FB0D3C2-62B0-4523-AD23-BB302E5D6655-
+
+CCopyStringsFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/ru.lproj/SSToolkit.strings Resources/ru.lproj/SSToolkit.strings
+s393310332.409493
+e393310332.416539
+r1
+xCopyStringsFile
+x/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/ru.lproj/SSToolkit.strings
+xResources/ru.lproj/SSToolkit.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection41"Copy Resources/ru.lproj/SSToolkit.strings55f7687c7071b741^bcb36a7c7071b741^---0#0#0#-19%DVTDocumentLocation2@123"file://localhost/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/ru.lproj/SSToolkit.strings0000000000000000^1209"CopyStringsFile ../Resources/SSToolkitResources.bundle/ru.lproj/SSToolkit.strings Resources/ru.lproj/SSToolkit.strings    cd /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@utils/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@global/bin:/Users/erich/.rvm/rubies/ruby-1.9.3-p392/bin:/Users/erich/.rvm/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/usr/local/bin:/usr/local/sbin:/Developer/SDKs/scala-2.9.1.final/bin:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/platform-tools/:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/tools/:/usr/local/mysql/bin/:~/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:/Users/erich/Documents/inst/forge-1.0.0.Beta3/bin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/ru.lproj -- Resources/ru.lproj/SSToolkit.strings36"5E25636F-534A-4924-8CD5-F5CAD757B2D8-
+
+CCopyStringsFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/sv.lproj/SSToolkit.strings Resources/sv.lproj/SSToolkit.strings
+s393310332.413733
+e393310332.418242
+r1
+xCopyStringsFile
+x/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/sv.lproj/SSToolkit.strings
+xResources/sv.lproj/SSToolkit.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection41"Copy Resources/sv.lproj/SSToolkit.stringsc30f6a7c7071b741^529c6b7c7071b741^---0#0#0#-19%DVTDocumentLocation2@123"file://localhost/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/sv.lproj/SSToolkit.strings0000000000000000^1209"CopyStringsFile ../Resources/SSToolkitResources.bundle/sv.lproj/SSToolkit.strings Resources/sv.lproj/SSToolkit.strings    cd /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@utils/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@global/bin:/Users/erich/.rvm/rubies/ruby-1.9.3-p392/bin:/Users/erich/.rvm/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/usr/local/bin:/usr/local/sbin:/Developer/SDKs/scala-2.9.1.final/bin:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/platform-tools/:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/tools/:/usr/local/mysql/bin/:~/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:/Users/erich/Documents/inst/forge-1.0.0.Beta3/bin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/sv.lproj -- Resources/sv.lproj/SSToolkit.strings36"E8CCF856-B354-4B16-8D7E-8A511F22B25B-
+
+CCopyStringsFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/zh_Hans.lproj/SSToolkit.strings Resources/zh_Hans.lproj/SSToolkit.strings
+s393310332.415037
+e393310332.419427
+r1
+xCopyStringsFile
+x/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/zh_Hans.lproj/SSToolkit.strings
+xResources/zh_Hans.lproj/SSToolkit.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection46"Copy Resources/zh_Hans.lproj/SSToolkit.strings096c6a7c7071b741^2dcf6b7c7071b741^---0#0#0#-19%DVTDocumentLocation2@128"file://localhost/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/zh_Hans.lproj/SSToolkit.strings0000000000000000^1229"CopyStringsFile ../Resources/SSToolkitResources.bundle/zh_Hans.lproj/SSToolkit.strings Resources/zh_Hans.lproj/SSToolkit.strings    cd /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@utils/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@global/bin:/Users/erich/.rvm/rubies/ruby-1.9.3-p392/bin:/Users/erich/.rvm/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/usr/local/bin:/usr/local/sbin:/Developer/SDKs/scala-2.9.1.final/bin:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/platform-tools/:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/tools/:/usr/local/mysql/bin/:~/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:/Users/erich/Documents/inst/forge-1.0.0.Beta3/bin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/zh_Hans.lproj -- Resources/zh_Hans.lproj/SSToolkit.strings36"6363735E-1A15-4438-97B6-0D4A4BFE5BD7-
+
+CCopyStringsFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/zh_Hant.lproj/SSToolkit.strings Resources/zh_Hant.lproj/SSToolkit.strings
+s393310332.415345
+e393310332.422049
+r1
+xCopyStringsFile
+x/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/zh_Hant.lproj/SSToolkit.strings
+xResources/zh_Hant.lproj/SSToolkit.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection46"Copy Resources/zh_Hant.lproj/SSToolkit.stringsc4776a7c7071b741^902f6d7c7071b741^---0#0#0#-19%DVTDocumentLocation2@128"file://localhost/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/zh_Hant.lproj/SSToolkit.strings0000000000000000^1229"CopyStringsFile ../Resources/SSToolkitResources.bundle/zh_Hant.lproj/SSToolkit.strings Resources/zh_Hant.lproj/SSToolkit.strings    cd /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@utils/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@global/bin:/Users/erich/.rvm/rubies/ruby-1.9.3-p392/bin:/Users/erich/.rvm/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/usr/local/bin:/usr/local/sbin:/Developer/SDKs/scala-2.9.1.final/bin:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/platform-tools/:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/tools/:/usr/local/mysql/bin/:~/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:/Users/erich/Documents/inst/forge-1.0.0.Beta3/bin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/zh_Hant.lproj -- Resources/zh_Hant.lproj/SSToolkit.strings36"97DC540E-533E-4578-BABF-8D73FD75DC9A-
+
+CProcessInfoPlistFile /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/Info.plist Resources/SSToolkitResources-Info.plist
+s393310332.350036
+e393310332.354554
+r1
+xProcessInfoPlistFile
+x/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/Info.plist
+xResources/SSToolkitResources-Info.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection47"Process Resources/SSToolkitResources-Info.plist58c7597c7071b741^0fd35a7c7071b741^---0#0#0#-19%DVTDocumentLocation2@126"file://localhost/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/Resources/SSToolkitResources-Info.plist0000000000000000^1200"ProcessInfoPlistFile ../Resources/SSToolkitResources.bundle/Info.plist Resources/SSToolkitResources-Info.plist    cd /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@utils/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@global/bin:/Users/erich/.rvm/rubies/ruby-1.9.3-p392/bin:/Users/erich/.rvm/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/usr/local/bin:/usr/local/sbin:/Developer/SDKs/scala-2.9.1.final/bin:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/platform-tools/:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/tools/:/usr/local/mysql/bin/:~/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:/Users/erich/Documents/inst/forge-1.0.0.Beta3/bin"    builtin-infoPlistUtility Resources/SSToolkitResources-Info.plist -expandbuildsettings -format binary -platform iphoneos -o /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle/Info.plist36"39673194-ECC5-40F7-AE6F-47705CCADDD0-
+
+CTouch /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle
+s393310333.525256
+e393310333.534033
+r1
+xTouch
+x/Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection115"Touch /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle3199867d7071b741^99b9887d7071b741^---0#0#0#--1018"Touch ../Resources/SSToolkitResources.bundle    cd /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@utils/bin:/Users/erich/.rvm/gems/ruby-1.9.3-p392@global/bin:/Users/erich/.rvm/rubies/ruby-1.9.3-p392/bin:/Users/erich/.rvm/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/usr/local/bin:/usr/local/sbin:/Developer/SDKs/scala-2.9.1.final/bin:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/platform-tools/:/Applications/eclipse_versions/adt-bundle-mac-x86_64/sdk/tools/:/usr/local/mysql/bin/:~/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:/Users/erich/Documents/inst/forge-1.0.0.Beta3/bin"    /usr/bin/touch -c /Users/erich/Documents/Workspaces/from_xcode/onibus-ios/Pods/SSToolkit/../Resources/SSToolkitResources.bundle36"F34CD3F6-CF1C-49B6-A3D2-ABC6590B75E1-
+

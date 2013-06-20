@@ -13,7 +13,6 @@
 		2039296D152612D600B791DF /* Parada.m in Sources */ = {isa = PBXBuildFile; fileRef = 2039296C152612D600B791DF /* Parada.m */; };
 		203929711526134B00B791DF /* ParadaDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 203929701526134B00B791DF /* ParadaDataSource.m */; };
 		20392974152651E100B791DF /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 20392973152651E100B791DF /* DataSource.m */; };
-		2039297815265F6300B791DF /* ParadasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2039297615265F6300B791DF /* ParadasViewController.m */; };
 		2039297B15265F8200B791DF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2039297A15265F8200B791DF /* MapKit.framework */; };
 		2053E9871549FE1900B9F3FD /* Appirater.m in Sources */ = {isa = PBXBuildFile; fileRef = 2053E9861549FE1900B9F3FD /* Appirater.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2053E9891549FF2900B9F3FD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2053E9881549FF2900B9F3FD /* SystemConfiguration.framework */; };
@@ -86,6 +85,8 @@
 		7742E5FF17628F5700157A84 /* FavoritosController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7742E5FE17628F5700157A84 /* FavoritosController.m */; };
 		774C579616373A9500AAAF2A /* TempoRealDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 774C579516373A9500AAAF2A /* TempoRealDataSource.m */; };
 		774C579A1637438F00AAAF2A /* Veiculo.m in Sources */ = {isa = PBXBuildFile; fileRef = 774C57991637438F00AAAF2A /* Veiculo.m */; };
+		77A180B41773417C00F8A828 /* MenuNavegacaoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A180B31773417C00F8A828 /* MenuNavegacaoController.m */; };
+		77A180B8177344AA00F8A828 /* PrincipalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A180B7177344AA00F8A828 /* PrincipalController.m */; };
 		77C0A5B317501B6D005D4823 /* DetalhesDoOnibusController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C0A5B117501B6D005D4823 /* DetalhesDoOnibusController.m */; };
 		77C0A5B417501B6D005D4823 /* DetalhesDoOnibusController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77C0A5B217501B6D005D4823 /* DetalhesDoOnibusController.xib */; };
 		77C0A5B817514733005D4823 /* pin-busstop-transp.png in Resources */ = {isa = PBXBuildFile; fileRef = 77C0A5B717514733005D4823 /* pin-busstop-transp.png */; };
@@ -109,8 +110,6 @@
 		203929701526134B00B791DF /* ParadaDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParadaDataSource.m; sourceTree = "<group>"; };
 		20392972152651E100B791DF /* DataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSource.h; sourceTree = "<group>"; };
 		20392973152651E100B791DF /* DataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSource.m; sourceTree = "<group>"; };
-		2039297515265F6300B791DF /* ParadasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParadasViewController.h; sourceTree = "<group>"; };
-		2039297615265F6300B791DF /* ParadasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParadasViewController.m; sourceTree = "<group>"; };
 		2039297A15265F8200B791DF /* MapKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		2053E9851549FE1900B9F3FD /* Appirater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Appirater.h; sourceTree = "<group>"; };
 		2053E9861549FE1900B9F3FD /* Appirater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Appirater.m; sourceTree = "<group>"; };
@@ -214,6 +213,10 @@
 		774C579516373A9500AAAF2A /* TempoRealDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TempoRealDataSource.m; sourceTree = "<group>"; };
 		774C57981637438F00AAAF2A /* Veiculo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Veiculo.h; sourceTree = "<group>"; };
 		774C57991637438F00AAAF2A /* Veiculo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Veiculo.m; sourceTree = "<group>"; };
+		77A180B21773417C00F8A828 /* MenuNavegacaoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuNavegacaoController.h; sourceTree = "<group>"; };
+		77A180B31773417C00F8A828 /* MenuNavegacaoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuNavegacaoController.m; sourceTree = "<group>"; };
+		77A180B6177344AA00F8A828 /* PrincipalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrincipalController.h; sourceTree = "<group>"; };
+		77A180B7177344AA00F8A828 /* PrincipalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrincipalController.m; sourceTree = "<group>"; };
 		77C0A5B017501B6D005D4823 /* DetalhesDoOnibusController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetalhesDoOnibusController.h; sourceTree = "<group>"; };
 		77C0A5B117501B6D005D4823 /* DetalhesDoOnibusController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetalhesDoOnibusController.m; sourceTree = "<group>"; };
 		77C0A5B217501B6D005D4823 /* DetalhesDoOnibusController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetalhesDoOnibusController.xib; sourceTree = "<group>"; };
@@ -390,20 +393,14 @@
 		208A1C3F1524FD3E00335F87 /* Telas */ = {
 			isa = PBXGroup;
 			children = (
-				20708698152CA3ED00EADA0F /* PontoDeOnibusController.h */,
-				20708699152CA3ED00EADA0F /* PontoDeOnibusController.m */,
-				20D8E40A152B7634006C7328 /* ListaPontoDeOnibusController.h */,
-				20D8E40B152B7634006C7328 /* ListaPontoDeOnibusController.m */,
-				2039297515265F6300B791DF /* ParadasViewController.h */,
-				2039297615265F6300B791DF /* ParadasViewController.m */,
-				20D8E413152B77DC006C7328 /* PontosPorProximidadeController.h */,
-				20D8E414152B77DC006C7328 /* PontosPorProximidadeController.m */,
+				77A180B51773449100F8A828 /* Principal */,
+				77A180B11773414600F8A828 /* MenuNavegacao */,
+				77A180AD17725E9B00F8A828 /* PeloMapa */,
+				77A180AC17725E5100F8A828 /* Ponto */,
+				77A180AB17725E3B00F8A828 /* Favoritos */,
+				77A180AA17725E1200F8A828 /* Proximos */,
+				77A180A917725E0600F8A828 /* Detalhes */,
 				20B974FC15360CA2008DAD44 /* SemGps.xib */,
-				77C0A5B017501B6D005D4823 /* DetalhesDoOnibusController.h */,
-				77C0A5B117501B6D005D4823 /* DetalhesDoOnibusController.m */,
-				77C0A5B217501B6D005D4823 /* DetalhesDoOnibusController.xib */,
-				7742E5FD17628F5700157A84 /* FavoritosController.h */,
-				7742E5FE17628F5700157A84 /* FavoritosController.m */,
 			);
 			name = Telas;
 			sourceTree = "<group>";
@@ -516,6 +513,70 @@
 				77307D93175FDD3000B7B1E8 /* BusaoSP.xcdatamodeld */,
 			);
 			name = Persistence;
+			sourceTree = "<group>";
+		};
+		77A180A917725E0600F8A828 /* Detalhes */ = {
+			isa = PBXGroup;
+			children = (
+				77C0A5B017501B6D005D4823 /* DetalhesDoOnibusController.h */,
+				77C0A5B117501B6D005D4823 /* DetalhesDoOnibusController.m */,
+				77C0A5B217501B6D005D4823 /* DetalhesDoOnibusController.xib */,
+			);
+			name = Detalhes;
+			sourceTree = "<group>";
+		};
+		77A180AA17725E1200F8A828 /* Proximos */ = {
+			isa = PBXGroup;
+			children = (
+				20D8E40A152B7634006C7328 /* ListaPontoDeOnibusController.h */,
+				20D8E40B152B7634006C7328 /* ListaPontoDeOnibusController.m */,
+			);
+			name = Proximos;
+			sourceTree = "<group>";
+		};
+		77A180AB17725E3B00F8A828 /* Favoritos */ = {
+			isa = PBXGroup;
+			children = (
+				7742E5FD17628F5700157A84 /* FavoritosController.h */,
+				7742E5FE17628F5700157A84 /* FavoritosController.m */,
+			);
+			name = Favoritos;
+			sourceTree = "<group>";
+		};
+		77A180AC17725E5100F8A828 /* Ponto */ = {
+			isa = PBXGroup;
+			children = (
+				20708698152CA3ED00EADA0F /* PontoDeOnibusController.h */,
+				20708699152CA3ED00EADA0F /* PontoDeOnibusController.m */,
+			);
+			name = Ponto;
+			sourceTree = "<group>";
+		};
+		77A180AD17725E9B00F8A828 /* PeloMapa */ = {
+			isa = PBXGroup;
+			children = (
+				20D8E413152B77DC006C7328 /* PontosPorProximidadeController.h */,
+				20D8E414152B77DC006C7328 /* PontosPorProximidadeController.m */,
+			);
+			name = PeloMapa;
+			sourceTree = "<group>";
+		};
+		77A180B11773414600F8A828 /* MenuNavegacao */ = {
+			isa = PBXGroup;
+			children = (
+				77A180B21773417C00F8A828 /* MenuNavegacaoController.h */,
+				77A180B31773417C00F8A828 /* MenuNavegacaoController.m */,
+			);
+			name = MenuNavegacao;
+			sourceTree = "<group>";
+		};
+		77A180B51773449100F8A828 /* Principal */ = {
+			isa = PBXGroup;
+			children = (
+				77A180B6177344AA00F8A828 /* PrincipalController.h */,
+				77A180B7177344AA00F8A828 /* PrincipalController.m */,
+			);
+			name = Principal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -650,7 +711,6 @@
 				2039296D152612D600B791DF /* Parada.m in Sources */,
 				203929711526134B00B791DF /* ParadaDataSource.m in Sources */,
 				20392974152651E100B791DF /* DataSource.m in Sources */,
-				2039297815265F6300B791DF /* ParadasViewController.m in Sources */,
 				208DD3D5152A2B1100D730F8 /* MKMapView+ZoomOut.m in Sources */,
 				208DD3DA152A2BCD00D730F8 /* Localizacao.m in Sources */,
 				20D8E3C9152B63CA006C7328 /* UIViewController+NavigationController.m in Sources */,
@@ -675,6 +735,8 @@
 				77307D9E175FE1EC00B7B1E8 /* NSManagedObject+ComFacilitadores.m in Sources */,
 				7742E5FF17628F5700157A84 /* FavoritosController.m in Sources */,
 				77C3081C176DF3FD009CCA8A /* OnibusTableCell.m in Sources */,
+				77A180B41773417C00F8A828 /* MenuNavegacaoController.m in Sources */,
+				77A180B8177344AA00F8A828 /* PrincipalController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

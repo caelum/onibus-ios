@@ -7,13 +7,10 @@
 //
 
 #import "UIViewController+NavigationController.h"
-#import "ListaPontoDeOnibusController.h"
-#import "PontosPorProximidadeController.h"
 #import "OnibusDataSource.h"
 #import "AppDelegate.h"
 #import "Appirater.h"
-#import "FavoritosController.h"
-
+#import "PrincipalController.h"
 
 @interface AppDelegate()
 @end
@@ -41,29 +38,22 @@
     return YES;
 }
 - (void) configuraViewParaIPad {
-    UISplitViewController *splitView = [[UISplitViewController alloc] init];
-    ListaPontoDeOnibusController *listaDeOnibus = [[ListaPontoDeOnibusController alloc] init];
-
-    
     //TODO
     
-    splitView.tabBarItem = listaDeOnibus.tabBarItem;
+//    UISplitViewController *splitView = [[UISplitViewController alloc] init];
+//    ListaPontoDeOnibusController *listaDeOnibus = [[ListaPontoDeOnibusController alloc] init];
+//    splitView.tabBarItem = listaDeOnibus.tabBarItem;
     
-    PontosPorProximidadeController *onibusDisponiveis = [[PontosPorProximidadeController alloc] init];
+//    PontosPorProximidadeController *onibusDisponiveis = [[PontosPorProximidadeController alloc] init];
     
-    UITabBarController *tabBarController = [[UITabBarController alloc] init];
-    tabBarController.viewControllers = @[splitView, [onibusDisponiveis comNavigation]];
+//    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+//    tabBarController.viewControllers = @[splitView, [onibusDisponiveis comNavigation]];
     
-    self.window.rootViewController = tabBarController;
+//    self.window.rootViewController = tabBarController;
 }
 - (void) configuraViewParaIPhone {
-    ListaPontoDeOnibusController *listaDeOnibus = [[ListaPontoDeOnibusController alloc] init];
-    PontosPorProximidadeController *onibusDisponiveis = [[PontosPorProximidadeController alloc] init];
-    FavoritosController *favoritos = [[FavoritosController alloc]init];
     
-    UITabBarController *tabBarController = [[UITabBarController alloc] init];
-    tabBarController.viewControllers = @[[listaDeOnibus comNavigation], [favoritos comNavigation], [onibusDisponiveis comNavigation]];
-    self.window.rootViewController = tabBarController;
+    self.window.rootViewController = [[PrincipalController new] comNavigation];
 }
 
 -(void) applicationWillTerminate:(UIApplication *)application {

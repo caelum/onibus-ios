@@ -28,14 +28,26 @@
 
 @implementation PontoDeOnibusController
 
+- (id)init {
+    self = [super initWithStyle:UITableViewStylePlain];
+    if (self) {
+        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Tempo real"
+                                                             style:UIBarButtonItemStyleBordered
+                                                            target:self
+                                                            action:@selector(irParaMapa)];
+        self.navigationItem.title = NSLocalized(@"onibus");
+    }
+    return self;
+}
+
 - (id)initWithPonto: (Ponto *) ponto
 {
-    self = [super initWithStyle:UITableViewStylePlain];
-    if (self) {     
+    self = [self init];
+    if (self) {
         self.pontos = [NSArray arrayWithObject:ponto];
-        self.navigationItem.title = NSLocalized(@"onibus");
         self.pontosSelecionados = [[NSMutableArray alloc] init];
         [self.pontosSelecionados addObject:ponto];
+        
     }
     return self;
 }
@@ -62,17 +74,9 @@
     self.tableView.allowsMultipleSelection = YES;
 }
 
-
-
 -(void) viewWillAppear:(BOOL)animated {
     //TODO isso tah aqui pela heranca mal usada, REFACTOR!!
     self.tableView.rowHeight = 55;
-    
-    UIBarButtonItem *mapa = [[UIBarButtonItem alloc] initWithTitle:@"Tempo real"
-                                                             style:UIBarButtonItemStyleBordered
-                                                            target:self
-                                                            action:@selector(irParaMapa)];
-    self.navigationItem.rightBarButtonItem = mapa;
     
     [self atualizaBotaoTempoReal];
 
