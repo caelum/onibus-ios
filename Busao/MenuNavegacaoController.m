@@ -25,15 +25,15 @@
     if (self = [super init]) {
         self.sections = @[@"Busque por onibus",  @"Favoritos", @"Configurações"];
         
-        self.itens = @{[self.sections objectAtIndex:0] : @[@"Pontos Proximos", @"Por endereço"],
+        self.itens = @{[self.sections objectAtIndex:0] : @[@"Pontos Proximos", @"Por endereço", @"Por linha"],
                        [self.sections objectAtIndex:1] : @[@"Todos", @"Faculdade - Casa", @"Trabalho - Casa"],
                        [self.sections objectAtIndex:2] : @"Editar preferências"};
         
         self.controllers = @{[self.sections objectAtIndex:0] :
-                                    @[[ListaPontoDeOnibusController new], [PontosPorProximidadeController new]],
+                                    @[[ListaPontoDeOnibusController new], [PontosPorProximidadeController new], [NSObject new]],
                              [self.sections objectAtIndex:1] :
-                                    @[[FavoritosController new], [FavoritosController new], [FavoritosController new]],
-                             [self.sections objectAtIndex:2] : [FavoritosController new]};
+                                    @[[FavoritosController new], [NSObject new], [NSObject new]],
+                             [self.sections objectAtIndex:2] : [NSObject new]};
 
     }
     return self;
