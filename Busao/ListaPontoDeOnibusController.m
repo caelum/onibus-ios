@@ -92,17 +92,17 @@
     
     double latitude = newLocation.coordinate.latitude;
     double longitude = newLocation.coordinate.longitude; 
-        
-    self.localizacaoAtual = [[Localizacao alloc] initWithLatitude:latitude eLongitude:longitude];
     
-    [self.onibusDataSource buscaPontosParaLocalizacao:self.localizacaoAtual];
+    [[self appDelegate] setLocalizacaoAtual: [[Localizacao alloc] initWithLatitude:latitude eLongitude:longitude]];
+    
+    [self.onibusDataSource buscaPontosParaLocalizacao:[[self appDelegate]localizacaoAtual]];
 }
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
     if([self isSearching:tableView]){
         return nil;
     }
     Ponto *ponto = [self.pontos objectAtIndex:section];    
-    double distanciaDoPontoAtual = [ponto.localizacao distanciaEntrePonto:self.localizacaoAtual];
+    double distanciaDoPontoAtual = [ponto.localizacao distanciaEntrePonto: [[self appDelegate]localizacaoAtual] ];
     NSString *distancia = [NSString stringWithFormat:@" %.0fm", distanciaDoPontoAtual];
     float tamanhoDistancia = [distancia sizeWithFont:[UIFont boldSystemFontOfSize:18]].width;
     

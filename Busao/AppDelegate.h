@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Localizacao.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
@@ -15,6 +16,8 @@
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+
+@property(nonatomic, strong) Localizacao *localizacaoAtual;
 
 - (void)saveContext;
 

@@ -196,7 +196,7 @@
 
 -(void) irParaMapa {
     if ([self.onibusSelecionados count] > 0) {
-        [self.navigationController pushViewController:[[DetalhesDoOnibusController alloc] initWithOnibuses:self.onibusSelecionados andLocalizacao:self.localizacaoAtual] animated:YES];
+        [self.navigationController pushViewController:[[DetalhesDoOnibusController alloc] initWithOnibuses:self.onibusSelecionados andLocalizacao:[[self appDelegate]localizacaoAtual]] animated:YES];
     }
     
 }
@@ -206,7 +206,7 @@
     Ponto *ponto = [self.pontos objectAtIndex:section];
     
     UIView *viewSection = [[PontoUITableSection alloc] initWithPonto:ponto
-                                                 andLocalizacaoAtual: self.localizacaoAtual
+                                                 andLocalizacaoAtual: [[self appDelegate]localizacaoAtual]
                                                          andCallback:^{
                                                              if ([self.pontosSelecionados containsObject:ponto]) {
                                                                  [self.pontosSelecionados removeObject:ponto];

@@ -13,7 +13,7 @@
 
 @interface PontoDeOnibusController : UITableViewController <UISearchDisplayDelegate, UISearchBarDelegate,OnibusTableCellDelagate>
 
-@property(nonatomic, strong) Localizacao *localizacaoAtual;
+
 @property(nonatomic, strong) NSArray *pontos;
 @property(nonatomic, strong) OnibusViewController *onibusController;
 @property(nonatomic, strong) NSMutableArray *pontosSelecionados;
