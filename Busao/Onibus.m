@@ -17,4 +17,8 @@
     return [NSString stringWithFormat:@"%i: %@", identificador, letreiro];
 }
 
+-(NSString*) descricaoSentido {
+    return [self.sentido description];
+}
+
 @end

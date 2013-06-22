@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "OnibusTableCell.h"
 
-@interface FavoritosController : UITableViewController
+@interface FavoritosController : UITableViewController<OnibusTableCellDelagate>
 
 @end

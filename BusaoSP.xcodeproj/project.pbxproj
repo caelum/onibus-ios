@@ -217,6 +217,7 @@
 		77A180B31773417C00F8A828 /* MenuNavegacaoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuNavegacaoController.m; sourceTree = "<group>"; };
 		77A180B6177344AA00F8A828 /* PrincipalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrincipalController.h; sourceTree = "<group>"; };
 		77A180B7177344AA00F8A828 /* PrincipalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrincipalController.m; sourceTree = "<group>"; };
+		77B2DF301775B80F009C9492 /* OnibusInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OnibusInfo.h; sourceTree = "<group>"; };
 		77C0A5B017501B6D005D4823 /* DetalhesDoOnibusController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetalhesDoOnibusController.h; sourceTree = "<group>"; };
 		77C0A5B117501B6D005D4823 /* DetalhesDoOnibusController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetalhesDoOnibusController.m; sourceTree = "<group>"; };
 		77C0A5B217501B6D005D4823 /* DetalhesDoOnibusController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetalhesDoOnibusController.xib; sourceTree = "<group>"; };
@@ -336,7 +337,6 @@
 		208A1C221524F7FE00335F87 /* Busao */ = {
 			isa = PBXGroup;
 			children = (
-				77307D92175FDD1400B7B1E8 /* Persistence */,
 				77307D81175E994C00B7B1E8 /* Widget */,
 				202B23641533653100619462 /* Utilities */,
 				20EB2190152CBB370009BC49 /* Factories */,
@@ -372,6 +372,7 @@
 		208A1C361524FB1B00335F87 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				77307D92175FDD1400B7B1E8 /* Persistence */,
 				208A1C331524FB1700335F87 /* Ponto.h */,
 				208A1C341524FB1700335F87 /* Ponto.m */,
 				208A1C371524FB7100335F87 /* Onibus.h */,
@@ -386,6 +387,7 @@
 				772FAEE1162F9288000DAC1F /* Operacao.m */,
 				774C57981637438F00AAAF2A /* Veiculo.h */,
 				774C57991637438F00AAAF2A /* Veiculo.m */,
+				77B2DF301775B80F009C9492 /* OnibusInfo.h */,
 			);
 			name = Model;
 			sourceTree = "<group>";

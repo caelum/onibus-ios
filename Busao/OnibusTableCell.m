@@ -11,7 +11,7 @@
 
 @interface OnibusTableCell()
 
-@property(nonatomic, weak) Onibus *onibus;
+@property(nonatomic, weak) id<OnibusInfo> onibus;
 @property(nonatomic, weak) id<OnibusTableCellDelagate> delegateFavorito;
 
 @end
@@ -20,7 +20,7 @@
 
 
 
-- (id)initWithOnibus: (Onibus*) onibus andDelegate: (id<OnibusTableCellDelagate>) delegate {
+- (id)initWithOnibus: (id<OnibusInfo>) onibus andDelegate: (id<OnibusTableCellDelagate>) delegate {
     
     self = [super initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:[OnibusTableCell identifier]];
     if (self) {
@@ -75,6 +75,9 @@
     return corLinhaPadrao;
 }
 
++(NSInteger) rowHeight {
+    return 55;
+}
 
 -(void) montaCelula: (BOOL) onibusFavorito {
     
@@ -105,7 +108,7 @@
     
     self.textLabel.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0];
     
-    self.detailTextLabel.text = [[self.onibus sentido] description];
+    self.detailTextLabel.text = [self.onibus descricaoSentido];
     self.detailTextLabel.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0];
 }
 

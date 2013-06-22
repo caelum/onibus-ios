@@ -77,7 +77,7 @@
 
 -(void) viewWillAppear:(BOOL)animated {
     //TODO isso tah aqui pela heranca mal usada, REFACTOR!!
-    self.tableView.rowHeight = 55;
+    self.tableView.rowHeight = [OnibusTableCell rowHeight];
     
     [self atualizaBotaoTempoReal];
 

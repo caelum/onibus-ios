@@ -9,10 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "Sentido.h"
 #import "Operacao.h"
+#import "OnibusInfo.h"
 
 @class Ponto;
 
-@interface Onibus : NSObject
+@interface Onibus : NSObject<OnibusInfo>
 
 @property(nonatomic, readonly) int identificador;
 @property(nonatomic, readonly) NSString *letreiro;
@@ -23,5 +24,7 @@
 @property(nonatomic, strong) NSArray *paradas;
 
 @property(nonatomic) BOOL favorito;
+
+-(NSString*) descricaoSentido;
 
 @end

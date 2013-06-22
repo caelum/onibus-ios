@@ -9,9 +9,11 @@
 #import "FavoritosController.h"
 #import "LinhaDeOnibus.h"
 
+
+
 @interface FavoritosController()
 
-@property(nonatomic, strong) NSMutableArray *favoritos;
+@property(nonatomic, strong) NSMutableArray *onibus;
 
 @end
 
@@ -25,48 +27,44 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"Favoritos";
-    self.favoritos = [[NSMutableArray alloc] init];
-    self.tableView.rowHeight = 55;
+    self.onibus = [[NSMutableArray alloc] init];
+    self.tableView.rowHeight = [OnibusTableCell rowHeight];
 }
 
 -(void) viewDidAppear:(BOOL)animated {
-    if ([self.favoritos count]>0) {
-        [self.favoritos removeAllObjects];
+    if ([self.onibus count]>0) {
+        [self.onibus removeAllObjects];
     }
-    [self.favoritos addObjectsFromArray:[LinhaDeOnibus todasWithContext:[self context]]];
+    [self.onibus addObjectsFromArray:[LinhaDeOnibus todasWithContext:[self context]]];
     [self.tableView reloadData];
 }
 
 #pragma mark - Table view data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [self.favoritos count];
+    return [self.onibus count];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier ];
+-(void) favorita:(UIGestureRecognizer *)gestureRecognizer {
+    CGPoint ponto = [gestureRecognizer locationInView:self.tableView];
+    NSIndexPath *indexPath = [self.tableView indexPathForRowAtPoint:ponto];
     
-    if (!cell) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+    LinhaDeOnibus *selecionado = [self.onibus objectAtIndex:indexPath.row];
+    [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    
+    [self.onibus removeObject:selecionado];
+    [[self context] deleteObject:selecionado];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[OnibusTableCell identifier]];
+    
+    Onibus *onibus = [self.onibus objectAtIndex:indexPath.row];
+    
+    if(!cell){
+        cell = [[OnibusTableCell alloc] initWithOnibus:onibus andDelegate:self];
     }
     
-    LinhaDeOnibus *selecionada = [self.favoritos objectAtIndex:[indexPath row]];
-    
-    UIImageView *estrelaFavorito = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"favorite-star.png"]];
-    
-    UITapGestureRecognizer *onTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(desfavorita:)];
-    [onTap setNumberOfTapsRequired:1];
-    
-    [estrelaFavorito addGestureRecognizer:onTap];
-    [estrelaFavorito setUserInteractionEnabled:YES];
-    
-    cell.accessoryView = estrelaFavorito;
-    
-    cell.textLabel.text = [selecionada letreiro];
-    cell.detailTextLabel.text = [selecionada origem];
-
     return cell;
 }
 
@@ -74,10 +72,10 @@
     CGPoint ponto = [gestureRecognizer locationInView:self.tableView];
     NSIndexPath *indexPath = [self.tableView indexPathForRowAtPoint:ponto];
     
-    LinhaDeOnibus *selecionado = [self.favoritos objectAtIndex:[indexPath row]];
+    LinhaDeOnibus *selecionado = [self.onibus objectAtIndex:[indexPath row]];
     
     [[self context] deleteObject:selecionado];
-    [self.favoritos removeObject:selecionado];
+    [self.onibus removeObject:selecionado];
     
     [self saveManagedContext];
     

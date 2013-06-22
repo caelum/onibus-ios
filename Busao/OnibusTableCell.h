@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Onibus.h"
+#import "OnibusInfo.h"
 
 
 @protocol OnibusTableCellDelagate <NSObject>
@@ -20,10 +20,12 @@
 
 +(NSString*) identifier;
 
-- (id)initWithOnibus: (Onibus*) onibus andDelegate: (id<OnibusTableCellDelagate>) delegate;
+- (id)initWithOnibus: (id<OnibusInfo>) onibus andDelegate: (id<OnibusTableCellDelagate>) delegate;
 
 +(UIColor*) corLinhaSelecionada;
 
 -(void) aplicaCorDaCelulaParaOnibusSelecionados: (NSArray*) onibusSelecionados;
+
++(NSInteger) rowHeight;
 
 @end

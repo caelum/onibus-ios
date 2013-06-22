@@ -9,9 +9,10 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 #import "Onibus.h"
+#import "OnibusInfo.h"
 
 
-@interface LinhaDeOnibus : NSManagedObject
+@interface LinhaDeOnibus : NSManagedObject<OnibusInfo>
 
 @property (nonatomic, retain) NSString * letreiro;
 @property (nonatomic, retain) NSNumber * identificador;

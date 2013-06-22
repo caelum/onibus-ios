@@ -60,4 +60,12 @@
     return [self allWithContext:ctx];
 }
 
+-(NSString*) descricaoSentido {
+    return self.origem;
+}
+
+-(BOOL) favorito {
+    return YES;
+}
+
 @end
