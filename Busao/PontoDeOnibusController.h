@@ -11,7 +11,7 @@
 
 @class Ponto, ParadaDataSource, OnibusViewController, Localizacao;
 
-@interface PontoDeOnibusController : UITableViewController <UISearchDisplayDelegate, OnibusTableCellDelagate>
+@interface PontoDeOnibusController : UITableViewController <UISearchDisplayDelegate, UISearchBarDelegate,OnibusTableCellDelagate>
 
 @property(nonatomic, strong) Localizacao *localizacaoAtual;
 @property(nonatomic, strong) NSArray *pontos;

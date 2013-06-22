@@ -62,6 +62,7 @@
     self.searchController.delegate = self;
     self.searchController.searchResultsDataSource = self;
     self.searchController.searchResultsDelegate = self;
+    self.searchBar.delegate = self;
     
     [self hideSearchView];
     
