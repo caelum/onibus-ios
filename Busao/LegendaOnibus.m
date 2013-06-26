@@ -44,7 +44,7 @@
                                          andStartingAtX:novaOrigem.x + tamanhoImagem
                                                    andY:novaOrigem.y];
     
-    UILabel *linha = [UILabel labelWithText:[onibus.sentido description]
+    UILabel *linha = [UILabel labelWithText:[onibus descricaoSentido]
                                       andStartingAtX:novaOrigem.x + tamanhoImagem
                                                 andY:novaOrigem.y+15 withFontSize:10];
     

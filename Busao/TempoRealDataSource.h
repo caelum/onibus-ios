@@ -7,12 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Onibus.h"
+#import "OnibusInfo.h"
 #import "DataSource.h"
 
 @protocol TempoRealDelegate <NSObject>
 
-- (void) recebeLocalizacoes: (NSArray *) localizacoes paraOnibus: (Onibus *) onibus;
+- (void) recebeLocalizacoes: (NSArray *) localizacoes paraOnibus: (id<OnibusInfo>) onibus;
 - (void) problemaParaBuscarLocalizacoes;
 
 @end
@@ -22,6 +22,6 @@
 
 - (id)initWithDelegate: (id<TempoRealDelegate>) _delegate;
 
-- (void) buscaLocalizacoesParaOnibus: (Onibus *) _onibus;
+- (void) buscaLocalizacoesParaOnibus: (id<OnibusInfo>) onibus;
 
 @end

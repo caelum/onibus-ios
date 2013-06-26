@@ -13,5 +13,6 @@
 -(NSString*) letreiro;
 -(NSString*) descricaoSentido;
 -(BOOL) favorito;
+-(NSString*) codigoGPS;
 
 @end

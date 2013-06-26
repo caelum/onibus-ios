@@ -25,6 +25,16 @@
 
 @implementation FavoritosController
 
+-(id) init {
+    if(self = [super initWithStyle:UITableViewStylePlain]) {
+        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Tempo real"
+                                                                                  style:UIBarButtonItemStyleBordered
+                                                                                 target:self
+                                                                                 action:@selector(irParaMapa)];
+
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -53,7 +63,7 @@
     CGPoint ponto = [gestureRecognizer locationInView:self.tableView];
     NSIndexPath *indexPath = [self.tableView indexPathForRowAtPoint:ponto];
     
-    LinhaDeOnibus *selecionado = [self.onibuses objectAtIndex:indexPath.row];
+    id<OnibusInfo> selecionado = [self.onibuses objectAtIndex:indexPath.row];
     [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     
     [self.onibuses removeObject:selecionado];
@@ -63,7 +73,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[OnibusTableCell identifier]];
     
-    Onibus *onibus = [self.onibuses objectAtIndex:indexPath.row];
+    id<OnibusInfo> onibus = [self.onibuses objectAtIndex:indexPath.row];
     
     if(!cell){
         cell = [[OnibusTableCell alloc] initWithOnibus:onibus andDelegate:self];
@@ -76,7 +86,7 @@
     CGPoint ponto = [gestureRecognizer locationInView:self.tableView];
     NSIndexPath *indexPath = [self.tableView indexPathForRowAtPoint:ponto];
     
-    LinhaDeOnibus *selecionado = [self.onibuses objectAtIndex:[indexPath row]];
+    id<OnibusInfo> selecionado = [self.onibuses objectAtIndex:[indexPath row]];
     
     [[self context] deleteObject:selecionado];
     [self.onibuses removeObject:selecionado];
@@ -89,7 +99,7 @@
 #pragma mark - Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    Onibus *onibus = [self.onibuses objectAtIndex:indexPath];
+    id<OnibusInfo> onibus = [self.onibuses objectAtIndex:indexPath.row];
     
     if (!self.onibusSelecionados) {
         self.onibusSelecionados = [[NSMutableArray alloc] init];
@@ -121,6 +131,8 @@
         [self atualizaBotaoTempoReal];
     }
 }
+
+#pragma mark - Custom Methods
 
 -(void) atualizaBotaoTempoReal {
     if ([self.onibusSelecionados count] > 0) {

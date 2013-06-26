@@ -17,7 +17,7 @@
 
 @property(nonatomic, unsafe_unretained) id<TempoRealDelegate> delegate;
 @property(nonatomic, strong) DataSource *dataSource;
-@property(nonatomic, strong) Onibus *onibus;
+@property(nonatomic, strong) id<OnibusInfo> onibus;
 
 @end
 
@@ -35,7 +35,7 @@
     
 }
 
-- (void) buscaLocalizacoesParaOnibus: (Onibus *) onibusSelecionado {
+- (void) buscaLocalizacoesParaOnibus: (id<OnibusInfo>) onibusSelecionado {
     self.onibus = onibusSelecionado;
     [self.dataSource inicializaConexao];
 }
@@ -60,7 +60,7 @@
     NSArray *veiculos = [parser parseArray:resultados];
     
     for (Veiculo *veiculo in veiculos) {
-        [veiculo setLinha:[self.onibus.sentido description]];
+        [veiculo setLinha:[self.onibus descricaoSentido]];
         [veiculo setLetreiro:self.onibus.letreiro];
     }
     
