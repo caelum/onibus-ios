@@ -25,11 +25,14 @@
     self = [super initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:[OnibusTableCell identifier]];
     if (self) {
         self.delegateFavorito = delegate;
-        self.onibus = onibus;
-        [self montaCelula: self.onibus.favorito];
-        
+        [self configuraCelulaParaOnibus:onibus];
     }
     return self;
+}
+
+-(void) configuraCelulaParaOnibus: (id<OnibusInfo>) onibus {
+    self.onibus = onibus;
+    [self montaCelula: self.onibus.favorito];
 }
 
 -(void) aplicaCorDaCelulaParaOnibusSelecionados: (NSArray*) onibusSelecionados {

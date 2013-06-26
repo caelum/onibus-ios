@@ -22,6 +22,8 @@
 
 - (id)initWithOnibus: (id<OnibusInfo>) onibus andDelegate: (id<OnibusTableCellDelagate>) delegate;
 
+-(void) configuraCelulaParaOnibus: (id<OnibusInfo>) onibus;
+
 +(UIColor*) corLinhaSelecionada;
 
 -(void) aplicaCorDaCelulaParaOnibusSelecionados: (NSArray*) onibusSelecionados;

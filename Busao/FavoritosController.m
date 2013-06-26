@@ -71,13 +71,18 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[OnibusTableCell identifier]];
+    OnibusTableCell *cell = (OnibusTableCell*)[tableView dequeueReusableCellWithIdentifier:[OnibusTableCell identifier]];
     
     id<OnibusInfo> onibus = [self.onibuses objectAtIndex:indexPath.row];
     
+    NSLog(@"ONIBUS: %@  ------>   ONIBUSES %@",onibus,  self.onibuses);
+    
     if(!cell){
         cell = [[OnibusTableCell alloc] initWithOnibus:onibus andDelegate:self];
+    } else {
+        [cell configuraCelulaParaOnibus:onibus];
     }
+    
     
     return cell;
 }
@@ -130,6 +135,11 @@
         [self.tableView reloadData];
         [self atualizaBotaoTempoReal];
     }
+}
+
+-(void) tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    [(OnibusTableCell*)cell aplicaCorDaCelulaParaOnibusSelecionados:self.onibusSelecionados];
 }
 
 #pragma mark - Custom Methods

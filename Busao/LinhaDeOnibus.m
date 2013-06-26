@@ -64,6 +64,10 @@
     return self.origem;
 }
 
+-(NSString*) description {
+    return self.letreiro;
+}
+
 -(BOOL) favorito {
     return YES;
 }

@@ -37,7 +37,9 @@
     int tamanhoImagem = imagem.size.width;
     CGPoint novaOrigem = CGPointMake(origem.x+5, origem.y);
     
-    UIImageView *imageView = [[UIImageView alloc] initWithFrame: CGRectMake(novaOrigem.x, 0, imagem.size.width, imagem.size.height)];
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:
+                              CGRectMake(novaOrigem.x, 0, imagem.size.width, imagem.size.height)];
+    
     [imageView setImage:imagem];
     
     UILabel *letreiro = [UILabel labelWithText:onibus.letreiro
