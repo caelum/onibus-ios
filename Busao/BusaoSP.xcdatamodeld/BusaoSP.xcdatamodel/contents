@@ -6,8 +6,15 @@
         <attribute name="identificador" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="letreiro" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="origem" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="tag" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="TagSelecaoLinhas" inverseName="onibuses" inverseEntity="TagSelecaoLinhas" syncable="YES"/>
+    </entity>
+    <entity name="TagSelecaoLinhas" representedClassName="TagSelecaoLinhas" syncable="YES">
+        <attribute name="codigo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="onibuses" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="LinhaDeOnibus" inverseName="tag" inverseEntity="LinhaDeOnibus" syncable="YES"/>
     </entity>
     <elements>
-        <element name="LinhaDeOnibus" positionX="160" positionY="192" width="128" height="120"/>
+        <element name="LinhaDeOnibus" positionX="160" positionY="192" width="128" height="135"/>
+        <element name="TagSelecaoLinhas" positionX="160" positionY="192" width="128" height="90"/>
     </elements>
 </model>

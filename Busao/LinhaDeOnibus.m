@@ -1,22 +1,25 @@
 //
 //  LinhaDeOnibus.m
-//  Pods
+//  BusaoSP
 //
-//  Created by Erich Egert on 6/5/13.
-//
+//  Created by Erich Egert on 6/26/13.
+//  Copyright (c) 2013 None. All rights reserved.
 //
 
 #import "LinhaDeOnibus.h"
+#import "TagSelecaoLinhas.h"
 #import "NSManagedObject+ComFacilitadores.h"
 
 
 @implementation LinhaDeOnibus
 
-@dynamic letreiro;
-@dynamic identificador;
 @dynamic codigoGPS;
-@dynamic origem;
 @dynamic destino;
+@dynamic identificador;
+@dynamic letreiro;
+@dynamic origem;
+@dynamic tag;
+
 
 +(void) mudaStatusDeFavoritoParaOnibus: (Onibus*) onibus noContext: (NSManagedObjectContext*) ctx {
     if (onibus.favorito) {
@@ -71,5 +74,6 @@
 -(BOOL) favorito {
     return YES;
 }
+
 
 @end

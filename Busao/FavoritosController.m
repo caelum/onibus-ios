@@ -75,14 +75,11 @@
     
     id<OnibusInfo> onibus = [self.onibuses objectAtIndex:indexPath.row];
     
-    NSLog(@"ONIBUS: %@  ------>   ONIBUSES %@",onibus,  self.onibuses);
-    
     if(!cell){
         cell = [[OnibusTableCell alloc] initWithOnibus:onibus andDelegate:self];
     } else {
         [cell configuraCelulaParaOnibus:onibus];
     }
-    
     
     return cell;
 }
