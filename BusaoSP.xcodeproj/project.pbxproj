@@ -70,6 +70,12 @@
 		20F5804D1535267500F1CAAB /* compass@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20F5804B1535267500F1CAAB /* compass@2x.png */; };
 		20F5805C1535F76700F1CAAB /* GPSManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F5805B1535F76700F1CAAB /* GPSManager.m */; };
 		240DB81C15EC4E38B5D24AAB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BDDFF3F780CE4FAEBF6C9AE7 /* libPods.a */; };
+		770F6B6B1781EC460073B617 /* LinhaDeOnibus+WithBehaviour.m in Sources */ = {isa = PBXBuildFile; fileRef = 770F6B6A1781EC460073B617 /* LinhaDeOnibus+WithBehaviour.m */; };
+		770F6B6E1781ECB10073B617 /* LinhaDeOnibus.m in Sources */ = {isa = PBXBuildFile; fileRef = 770F6B6D1781ECB10073B617 /* LinhaDeOnibus.m */; };
+		770F6B7A1781F36A0073B617 /* TagLinhas+WithBevaviour.m in Sources */ = {isa = PBXBuildFile; fileRef = 770F6B791781F36A0073B617 /* TagLinhas+WithBevaviour.m */; };
+		770F6B811781F7050073B617 /* NovaTagController.m in Sources */ = {isa = PBXBuildFile; fileRef = 770F6B801781F7050073B617 /* NovaTagController.m */; };
+		770F6B871781FA490073B617 /* NovaTagDetalhesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 770F6B861781FA490073B617 /* NovaTagDetalhesCell.m */; };
+		770F6B891781FA590073B617 /* NovaTagDetalhesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 770F6B881781FA590073B617 /* NovaTagDetalhesCell.xib */; };
 		772FAEDE162F903F000DAC1F /* Sentido.m in Sources */ = {isa = PBXBuildFile; fileRef = 772FAEDD162F903F000DAC1F /* Sentido.m */; };
 		772FAEE2162F9289000DAC1F /* Operacao.m in Sources */ = {isa = PBXBuildFile; fileRef = 772FAEE1162F9288000DAC1F /* Operacao.m */; };
 		77307D84175E996400B7B1E8 /* LegendaOnibus.m in Sources */ = {isa = PBXBuildFile; fileRef = 77307D83175E996400B7B1E8 /* LegendaOnibus.m */; };
@@ -94,8 +100,8 @@
 		77C0A5C01751B0A9005D4823 /* pin-bus-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 77C0A5BC1751B0A9005D4823 /* pin-bus-yellow.png */; };
 		77C0A5C21751B0C9005D4823 /* pin-bus-green.png in Resources */ = {isa = PBXBuildFile; fileRef = 77C0A5C11751B0C9005D4823 /* pin-bus-green.png */; };
 		77C3081C176DF3FD009CCA8A /* OnibusTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C3081B176DF3FD009CCA8A /* OnibusTableCell.m */; };
-		77F30A5F177B7B75009ABD5D /* TagSelecaoLinhas.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F30A5E177B7B74009ABD5D /* TagSelecaoLinhas.m */; };
-		77F30A62177B7BCA009ABD5D /* LinhaDeOnibus.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F30A61177B7BCA009ABD5D /* LinhaDeOnibus.m */; };
+		77DF65CC1782067A0051ECE3 /* TagLinhas.m in Sources */ = {isa = PBXBuildFile; fileRef = 77DF65CB1782067A0051ECE3 /* TagLinhas.m */; };
+		77DF65D017820B080051ECE3 /* ListaTagsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77DF65CF17820B080051ECE3 /* ListaTagsController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -190,6 +196,17 @@
 		20F5804B1535267500F1CAAB /* compass@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "compass@2x.png"; sourceTree = "<group>"; };
 		20F5805A1535F76700F1CAAB /* GPSManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSManager.h; sourceTree = "<group>"; };
 		20F5805B1535F76700F1CAAB /* GPSManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPSManager.m; sourceTree = "<group>"; };
+		770F6B691781EC460073B617 /* LinhaDeOnibus+WithBehaviour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LinhaDeOnibus+WithBehaviour.h"; sourceTree = "<group>"; };
+		770F6B6A1781EC460073B617 /* LinhaDeOnibus+WithBehaviour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LinhaDeOnibus+WithBehaviour.m"; sourceTree = "<group>"; };
+		770F6B6C1781ECB10073B617 /* LinhaDeOnibus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LinhaDeOnibus.h; path = ../LinhaDeOnibus.h; sourceTree = "<group>"; };
+		770F6B6D1781ECB10073B617 /* LinhaDeOnibus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LinhaDeOnibus.m; path = ../LinhaDeOnibus.m; sourceTree = "<group>"; };
+		770F6B781781F36A0073B617 /* TagLinhas+WithBevaviour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TagLinhas+WithBevaviour.h"; path = "../TagLinhas+WithBevaviour.h"; sourceTree = "<group>"; };
+		770F6B791781F36A0073B617 /* TagLinhas+WithBevaviour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "TagLinhas+WithBevaviour.m"; path = "../TagLinhas+WithBevaviour.m"; sourceTree = "<group>"; };
+		770F6B7F1781F7050073B617 /* NovaTagController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NovaTagController.h; sourceTree = "<group>"; };
+		770F6B801781F7050073B617 /* NovaTagController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NovaTagController.m; sourceTree = "<group>"; };
+		770F6B851781FA490073B617 /* NovaTagDetalhesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NovaTagDetalhesCell.h; sourceTree = "<group>"; };
+		770F6B861781FA490073B617 /* NovaTagDetalhesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NovaTagDetalhesCell.m; sourceTree = "<group>"; };
+		770F6B881781FA590073B617 /* NovaTagDetalhesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NovaTagDetalhesCell.xib; sourceTree = "<group>"; };
 		772FAEDC162F903F000DAC1F /* Sentido.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sentido.h; sourceTree = "<group>"; };
 		772FAEDD162F903F000DAC1F /* Sentido.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sentido.m; sourceTree = "<group>"; };
 		772FAEE0162F9288000DAC1F /* Operacao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Operacao.h; sourceTree = "<group>"; };
@@ -227,10 +244,10 @@
 		77C0A5C11751B0C9005D4823 /* pin-bus-green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pin-bus-green.png"; sourceTree = "<group>"; };
 		77C3081A176DF3FD009CCA8A /* OnibusTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnibusTableCell.h; sourceTree = "<group>"; };
 		77C3081B176DF3FD009CCA8A /* OnibusTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnibusTableCell.m; sourceTree = "<group>"; };
-		77F30A5D177B7B74009ABD5D /* TagSelecaoLinhas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagSelecaoLinhas.h; sourceTree = "<group>"; };
-		77F30A5E177B7B74009ABD5D /* TagSelecaoLinhas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagSelecaoLinhas.m; sourceTree = "<group>"; };
-		77F30A60177B7BCA009ABD5D /* LinhaDeOnibus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinhaDeOnibus.h; sourceTree = "<group>"; };
-		77F30A61177B7BCA009ABD5D /* LinhaDeOnibus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinhaDeOnibus.m; sourceTree = "<group>"; };
+		77DF65CA1782067A0051ECE3 /* TagLinhas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TagLinhas.h; path = ../TagLinhas.h; sourceTree = "<group>"; };
+		77DF65CB1782067A0051ECE3 /* TagLinhas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TagLinhas.m; path = ../TagLinhas.m; sourceTree = "<group>"; };
+		77DF65CE17820B080051ECE3 /* ListaTagsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListaTagsController.h; sourceTree = "<group>"; };
+		77DF65CF17820B080051ECE3 /* ListaTagsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListaTagsController.m; sourceTree = "<group>"; };
 		946F015939FB4246B6A1EA08 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		BDDFF3F780CE4FAEBF6C9AE7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -398,6 +415,8 @@
 		208A1C3F1524FD3E00335F87 /* Telas */ = {
 			isa = PBXGroup;
 			children = (
+				77DF65CD17820AEF0051ECE3 /* ListaTags */,
+				770F6B7B1781F42C0073B617 /* NovaTagSelecao */,
 				77A180B51773449100F8A828 /* Principal */,
 				77A180B11773414600F8A828 /* MenuNavegacao */,
 				77A180AD17725E9B00F8A828 /* PeloMapa */,
@@ -497,6 +516,26 @@
 			name = Imagens;
 			sourceTree = "<group>";
 		};
+		770F6B7B1781F42C0073B617 /* NovaTagSelecao */ = {
+			isa = PBXGroup;
+			children = (
+				770F6B841781FA130073B617 /* Células */,
+				770F6B7F1781F7050073B617 /* NovaTagController.h */,
+				770F6B801781F7050073B617 /* NovaTagController.m */,
+			);
+			name = NovaTagSelecao;
+			sourceTree = "<group>";
+		};
+		770F6B841781FA130073B617 /* Células */ = {
+			isa = PBXGroup;
+			children = (
+				770F6B851781FA490073B617 /* NovaTagDetalhesCell.h */,
+				770F6B861781FA490073B617 /* NovaTagDetalhesCell.m */,
+				770F6B881781FA590073B617 /* NovaTagDetalhesCell.xib */,
+			);
+			name = "Células";
+			sourceTree = "<group>";
+		};
 		77307D81175E994C00B7B1E8 /* Widget */ = {
 			isa = PBXGroup;
 			children = (
@@ -513,11 +552,15 @@
 		77307D92175FDD1400B7B1E8 /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
-				77F30A5D177B7B74009ABD5D /* TagSelecaoLinhas.h */,
-				77F30A5E177B7B74009ABD5D /* TagSelecaoLinhas.m */,
 				77307D93175FDD3000B7B1E8 /* BusaoSP.xcdatamodeld */,
-				77F30A60177B7BCA009ABD5D /* LinhaDeOnibus.h */,
-				77F30A61177B7BCA009ABD5D /* LinhaDeOnibus.m */,
+				77DF65CA1782067A0051ECE3 /* TagLinhas.h */,
+				77DF65CB1782067A0051ECE3 /* TagLinhas.m */,
+				770F6B781781F36A0073B617 /* TagLinhas+WithBevaviour.h */,
+				770F6B791781F36A0073B617 /* TagLinhas+WithBevaviour.m */,
+				770F6B6C1781ECB10073B617 /* LinhaDeOnibus.h */,
+				770F6B6D1781ECB10073B617 /* LinhaDeOnibus.m */,
+				770F6B691781EC460073B617 /* LinhaDeOnibus+WithBehaviour.h */,
+				770F6B6A1781EC460073B617 /* LinhaDeOnibus+WithBehaviour.m */,
 			);
 			name = Persistence;
 			sourceTree = "<group>";
@@ -584,6 +627,15 @@
 				77A180B7177344AA00F8A828 /* PrincipalController.m */,
 			);
 			name = Principal;
+			sourceTree = "<group>";
+		};
+		77DF65CD17820AEF0051ECE3 /* ListaTags */ = {
+			isa = PBXGroup;
+			children = (
+				77DF65CE17820B080051ECE3 /* ListaTagsController.h */,
+				77DF65CF17820B080051ECE3 /* ListaTagsController.m */,
+			);
+			name = ListaTags;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -681,6 +733,7 @@
 				77307D88175E9C0C00B7B1E8 /* list@2x.png in Resources */,
 				77307DA5175FFEF600B7B1E8 /* favorite-star-gray.png in Resources */,
 				77307DA6175FFEF600B7B1E8 /* favorite-star.png in Resources */,
+				770F6B891781FA590073B617 /* NovaTagDetalhesCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -743,8 +796,13 @@
 				77C3081C176DF3FD009CCA8A /* OnibusTableCell.m in Sources */,
 				77A180B41773417C00F8A828 /* MenuNavegacaoController.m in Sources */,
 				77A180B8177344AA00F8A828 /* PrincipalController.m in Sources */,
-				77F30A5F177B7B75009ABD5D /* TagSelecaoLinhas.m in Sources */,
-				77F30A62177B7BCA009ABD5D /* LinhaDeOnibus.m in Sources */,
+				770F6B6B1781EC460073B617 /* LinhaDeOnibus+WithBehaviour.m in Sources */,
+				770F6B6E1781ECB10073B617 /* LinhaDeOnibus.m in Sources */,
+				770F6B7A1781F36A0073B617 /* TagLinhas+WithBevaviour.m in Sources */,
+				770F6B811781F7050073B617 /* NovaTagController.m in Sources */,
+				770F6B871781FA490073B617 /* NovaTagDetalhesCell.m in Sources */,
+				77DF65CC1782067A0051ECE3 /* TagLinhas.m in Sources */,
+				77DF65D017820B080051ECE3 /* ListaTagsController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

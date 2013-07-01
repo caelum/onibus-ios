@@ -1,9 +1,9 @@
 //
-//  TagSelecaoLinhas.h
-//  Pods
+//  TagLinhas.h
+//  BusaoSP
 //
-//  Created by Erich Egert on 6/26/13.
-//
+//  Created by Erich Egert on 7/1/13.
+//  Copyright (c) 2013 None. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -11,14 +11,16 @@
 
 @class LinhaDeOnibus;
 
-@interface TagSelecaoLinhas : NSManagedObject
+@interface TagLinhas : NSManagedObject
 
-@property (nonatomic, retain) NSString * nome;
 @property (nonatomic, retain) NSString * codigo;
+@property (nonatomic, retain) NSString * nome;
+@property (nonatomic, retain) NSDate * horarioInicio;
+@property (nonatomic, retain) NSDate * horarioFim;
 @property (nonatomic, retain) NSSet *onibuses;
 @end
 
-@interface TagSelecaoLinhas (CoreDataGeneratedAccessors)
+@interface TagLinhas (CoreDataGeneratedAccessors)
 
 - (void)addOnibusesObject:(LinhaDeOnibus *)value;
 - (void)removeOnibusesObject:(LinhaDeOnibus *)value;

@@ -10,6 +10,7 @@
 #import "FavoritosController.h"
 #import "PontosPorProximidadeController.h"
 #import "ListaPontoDeOnibusController.h"
+#import "ListaTagsController.h"
 
 @interface MenuNavegacaoController ()
 @property (nonatomic, strong) NSArray *sections;
@@ -26,14 +27,19 @@
         self.sections = @[@"Busque por onibus",  @"Favoritos", @"Configurações"];
         
         self.itens = @{[self.sections objectAtIndex:0] : @[@"Pontos Proximos", @"Por endereço", @"Por linha"],
-                       [self.sections objectAtIndex:1] : @[@"Todos", @"Faculdade - Casa", @"Trabalho - Casa"],
+                       [self.sections objectAtIndex:1] : @[@"Todos", @"Tags (Atalhos de seleção)"],
                        [self.sections objectAtIndex:2] : @"Editar preferências"};
         
-        self.controllers = @{[self.sections objectAtIndex:0] :
-                                    @[[ListaPontoDeOnibusController new], [PontosPorProximidadeController new], [NSObject new]],
-                             [self.sections objectAtIndex:1] :
-                                    @[[FavoritosController new], [NSObject new], [NSObject new]],
-                             [self.sections objectAtIndex:2] : [NSObject new]};
+        self.controllers = @{
+                             
+             [self.sections objectAtIndex:0] :
+                    @[[ListaPontoDeOnibusController new], [PontosPorProximidadeController new], [NSObject new]],
+             
+             [self.sections objectAtIndex:1] :
+                    @[[FavoritosController new], [ListaTagsController new]],
+             
+             [self.sections objectAtIndex:2] : [NSObject new]
+        };
 
     }
     return self;

@@ -1,25 +1,15 @@
 //
-//  LinhaDeOnibus.m
+//  LinhaDeOnibus+WithBehaviour.m
 //  BusaoSP
 //
-//  Created by Erich Egert on 6/26/13.
+//  Created by Erich Egert on 7/1/13.
 //  Copyright (c) 2013 None. All rights reserved.
 //
 
-#import "LinhaDeOnibus.h"
-#import "TagSelecaoLinhas.h"
+#import "LinhaDeOnibus+WithBehaviour.h"
 #import "NSManagedObject+ComFacilitadores.h"
 
-
-@implementation LinhaDeOnibus
-
-@dynamic codigoGPS;
-@dynamic destino;
-@dynamic identificador;
-@dynamic letreiro;
-@dynamic origem;
-@dynamic tag;
-
+@implementation LinhaDeOnibus (WithBehaviour)
 
 +(void) mudaStatusDeFavoritoParaOnibus: (Onibus*) onibus noContext: (NSManagedObjectContext*) ctx {
     if (onibus.favorito) {

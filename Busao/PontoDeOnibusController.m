@@ -13,7 +13,7 @@
 #import "Ponto.h"
 #import "DetalhesDoOnibusController.h"
 #import "PontoUITableSection.h"
-#import "LinhaDeOnibus.h"
+#import "LinhaDeOnibus+WithBehaviour.h"
 
 
 

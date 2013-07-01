@@ -7,8 +7,11 @@
 //
 
 #import "FavoritosController.h"
-#import "LinhaDeOnibus.h"
+#import "LinhaDeOnibus+WithBehaviour.h"
 #import "DetalhesDoOnibusController.h"
+#import "FavoritosController.h"
+#import "NovaTagController.h"
+#import "UIViewController+NavigationController.h"
 
 
 
@@ -27,10 +30,18 @@
 
 -(id) init {
     if(self = [super initWithStyle:UITableViewStylePlain]) {
-        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Tempo real"
+        UIBarButtonItem *tempoReal = [[UIBarButtonItem alloc] initWithTitle:@"Tempo real"
                                                                                   style:UIBarButtonItemStyleBordered
                                                                                  target:self
                                                                                  action:@selector(irParaMapa)];
+        UIBarButtonItem *tag = [[UIBarButtonItem alloc] initWithTitle:@"Tag"
+                                                                      style:UIBarButtonItemStyleBordered
+                                                                     target:self
+                                                                     action:@selector(criaTagSelecao)];
+        
+        self.title = @"Favoritos";
+        
+        self.navigationItem.rightBarButtonItems= @[tempoReal, tag];
 
     }
     return self;
@@ -155,7 +166,14 @@
     if ([self.onibusSelecionados count] > 0) {
         [self.navigationController pushViewController:[[DetalhesDoOnibusController alloc] initWithOnibuses:self.onibusSelecionados andLocalizacao:[[self appDelegate]localizacaoAtual]] animated:YES];
     }
+}
+
+-(void) criaTagSelecao {
+    NSLog(@"ANTESSSSSS");
     
+    [self presentViewController:[[[NovaTagController alloc]initWithFavoritosSelecionados:self.onibusSelecionados] comNavigation] animated:YES completion:^{
+        NSLog(@"DEPOISSSSSSS");
+    }];
 }
 
 @end

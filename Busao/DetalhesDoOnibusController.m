@@ -98,8 +98,6 @@
 }
 
 - (void)buscaDetalhesDoOnibus {
-    
-    
     for (Onibus *onibus in self.onibuses) {
         TempoRealDataSource *tempoRealDataSource = [[TempoRealDataSource alloc] initWithDelegate:self];
         [tempoRealDataSource buscaLocalizacoesParaOnibus: onibus];
